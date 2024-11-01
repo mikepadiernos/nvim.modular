@@ -1,4 +1,4 @@
-# modular.nvim
+# nvim.modular
 
 ## Introduction
 
