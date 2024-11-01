@@ -1,9 +1,11 @@
-**This repo is supposed to used as config by NvChad users!**
+# modular.nvim
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+## Introduction
 
-# Credits
+A configuration for Neovim based on [NvChad/starter](https://github.com/NvChad/starter) & inspired by [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) 
+in combination with [echasnovski/mini.nvim](https://github.com/echasnovski/mini.nvim) modules that includes QOL improvements for people migrating from IDE's like VSCode, that is:
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+* Fast
+* Modular
+* Geared towards [Drupal](https://drupal.org) development
+
