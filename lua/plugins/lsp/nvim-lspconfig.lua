@@ -1,6 +1,6 @@
 return  {
   "neovim/nvim-lspconfig",
   config = function()
-    require "configs.lspconfig"
+    require "core.lspconfig"
   end,
 }
