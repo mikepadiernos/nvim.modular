@@ -1,6 +1,7 @@
 return {
-  'shadowofseaice/yabs.nvim',
+  "shadowofseaice/yabs.nvim",
+  lazy = false,
   config = function()
-	require('yabs').setup()
-  end
+    require("yabs").setup()
+  end,
 }

@@ -1,5 +1,6 @@
 return {
   "neoclide/coc.nvim",
+  lazy = false,
   branch = "release",
   config = function()
     -- https://raw.githubusercontent.com/neoclide/coc.nvim/master/doc/coc-example-config.lua
