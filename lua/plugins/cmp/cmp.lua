@@ -1,7 +1,7 @@
 return {
   { -- Autocompletion
-    'hrsh7th/nvim-cmp',
-    event = 'InsertEnter',
+    "hrsh7th/nvim-cmp",
+    event = "InsertEnter",
     dependencies = {
       -- Snippet Engine & its associated nvim-cmp source
       {
@@ -36,7 +36,7 @@ return {
           cmp_filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
           -- WARNING: The search is not optimized to look for variables in JS files.
           -- If you change the search_extensions you might get false positives and weird completion results.
-          search_extensions = { ".js", ".ts", ".jsx", ".tsx" }
+          search_extensions = { ".js", ".ts", ".jsx", ".tsx" },
         },
       },
       -- cmp sources plugins
@@ -50,27 +50,36 @@ return {
     },
     config = function()
       -- See `:help cmp`
-      local cmp = require 'cmp'
-      local luasnip = require 'luasnip'
+      local cmp = require "cmp"
+      -- local config = require "plugins.cmp.cmp"
+      local luasnip = require "luasnip"
       luasnip.config.setup {}
 
       cmp.setup {
+        mapping = {
+          ["<CR>"] = cmp.mapping.confirm {
+            behavior = cmp.ConfirmBehavior.Insert,
+            select = false,
+          },
+        },
         snippet = {
           expand = function(args)
             luasnip.lsp_expand(args.body)
           end,
         },
-        completion = { completeopt = 'menu,menuone,noinsert' },
+        completion = { completeopt = "menu,menuone,noinsert" },
+        -- for LSPs that (re)enable this:
+        preselect = cmp.PreselectMode.None,
         sources = {
           {
-            name = 'lazydev',
+            name = "lazydev",
             -- set group index to 0 to skip loading LuaLS completions as lazydev recommends it
             group_index = 0,
           },
-          { name = 'nvim_lsp' },
-          { name = 'luasnip' },
-          { name = 'path' },
-          { name = 'css_vars' },
+          { name = "nvim_lsp" },
+          { name = "luasnip" },
+          { name = "path" },
+          { name = "css_vars" },
         },
       }
     end,

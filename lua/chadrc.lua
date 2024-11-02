@@ -11,6 +11,8 @@ User__fg      = "#ffffff"
 User_bg       = "#000000"
 User__bg      = "#171717"
 
+M.lsp = {signature = false}
+
 M.base46 = {
   theme = "gatekeeper",
 
