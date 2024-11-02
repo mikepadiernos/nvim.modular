@@ -1,5 +1,4 @@
 return {
-   'dyng/ctrlsf.vim',
-  config = function()
-  end,
+  "dyng/ctrlsf.vim",
+  config = function() end,
 }
