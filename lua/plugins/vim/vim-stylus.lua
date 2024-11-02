@@ -1,5 +1,7 @@
 return {
-  'iloginow/vim-stylus',
-  config = function()
-  end,
+  -- "acauamontiel/vim-stylus",
+  "shirohana/vim-stylus",
+  lazy = false,
+  opts = {},
+  config = function() end,
 }

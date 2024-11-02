@@ -65,7 +65,6 @@ return {
   { enabled = true, name = "scrollview", "dstein64/nvim-scrollview" },
   { enabled = true, name = "simplefile", "Rizwanelansyah/simplyfile.nvim" },
   { enabled = false, name = "sqlua", "xemptuous/sqlua.nvim" },
-  { enabled = false, name = "stylus", "ChiliConSql/neovim-stylus" },
   { enabled = false, name = "surround", "kylechui/nvim-surround" },
   { enabled = false, name = "tide", "jackMort/tide.nvim" },
   { enabled = false, name = "tmux-navigation", "alexghergh/nvim-tmux-navigation" },
