@@ -96,6 +96,6 @@ return {
   { enabled = false, name = "wilder", "gelguy/wilder.nvim" },
   { enabled = false, name = "yabs", "shadowofseaice/yabs.nvim" },
   { enabled = true, name = "yanky", "gbprod/yanky.nvim" },
-  { enabled = true, name = "zebrazone", "notomo/zebrazone.nvim" },
+  { enabled = false, name = "zebrazone", "notomo/zebrazone.nvim" },
   { enabled = true, name = "zen-mode", "folke/zen-mode.nvim" },
 }
