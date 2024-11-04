@@ -5,9 +5,10 @@ return {
 
   -- plugins
   { require "extend.contrib" },
+  { require "extend.productivity" },
   { require "extend.icons" },
   { require "extend.treesitter" },
-  -- { require 'extend.telescope' },
+  { require "extend.telescope" },
   -- { require 'extend.cmp' },
   { require "extend.lsp" },
   { require "extend.vim" },
