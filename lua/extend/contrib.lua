@@ -1,7 +1,7 @@
 return {
   --Contrib Modules
   { enabled = false, name = "aerial", "stevearc/aerial.nvim" },
-  { enabled = false, name = "autoclose", "m4xshen/autoclose.nvim" },
+  { enabled = true, name = "autoclose", "m4xshen/autoclose.nvim" },
   { enabled = true, name = "barbecue", "utilyre/barbecue.nvim" },
   { enabled = true, name = "better-comments", "Djancyp/better-comments.nvim" },
   { enabled = true, name = "better-escape", "max397574/better-escape.nvim" },
@@ -34,6 +34,7 @@ return {
   { enabled = true, name = "image", "3rd/image.nvim" },
   { enabled = true, name = "inc-rename", "smjonas/inc-rename.nvim" },
   { enabled = true, name = "lazydev", "folke/lazydev.nvim" },
+  { enabled = true, name = "leap", "ggandor/leap.nvim" },
   { enabled = true, name = "lint", "mfussenegger/nvim-lint" },
   { enabled = true, name = "lua-rocks", "vhyrro/luarocks.nvim" },
   { enabled = true, name = "mapx", "b0o/mapx.nvim" },
@@ -69,6 +70,7 @@ return {
   { enabled = true, name = "praise", "theoboldalex/praise.nvim" },
   { enabled = false, name = "precognition", "tris203/precognition.nvim" },
   { enabled = false, name = "project", "ahmedkhalf/project.nvim" },
+  { enabled = true, name = "px-to-rem", "jsongerber/nvim-px-to-rem" },
   { enabled = true, name = "rainbow-delimiters", "HiPhish/rainbow-delimiters.nvim" },
   { enabled = false, name = "remote", "amitds1997/remote-nvim.nvim" },
   { enabled = false, name = "remote-sshfs", "nosduco/remote-sshfs.nvim" },

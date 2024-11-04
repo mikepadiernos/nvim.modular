@@ -7,6 +7,7 @@ return {
       opts = {
         ensure_installed = {
           "markdownlint",
+          "prettier",
           "prettierd",
           "phpactor",
           "phpcs",
@@ -15,6 +16,7 @@ return {
           "css-lsp",
           "css-variables-language-server",
           "cssmodules-language-server",
+          "delve",
           "emmet-language-server",
           "eslint-lsp",
           "html-lsp",
