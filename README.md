@@ -6,6 +6,6 @@ A configuration for Neovim based on [NvChad/starter](https://github.com/NvChad/s
 in combination with [echasnovski/mini.nvim](https://github.com/echasnovski/mini.nvim) modules that includes QOL improvements for people migrating from IDE's like VSCode,
 which is:
 
-* Fast
 * Modular
+* Comprehensive
 * Geared towards [Drupal](https://drupal.org) development
