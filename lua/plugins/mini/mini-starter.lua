@@ -1,8 +1,9 @@
 return {
-  'echasnovski/mini.starter',
+  "echasnovski/mini.starter",
+  lazy = false,
   version = false,
   config = function()
-    local starter = require 'mini.starter'
+    local starter = require "mini.starter"
 
     -- local project_nvim = require("project_nvim")
     -- local recent_projects = project_nvim.get_recent_projects()
@@ -12,13 +13,13 @@ return {
     local items = {
       starter.sections.builtin_actions(),
       -- { name = 'Sessions', action = ":lua require'telescope'.extensions.sessions.sessions{}", section = 'Telescope' },
-  	  { name = 'Projects', action = ':Telescope projects', section = 'Telescope'},
-	    { name = 'Recent Files', action = ':Telescope oldfiles', section = 'Telescope' },
+      { name = "Projects", action = ":Telescope projects", section = "Telescope" },
+      { name = "Recent Files", action = ":Telescope oldfiles", section = "Telescope" },
       -- { name = 'Restore session', action = [[lua require("persistence").load()]], section = 'Session' },
       -- { name = 'File Browser', action = ':Telescope file_browser', section = 'Telescope' },
       starter.sections.recent_files(9, false),
       starter.sections.recent_files(11, true),
-	    -- starter.sections.pick(),
+      -- starter.sections.pick(),
       -- Use this if you set up 'mini.sessions'
       -- starter.sections.sessions(9, true),
       -- { name = 'Projects', action = ':e ~/Projects', section = 'Bookmarks' },
@@ -38,16 +39,16 @@ return {
 
       content_hooks = {
         starter.gen_hook.adding_bullet(),
-        starter.gen_hook.indexing('all', {
-          'Builtin actions',
-          'Telescope',
+        starter.gen_hook.indexing("all", {
+          "Builtin actions",
+          "Telescope",
           -- 'Bookmarks'
         }),
         starter.gen_hook.padding(0, 1),
-        starter.gen_hook.aligning('center', 'top'),
+        starter.gen_hook.aligning("center", "top"),
       },
 
-      query_updaters = 'abcdefghijklmnopqrstuvwxyz0123456789_-.',
+      query_updaters = "abcdefghijklmnopqrstuvwxyz0123456789_-.",
 
       silent = false,
     }

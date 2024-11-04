@@ -80,6 +80,7 @@ return {
           { name = "luasnip" },
           { name = "path" },
           { name = "css_vars" },
+          -- { name = "nerdfonts" },
         },
       }
     end,
