@@ -1,6 +1,5 @@
 return {
   "echasnovski/mini.starter",
-  lazy = false,
   version = false,
   config = function()
     local starter = require "mini.starter"
@@ -19,7 +18,6 @@ return {
       -- { name = 'File Browser', action = ':Telescope file_browser', section = 'Telescope' },
       starter.sections.recent_files(9, false),
       starter.sections.recent_files(11, true),
-      -- starter.sections.pick(),
       -- Use this if you set up 'mini.sessions'
       -- starter.sections.sessions(9, true),
       -- { name = 'Projects', action = ':e ~/Projects', section = 'Bookmarks' },

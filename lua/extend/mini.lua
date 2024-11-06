@@ -37,7 +37,7 @@ return {
   { enabled = false, name = "mini.pick", "echasnovski/mini.pick" },
   { enabled = false, name = "mini.sessions", "echasnovski/mini.sessions" },
   { enabled = false, name = "mini.splitjoin", "echasnovski/mini.splitjoin" },
-  { enabled = false, name = "mini.starter", "echasnovski/mini.starter" },
+  { enabled = false, name = "mini.starter", "echasnovski/mini.starter", priority = 1000 },
   { enabled = false, name = "mini.statusline", "echasnovski/mini.statusline" },
   { enabled = false, name = "mini.surround", "echasnovski/mini.surround" },
   { enabled = false, name = "mini.tabline", "echasnovski/mini.tabline" },

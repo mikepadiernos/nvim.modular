@@ -115,7 +115,7 @@
   "neocolumn": { "branch": "master", "commit": "56fdf7c7d5672d81b83ff3e8e5ea745d6e85c225" },
   "neotab": { "branch": "master", "commit": "6c6107dddaa051504e433608f59eca606138269b" },
   "noice": { "branch": "main", "commit": "d80136061820765baf70ace7dfb98a52575edc4a" },
-  "noice.nvim": { "branch": "main", "commit": "d80136061820765baf70ace7dfb98a52575edc4a" },
+  "noice.nvim": { "branch": "main", "commit": "8c9a29acbcb5380c4dadc09f25ab3e99f5ab626e" },
   "none-ls": { "branch": "main", "commit": "dcc8cd4efdcb29275681a3c95786a816330dbca6" },
   "nonicons": { "branch": "main", "commit": "ceda07dc7339f35444b5f4c4016f76a9eb42ac16" },
   "nui-components": { "branch": "main", "commit": "caecfe2089e5ffbe99c2b0e0468da91990263a90" },

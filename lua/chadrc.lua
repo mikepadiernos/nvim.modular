@@ -19,6 +19,10 @@ Keymap = vim.keymap.set
 
 M.lsp = { signature = false }
 
+M.nvdash = {
+  load_on_startup = true,
+}
+
 M.base46 = {
   theme = "gatekeeper",
 
@@ -47,10 +51,6 @@ M.base46 = {
     St_lspHints = { bg = User_bg },
     St_lspInfo = { bg = User_bg },
   },
-}
-
-M.nvdash = {
-  load_on_startup = true,
 }
 
 M.ui = {
