@@ -8,5 +8,7 @@ return {
   -- { enabled = false, name = 'cmp-path', 'hrsh7th/cmp-path' },
   { enabled = true, name = "cmp-sass-variables", "pontusk/cmp-sass-variables" },
   { enabled = true, name = "cmp-symfony-router", "fbuchlak/cmp-symfony-router" },
+  { enabled = true, name = "cmp-twig", "thomas-hiron/cmp-twig" },
+  { enabled = true, name = "cmp-twig", "thomas-hiron/cmp-twig-constants" },
   { enabled = true, name = "cmp-uuid", "koyashiro/cmp-uuid" },
 }
