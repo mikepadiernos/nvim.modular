@@ -1,6 +1,7 @@
 return {
   --Contrib Modules
   { enabled = false, name = "aerial", "stevearc/aerial.nvim" },
+  { enabled = false, name = "alien", "joeyfitzpatrick/alien.nvim" },
   { enabled = true, name = "autoclose", "m4xshen/autoclose.nvim" },
   { enabled = true, name = "barbecue", "utilyre/barbecue.nvim" },
   { enabled = true, name = "better-comments", "Djancyp/better-comments.nvim" },
@@ -59,6 +60,7 @@ return {
   { enabled = true, name = "none-ls", "nvimtools/none-ls.nvim" },
   { enabled = false, name = "notify", "rcarriga/nvim-notify" },
   { enabled = true, name = "nui-components", "grapp-dev/nui-components.nvim" },
+  { enabled = true, name = "null-ls", "brain-fuel/null-ls.nvim" },
   { enabled = true, name = "oil", "stevearc/oil.nvim" },
   { enabled = true, name = "overseer", "stevearc/overseer.nvim" },
   { enabled = false, name = "pane-resizer", "mboyov/pane-resizer.nvim" },
