@@ -1,6 +1,7 @@
 {
   "LuaSnip": { "branch": "master", "commit": "03c8e67eb7293c404845b3982db895d59c0d1538" },
   "NvChad": { "branch": "v2.5", "commit": "09dd13e9c6df98fe5609829a7a0fbccea2f515ae" },
+  "alien.nvim": { "branch": "main", "commit": "b8bea4fcf868cbe6cda83f4dd6182b7046542d0d" },
   "autoclose": { "branch": "main", "commit": "b2077aa2c83df7ebc19b2a20a3a0654b24ae9c8f" },
   "barbecue": { "branch": "main", "commit": "cd7e7da622d68136e13721865b4d919efd6325ed" },
   "base46": { "branch": "v2.5", "commit": "f006ffdd0e4c0a8b1a639713f5208bc282c60058" },
@@ -28,6 +29,7 @@
   "css-vars.nvim": { "branch": "main", "commit": "c63baeff865d45d123491d159d7df309a2d6b15c" },
   "dial": { "branch": "master", "commit": "ed4d6a5bbd5e479b4c4a3019d148561a2e6c1490" },
   "diffview": { "branch": "main", "commit": "4516612fe98ff56ae0415a259ff6361a89419b0a" },
+  "direnv.nvim": { "branch": "main", "commit": "3e38d855c764bb1bec230130ed0e026fca54e4c8" },
   "dressing": { "branch": "master", "commit": "1b7921eecc65af1baf8ac1dc06f0794934cbcfb2" },
   "dropbar": { "branch": "master", "commit": "22382f44f8ce0320d38023c6a68f3ef4087c8c10" },
   "drupal": { "branch": "main", "commit": "3be631c36458d31ac1a06033d164248bcd7104e1" },
@@ -126,6 +128,7 @@
   "nvim-lsp-extras": { "branch": "master", "commit": "db15048f6a6e585f21d4245bc2c6f3ef771b72d0" },
   "nvim-lspconfig": { "branch": "master", "commit": "52302604e3c667cfdf33aadf89088e96eb3c5da3" },
   "nvim-navic": { "branch": "master", "commit": "8649f694d3e76ee10c19255dece6411c29206a54" },
+  "nvim-sak": { "branch": "main", "commit": "323b774eb65fd7bd106d5ce4cc32cde3d38cd5f7" },
   "nvim-tree-preview.lua": { "branch": "main", "commit": "d14385f3649ffa996ce6a33738e007515c32398d" },
   "nvim-tree.lua": { "branch": "master", "commit": "610a1c189bdb2b9b936169b2ea9d1838f971fa2b" },
   "nvim-web-devicons": { "branch": "master", "commit": "19d257cf889f79f4022163c3fbb5e08639077bd8" },
