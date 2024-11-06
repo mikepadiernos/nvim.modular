@@ -69,7 +69,7 @@ return {
   { enabled = false, name = "popui", "hood/popui.nvim" },
   { enabled = true, name = "praise", "theoboldalex/praise.nvim" },
   { enabled = false, name = "precognition", "tris203/precognition.nvim" },
-  { enabled = false, name = "project", "ahmedkhalf/project.nvim" },
+  { enabled = true, name = "project", "ahmedkhalf/project.nvim" },
   { enabled = true, name = "px-to-rem", "jsongerber/nvim-px-to-rem" },
   { enabled = true, name = "rainbow-delimiters", "HiPhish/rainbow-delimiters.nvim" },
   { enabled = false, name = "remote", "amitds1997/remote-nvim.nvim" },

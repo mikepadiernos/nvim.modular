@@ -134,6 +134,7 @@
   "phptools": { "branch": "main", "commit": "471c01c55bf687380b0dc977a7437192bd9d0fb5" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
   "praise": { "branch": "main", "commit": "3cc84e8fd7cd32ed13cbaed70ca27757761732d9" },
+  "project": { "branch": "main", "commit": "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" },
   "promise-async": { "branch": "main", "commit": "119e8961014c9bfaf1487bf3c2a393d254f337e2" },
   "px-to-rem": { "branch": "main", "commit": "92c812bbc2f2ac2869c02d816c5e7c9843d9e06a" },
   "rainbow-delimiters": { "branch": "master", "commit": "e0f9b3efe150724af2d2ed59997d5ece373840e3" },

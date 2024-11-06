@@ -54,6 +54,9 @@ M.base46 = {
 }
 
 M.ui = {
+  tabufline = {
+    lazy = false,
+  },
   statusline = {
     separator_style = "block",
   },
