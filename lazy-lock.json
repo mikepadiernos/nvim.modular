@@ -166,6 +166,8 @@
   "twilight": { "branch": "main", "commit": "1584c0b0a979b71fd86b18d302ba84e9aba85b1b" },
   "ufo": { "branch": "main", "commit": "522d719d421fc42b95577d9624048d8348d326ea" },
   "ui": { "branch": "v3.0", "commit": "25319f3686b4f980458859b30244f373d158635c" },
+  "undotree": { "branch": "main", "commit": "eab459ab87dd249617b5f7187bb69e614a083047" },
+  "vessel": { "branch": "main", "commit": "23edb52bab7dbabc27481d5f2d5fc063c0fa0360" },
   "vgit": { "branch": "main", "commit": "9afe79a3ae65594ca483c2e6161690ff9b85123b" },
   "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" },
   "vim-stylus": { "branch": "master", "commit": "2dbab1bffde3132f74a02322cb9fbf27643c9631" },

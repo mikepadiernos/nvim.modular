@@ -5,22 +5,45 @@
 ---@type ChadrcConfig
 local M = {}
 
-User_accent = "#efe100"
-User_fg = "#ffffff"
-User__fg = "#ffffff"
-User_bg = "#000000"
-User__bg = "#171717"
-
-vim.api.nvim_set_hl(0, "TideBg", { bg = User__bg })
-vim.api.nvim_set_hl(0, "TideHeader", { fg = User_accent, bold = true })
-vim.api.nvim_set_hl(0, "TideSeparator", { fg = User__bg })
-
-Keymap = vim.keymap.set
+require "user.colors"
 
 M.lsp = { signature = false }
 
 M.nvdash = {
   load_on_startup = true,
+  header = {
+    "                            ",
+    "     ▄▄         ▄ ▄▄▄▄▄▄▄   ",
+    "   ▄▀███▄     ▄██ █████▀    ",
+    "   ██▄▀███▄   ███           ",
+    "   ███  ▀███▄ ███           ",
+    "   ███    ▀██ ███           ",
+    "   ███      ▀ ███           ",
+    "   ▀██ █████▄▀█▀▄██████▄    ",
+    "     ▀ ▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀   ",
+    "                            ",
+    "                            ",
+    "                            ",
+  },
+  buttons = {
+    { txt = "  Find File", keys = "ff", cmd = "Telescope find_files" },
+    { txt = "  Recent Files", keys = "fo", cmd = "Telescope oldfiles" },
+    { txt = "󰈭  Find Word", keys = "fw", cmd = "Telescope live_grep" },
+    -- { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('nvchad.themes').open()" },
+    { txt = "  Mappings", keys = "ch", cmd = "NvCheatsheet" },
+
+    { txt = " ", hl = "NvDashFooter", no_gap = true, rep = true },
+    {
+      txt = function()
+        local stats = require("lazy").stats()
+        local ms = math.floor(stats.startuptime) .. " ms"
+        return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
+      end,
+      hl = "NvDashFooter",
+      no_gap = true,
+    },
+    { txt = " ", hl = "NvDashFooter", no_gap = true, rep = true },
+  },
 }
 
 M.base46 = {
@@ -50,7 +73,7 @@ M.base46 = {
     St_lspWarning = { bg = User_bg },
     St_lspHints = { bg = User_bg },
     St_lspInfo = { bg = User_bg },
-  },
+ },
 }
 
 M.ui = {

@@ -1,4 +1,6 @@
-local colors = {
-  black2 = User_bg,
-}
-return colors
+User_accent = "#efe100"
+User_fg = "#ffffff"
+User__fg = "#ffffff"
+User_bg = "#000000"
+User__bg = "#171717"
+

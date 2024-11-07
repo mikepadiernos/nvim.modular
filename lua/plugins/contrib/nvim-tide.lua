@@ -1,3 +1,7 @@
+vim.api.nvim_set_hl(0, "TideBg", { bg = User_bg })
+vim.api.nvim_set_hl(0, "TideHeader", { fg = User_accent, bold = true })
+vim.api.nvim_set_hl(0, "TideSeparator", { fg = User_bg })
+
 return {
   "jackMort/tide.nvim",
   lazy = false,
