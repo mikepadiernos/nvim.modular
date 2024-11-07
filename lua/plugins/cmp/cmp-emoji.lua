@@ -15,7 +15,7 @@ return {
     enable_cmp_integration = true,
     -- optional if your plugin installation directory
     -- is not vim.fn.stdpath("data") .. "/lazy/
-    -- plugin_path = vim.fn.expand("$HOME/plugins/"),
+    plugin_path = vim.fn.expand("$HOME/.local/share/nvim/lazy/"),
   },
   config = function(_, opts)
     require("emoji").setup(opts)

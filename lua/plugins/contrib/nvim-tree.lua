@@ -9,7 +9,7 @@ return {
       sync_root_with_cwd = true,
       respect_buf_cwd = true,
       view = {
-        width = 45,
+        width = 40,
       },
       sort = {
         sorter = "case_sensitive",
