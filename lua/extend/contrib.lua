@@ -101,6 +101,7 @@ return {
   { enabled = false, name = "undotree", "jiaoshijie/undotree" },
   { enabled = false, name = "vgit", "tanvirtin/vgit.nvim" },
   { enabled = false, name = "wilder", "gelguy/wilder.nvim" },
+  { enabled = false, name = "workspaces", "rjyarwood/nvim_workspaces" },
   { enabled = false, name = "yabs", "shadowofseaice/yabs.nvim" },
   { enabled = true, name = "yanky", "gbprod/yanky.nvim" },
   { enabled = false, name = "zebrazone", "notomo/zebrazone.nvim" },

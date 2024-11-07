@@ -11,9 +11,18 @@ return {
       view = {
         width = 45,
       },
+      sort = {
+        sorter = "case_sensitive",
+      },
       update_focused_file = {
         enable = true,
         update_root = true,
+      },
+      renderer = {
+        group_empty = false,
+      },
+      filters = {
+        dotfiles = false,
       },
     }
   end,
