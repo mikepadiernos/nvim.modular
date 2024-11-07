@@ -45,6 +45,7 @@ return {
   { enabled = true, name = "markdown-preview", "iamcco/markdown-preview.nvim" },
   { enabled = true, name = "marks", "chentoast/marks.nvim" },
   { enabled = true, name = "minimap", "Isrothy/neominimap.nvim" },
+  { enabled = true, name = "mistake", "ck-zhang/mistake.nvim" },
   { enabled = false, name = "mkdnflow", "jakewvincent/mkdnflow.nvim" },
   { enabled = true, name = "modicator", "mawkler/modicator.nvim" },
   { enabled = false, name = "multicursor", "smoka7/multicursors.nvim" },
