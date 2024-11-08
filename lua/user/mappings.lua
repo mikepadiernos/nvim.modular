@@ -26,3 +26,7 @@ Keymap({ "n", "x" }, "<leader>v", [["+p]]) -- paste from system clipboard
 -- Delete into system clipboard
 Keymap({ "n", "v" }, "<C-d>", '"+d') -- delete motion
 Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
+
+-- Scratch
+Keymap("n", "<C-S-s>", "<cmd>Scratch<cr>")
+Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<cr>")
