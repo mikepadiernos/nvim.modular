@@ -26,11 +26,13 @@ M.nvdash = {
     "                            ",
   },
   buttons = {
-    { txt = "  Find File", keys = "ff", cmd = "Telescope find_files" },
+    { txt = "  Recent Projects", keys = "fp", cmd = "Telescope projects" },
     { txt = "  Recent Files", keys = "fo", cmd = "Telescope oldfiles" },
-    { txt = "󰈭  Find Word", keys = "fw", cmd = "Telescope live_grep" },
+    { txt = "  Find File", keys = "ff", cmd = "Telescope find_files" },
+    { txt = "  File Manager", keys = "fs", cmd = "SimplyFileOpen" },
+    -- { txt = "󰈭  Find Word", keys = "fw", cmd = "Telescope live_grep" },
     -- { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('nvchad.themes').open()" },
-    { txt = "  Mappings", keys = "ch", cmd = "NvCheatsheet" },
+    { txt = "  Keyboard Shortcuts", keys = "ch", cmd = "NvCheatsheet" },
 
     { txt = " ", hl = "NvDashFooter", no_gap = true, rep = true },
     {

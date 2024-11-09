@@ -5,6 +5,9 @@ local opts = { noremap = true, silent = true }
 Keymap("n", "<C-`>", "<esc>:Lazy<CR>", opts)
 Keymap("n", "<C-1>", "<esc>:Mason<CR>", opts)
 
+Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
+-- Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen", opts)
+
 Keymap({ "n", "v", "i" }, "\\", ":NvimTreeFocus<CR>", opts)
 Keymap({ "n", "v", "i" }, "<C-\\>", ":NvimTreeToggle<CR>", opts)
 
@@ -30,3 +33,7 @@ Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
 -- Scratch
 Keymap("n", "<C-S-s>", "<cmd>Scratch<cr>")
 Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<cr>")
+
+-- Telescope
+Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
+

@@ -90,7 +90,7 @@ return {
   { enabled = true, name = "scrollview", "dstein64/nvim-scrollview" },
   { enabled = true, name = "select-multi-line", "Rasukarusan/nvim-select-multi-line" },
   { enabled = false, name = "sensible", "basilgood/nvim-sensible" },
-  { enabled = true, name = "simplefile", "Rizwanelansyah/simplyfile.nvim" },
+  { enabled = true, name = "simplefile", "Rizwanelansyah/simplyfile.nvim", lazy = false },
   { enabled = false, name = "snacks", "folke/snacks.nvim" },
   { enabled = false, name = "sqlua", "xemptuous/sqlua.nvim" },
   { enabled = false, name = "surround", "kylechui/nvim-surround" },
