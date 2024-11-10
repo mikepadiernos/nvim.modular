@@ -37,3 +37,7 @@ Keymap({ "n", "v", "i" }, "<C-\\>", ":NvimTreeToggle<CR>", opts)
 Keymap("n", "<C-S-s>", "<cmd>Scratch<cr>")
 Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<cr>")
 
+Keymap("n", "<Leader>ic", "<cmd>IconPickerNormal<cr>", opts)
+Keymap("n", "<Leader>iy", "<cmd>IconPickerYank<cr>", opts) --> Yank the selected icon into register
+Keymap("i", "<C-i>", "<cmd>IconPickerInsert<cr>", opts)
+
