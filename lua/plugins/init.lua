@@ -10,7 +10,7 @@ return {
   { require "extend.icons" },
   { require "extend.treesitter" },
   { require "extend.telescope" },
-  { require 'extend.cmp' },
+  { require "extend.cmp" },
   { require "extend.lsp" },
   { require "extend.vim" },
   { require "extend.mini" },

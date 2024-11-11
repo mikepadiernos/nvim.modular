@@ -1,6 +1,5 @@
 return {
   "mawkler/modicator.nvim",
-  lazy = false,
   -- dependencies = 'mawkler/onedark.nvim', -- Add your colorscheme plugin here
   init = function()
     -- These are required for Modicator to work
