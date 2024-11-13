@@ -1,8 +1,8 @@
 return {
-  'ahmedkhalf/project.nvim',
-  event = 'VeryLazy',
+  "ahmedkhalf/project.nvim",
+  event = "VeryLazy",
   config = function()
-    require('project_nvim').setup {
+    require("project_nvim").setup {
       -- manual_mode = true,
       -- Manual mode doesn't automatically change your root directory, so you have
       -- the option to manually do so using `:ProjectRoot` command.
@@ -16,7 +16,7 @@ return {
 
       -- All the patterns used to detect root dir, when **"pattern"** is in
       -- detection_methods
-      patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json" },
+      patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json", "composer.json" },
 
       -- Table of lsp clients to ignore by name
       -- eg: { "efm", ... }
@@ -37,12 +37,12 @@ return {
       -- * global (default)
       -- * tab
       -- * win
-      scope_chdir = 'global',
+      scope_chdir = "global",
 
       -- Path where project.nvim will store the project history for use in
       -- telescope
-      datapath = vim.fn.stdpath("data"),
+      datapath = vim.fn.stdpath "data",
     }
-    require('telescope').load_extension('projects')
+    require("telescope").load_extension "projects"
   end,
 }

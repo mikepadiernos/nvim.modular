@@ -11,5 +11,6 @@ return {
   { enabled = false, name = "telescope-session", "HUAHUAI23/telescope-session.nvim" },
   { enabled = false, name = "telescope-sessions", "JoseConseco/telescope_sessions_picker.nvim" },
   -- { enabled = false, name = "telescope-ui-select", "nvim-telescope/telescope-ui-select.nvim" },
+  { enabled = true, name = "telescope-workspaces", "josa42/nvim-telescope-workspaces" },
   { enabled = true, name = "telescope-yanklist", "hasansujon786/telescope-yanklist.nvim" },
 }

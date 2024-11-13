@@ -1,4 +1,6 @@
 return {
   "kiyoon/nvim-tree-remote.nvim",
-  config = function() end,
+  config = function()
+    require("nvim_tree_remote").setup {}
+  end,
 }

@@ -1,5 +1,4 @@
 return {
-  "nvim-treesitter/nvim-treesitter",
-  config = function()
-  end
+  "nvim-treesitter/nvim-treesitter-textobjects",
+  config = function() end,
 }
