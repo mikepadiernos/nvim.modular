@@ -79,7 +79,7 @@ return {
   { enabled = true, name = "ufo", "kevinhwang91/nvim-ufo" },
   { enabled = true, name = "undotree", "jiaoshijie/undotree" },
   { enabled = true, name = "vgit", "tanvirtin/vgit.nvim" },
-  { enabled = true, name = "workspaces", "snatecraddock/workspaces.nvim" },
+  { enabled = true, name = "workspaces", "natecraddock/workspaces.nvim" },
   { enabled = true, name = "yanky", "gbprod/yanky.nvim" },
   { enabled = true, name = "zebrazone", "notomo/zebrazone.nvim", lazy = false },
   { enabled = true, name = "zen-mode", "folke/zen-mode.nvim" },

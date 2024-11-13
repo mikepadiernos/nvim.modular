@@ -15,7 +15,12 @@ return {
       "markdown",
       -- "stylus",
       -- "sass",
+      "ruby",
       "scss",
+      "styled",
+      "toml",
+      "typescript",
+      "xml",
     },
   },
 }
