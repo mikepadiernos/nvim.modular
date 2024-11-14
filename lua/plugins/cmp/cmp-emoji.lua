@@ -15,13 +15,13 @@ return {
     enable_cmp_integration = true,
     -- optional if your plugin installation directory
     -- is not vim.fn.stdpath("data") .. "/lazy/
-    plugin_path = vim.fn.expand("$HOME/.local/share/nvim/lazy/"),
+    plugin_path = vim.fn.expand "$HOME/.local/share/nvim/lazy/",
   },
   config = function(_, opts)
     require("emoji").setup(opts)
     -- optional for telescope integration
-    local ts = require('telescope').load_extension 'emoji'
-    vim.keymap.set('n', '<leader>se', ts.emoji, { desc = '[S]earch [E]moji' })
+    local ts = require("telescope").load_extension "emoji"
+    vim.keymap.set("n", "<leader>se", ts.emoji, { desc = "[S]earch [E]moji" })
   end,
   init = function()
     table.insert(require("cmp").get_config().sources, { name = "emoji" })

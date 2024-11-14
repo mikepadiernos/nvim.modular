@@ -3,5 +3,5 @@ return {
   version = false,
   config = function()
     require("mini.trailspace").setup()
-  end
+  end,
 }
