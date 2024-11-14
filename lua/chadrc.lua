@@ -5,19 +5,46 @@
 ---@type ChadrcConfig
 local M = {}
 
-User_accent = "#efe100"
-User_fg = "#ffffff"
-User__fg = "#ffffff"
-User_bg = "#000000"
-User__bg = "#171717"
-
-vim.api.nvim_set_hl(0, "TideBg", { bg = User__bg })
-vim.api.nvim_set_hl(0, "TideHeader", { fg = User_accent, bold = true })
-vim.api.nvim_set_hl(0, "TideSeparator", { fg = User__bg })
-
-Keymap = vim.keymap.set
+require "user.colors"
 
 M.lsp = { signature = false }
+
+M.nvdash = {
+  load_on_startup = true,
+  header = {
+    "                            ",
+    "    █████████████████████   ",
+    "                      ███   ",
+    "    ███   ███   ███   ███   ",
+    "    ███   ███   ███   ███   ",
+    "    ███   ███   █████████   ",
+    "    ███   ███   ███         ",
+    "    ███   ███   ███         ",
+    "                            ",
+    "                            ",
+    "                            ", },
+  buttons = {
+    { txt = "   Recent Projects", keys = "_ fp", cmd = "Telescope projects" },
+    { txt = "   Recent Files", keys = "_ fo", cmd = "Telescope oldfiles" },
+    { txt = "   Find File", keys = "_ ff", cmd = "Telescope find_files" },
+    { txt = "   File Manager", keys = "_ fs", cmd = "SimplyFileOpen" },
+    -- { txt = "󰈭  Find Word", keys = "fw", cmd = "Telescope live_grep" },
+    -- { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('nvchad.themes').open()" },
+    { txt = "   Keyboard Shortcuts", keys = "_ ch", cmd = "NvCheatsheet" },
+
+    { txt = " ", hl = "NvDashFooter", no_gap = true, rep = true },
+    {
+      txt = function()
+        local stats = require("lazy").stats()
+        local ms = math.floor(stats.startuptime) .. " ms"
+        return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
+      end,
+      hl = "NvDashFooter",
+      no_gap = true,
+    },
+    { txt = " ", hl = "NvDashFooter", no_gap = true, rep = true },
+  },
+}
 
 M.base46 = {
   theme = "gatekeeper",
@@ -28,6 +55,7 @@ M.base46 = {
     NvimTreeWinSeparator = { fg = User_bg, bg = User_bg },
     NvimTreeNormal = { bg = User_bg },
     NvimTreeNormalNC = { bg = User_bg },
+    NvDashAscii = { fg = User_accent },
     TabLineSel = { bg = User_bg },
     StatusLine = { bg = User_bg },
     St_NormalMode = { bg = User_accent },
@@ -47,13 +75,15 @@ M.base46 = {
     St_lspHints = { bg = User_bg },
     St_lspInfo = { bg = User_bg },
   },
-}
-
-M.nvdash = {
-  load_on_startup = true,
+  -- vim.api.nvim_set_hl(0, "TideBg", { bg = User_bg }),
+  -- vim.api.nvim_set_hl(0, "TideHeader", { fg = User_accent, bold = true }),
+  -- vim.api.nvim_set_hl(0, "TideSeparator", { fg = User_bg }),
 }
 
 M.ui = {
+  tabufline = {
+    lazy = false,
+  },
   statusline = {
     separator_style = "block",
   },

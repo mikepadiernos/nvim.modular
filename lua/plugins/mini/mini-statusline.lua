@@ -1,9 +1,9 @@
 return {
-  'echasnovski/mini.statusline',
+  "echasnovski/mini.statusline",
   version = false,
   config = function()
-    local sl = require 'mini.statusline'
-    local blocked = { ['NvimTree'] = true }
+    local sl = require "mini.statusline"
+    local blocked = { ["NvimTree"] = true }
 
     sl.setup {
       -- Content of statusline as functions which return statusline string. See
@@ -21,21 +21,21 @@ return {
           local search = MiniStatusline.section_searchcount { trunc_width = 75 }
 
           if blocked[vim.bo.filetype] then
-            return ''
+            return ""
           else
             return MiniStatusline.combine_groups {
               { hl = mode_hl, strings = { mode } },
-              { hl = 'MiniStatuslineDevinfo', strings = { git, diff, diagnostics, lsp } },
-              '%<', -- Mark general truncate point
-              { hl = 'MiniStatuslineFilename', strings = { filename } },
-              '%=', -- End left alignment
-              { hl = 'MiniStatuslineFileinfo', strings = { fileinfo } },
+              { hl = "MiniStatuslineDevinfo", strings = { git, diff, diagnostics, lsp } },
+              "%<", -- Mark general truncate point
+              { hl = "MiniStatuslineFilename", strings = { filename } },
+              "%=", -- End left alignment
+              { hl = "MiniStatuslineFileinfo", strings = { fileinfo } },
               { hl = mode_hl, strings = { search, location } },
             }
           end
         end,
         inactive = function()
-          return ''
+          return ""
         end,
       },
       -- Whether to use icons by default
@@ -44,7 +44,7 @@ return {
       set_vim_settings = true,
     }
     sl.section_location = function()
-      return '%2l:%-2v'
+      return "%2l:%-2v"
     end
   end,
 }

@@ -1,5 +1,7 @@
 return {
-  'echasnovski/mini.align',
+  "echasnovski/mini.align",
   version = false,
-  config = function() end,
+  config = function()
+    require("mini.align").setup()
+  end,
 }

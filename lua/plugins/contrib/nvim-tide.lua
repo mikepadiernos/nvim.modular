@@ -1,6 +1,5 @@
 return {
   "jackMort/tide.nvim",
-  lazy = false,
   dependencies = {
     "MunifTanjim/nui.nvim",
     "nvim-tree/nvim-web-devicons",
@@ -22,6 +21,9 @@ return {
       hints = {
         dictionary = "qwertzuiopsfghjklycvbnm", -- Key hints for quick access
       },
+      vim.api.nvim_set_hl(0, "TideBg", { bg = User_bg }),
+      vim.api.nvim_set_hl(0, "TideHeader", { fg = User_accent, bold = true }),
+      vim.api.nvim_set_hl(0, "TideSeparator", { fg = User_bg }),
     }
   end,
 }
