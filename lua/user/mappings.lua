@@ -1,8 +1,11 @@
 Keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
-Keymap("n", "<C-`>", "<esc>:Lazy<CR>", opts)
-Keymap("n", "<C-1>", "<esc>:Mason<CR>", opts)
+Keymap("n", "<leader>1", "<esc>:Lazy<CR>", opts)
+Keymap("n", "<leader>2", "<esc>:Mason<CR>", opts)
+
+Keymap({ "n", "v", "i", "x" }, "<C-S-Right>", ":bnext<CR>", opts)
+Keymap({ "n", "v", "i", "x" }, "<C-S-Left>", ":bprev<CR>", opts)
 
 Keymap({ "n", "i" }, "<C-s>", "<esc>:w<CR>", opts)
 Keymap({ "n", "v", "i" }, "<C-q>", "<esc>:q<CR>", opts)
@@ -40,4 +43,3 @@ Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<cr>")
 Keymap("n", "<Leader>ic", "<cmd>IconPickerNormal<cr>", opts)
 Keymap("n", "<Leader>iy", "<cmd>IconPickerYank<cr>", opts) --> Yank the selected icon into register
 Keymap("i", "<C-i>", "<cmd>IconPickerInsert<cr>", opts)
-
