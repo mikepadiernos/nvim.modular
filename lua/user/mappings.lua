@@ -33,8 +33,8 @@ Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
 
 -- Nvim Tree
-Keymap({ "n", "v", "i" }, "\\", ":NvimTreeFocus<CR>", opts)
-Keymap({ "n", "v", "i" }, "<C-\\>", ":NvimTreeToggle<CR>", opts)
+Keymap({ "n", "v", "i" }, "<C-\\>", ":NvimTreeFocus<CR>", opts)
+Keymap({ "n", "v", "i" }, "<C-S-\\>", ":NvimTreeToggle<CR>", opts)
 
 -- Scratch
 Keymap("n", "<C-S-s>", "<cmd>Scratch<cr>")
