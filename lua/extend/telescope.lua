@@ -8,6 +8,7 @@ return {
   { enabled = true, name = "telescope-gitignore", "chaosbaby/telescope-gitignore.nvim" },
   { enabled = true, name = "telescope-glob", "thenbe/telescope-glob.nvim" },
   { enabled = true, name = "telescope-nerdy", "2kabhishek/nerdy.nvim" },
+  { enabled = true, name = "telescope-oil", "albenisolmos/telescope-oil.nvim" },
   { enabled = true, name = "telescope-project", "nvim-telescope/telescope-project.nvim" },
   { enabled = false, name = "telescope-session", "HUAHUAI23/telescope-session.nvim" },
   { enabled = false, name = "telescope-sessions", "JoseConseco/telescope_sessions_picker.nvim" },

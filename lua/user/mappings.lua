@@ -26,15 +26,15 @@ Keymap({ "n", "x" }, "<C-v>", [["+p]]) -- paste from system clipboard
 Keymap({ "n", "v" }, "<C-d>", '"+d') -- delete motion
 Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
 
--- Telescope
-Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
-
--- Simply File Manager
-Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
-
 -- Nvim Tree
 Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeFocus<CR>", opts)
 Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
+
+-- Oil
+Keymap("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }, opts)
+
+-- Simply File Manager
+Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
 
 -- Scratch
 Keymap("n", "<C-S-s>", "<cmd>Scratch<cr>")
@@ -43,3 +43,7 @@ Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<cr>")
 Keymap("n", "<Leader>ic", "<cmd>IconPickerNormal<cr>", opts)
 Keymap("n", "<Leader>iy", "<cmd>IconPickerYank<cr>", opts) --> Yank the selected icon into register
 Keymap("i", "<C-i>", "<cmd>IconPickerInsert<cr>", opts)
+
+-- Telescope
+Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
+Keymap("n", "<leader>fl", "<cmd>Telescope oil<CR>", opts)
