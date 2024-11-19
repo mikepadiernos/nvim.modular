@@ -2,6 +2,7 @@ return {
   --Contrib Modules
   { enabled = true, name = "aerial", "stevearc/aerial.nvim" },
   { enabled = true, name = "alien", "joeyfitzpatrick/alien.nvim" },
+  { enabled = true, name = "arrow", "otavioschwanck/arrow.nvim" },
   { enabled = true, name = "autoclose", "m4xshen/autoclose.nvim" },
   { enabled = true, name = "barbecue", "utilyre/barbecue.nvim" },
   { enabled = true, name = "better-comments", "Djancyp/better-comments.nvim" },
