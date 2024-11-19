@@ -1,5 +1,5 @@
 return {
-  "airblade/vim-gitgutter",
+  "lambdalisue/vim-nerdfont",
   opts = {},
   config = function() end,
 }

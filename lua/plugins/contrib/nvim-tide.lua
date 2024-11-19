@@ -21,9 +21,9 @@ return {
       hints = {
         dictionary = "qwertzuiopsfghjklycvbnm", -- Key hints for quick access
       },
-      vim.api.nvim_set_hl(0, "TideBg", { bg = User_bg }),
-      vim.api.nvim_set_hl(0, "TideHeader", { fg = User_accent, bold = true }),
-      vim.api.nvim_set_hl(0, "TideSeparator", { fg = User_bg }),
     }
+    vim.api.nvim_set_hl(0, "TideBg", { bg = "#000000" })
+    vim.api.nvim_set_hl(0, "TideHeader", { fg = "#efe100", bold = true })
+    vim.api.nvim_set_hl(0, "TideSeparator", { fg = "#000000" })
   end,
 }

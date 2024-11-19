@@ -26,6 +26,9 @@ Keymap({ "n", "x" }, "<C-v>", [["+p]]) -- paste from system clipboard
 Keymap({ "n", "v" }, "<C-d>", '"+d') -- delete motion
 Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
 
+-- Grug FAR
+Keymap({ "n" }, "<C-S-g>", ",r", opts)
+
 -- Nvim Tree
 Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeFocus<CR>", opts)
 Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
