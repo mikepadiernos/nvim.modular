@@ -14,7 +14,7 @@ return {
   { enabled = true, name = "colorpicker", "tribhuwan-kumar/NVIMColorPicker" },
   { enabled = true, name = "commander", "FeiyouG/commander.nvim" },
   { enabled = true, name = "conform", "stevearc/conform.nvim" },
-  { enabled = true, name = "ctrlsf", "dyng/ctrlsf.vim" },
+  { enabled = true, name = "ctrlsf", "dyng/ctrlsf.vim", lazy = false },
   { enabled = true, name = "devtools", "muhfaris/devtools.nvim" },
   { enabled = true, name = "dial", "monaqa/dial.nvim" },
   { enabled = true, name = "diffview", "sindrets/diffview.nvim" },
