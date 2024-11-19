@@ -22,7 +22,8 @@ M.nvdash = {
     "    ███   ███   ███         ",
     "                            ",
     "                            ",
-    "                            ", },
+    "                            ",
+  },
   buttons = {
     { txt = "   Recent Projects", keys = "_ fp", cmd = "Telescope projects" },
     { txt = "   Recent Files", keys = "_ fo", cmd = "Telescope oldfiles" },
@@ -47,16 +48,21 @@ M.nvdash = {
 }
 
 M.base46 = {
-  theme = "gatekeeper",
+  theme = "onedark",
 
   hl_override = {
     Normal = { bg = User_bg },
     NormalNC = { bg = User_bg },
+    NormalFloat = { bg = User_bg },
     NvimTreeWinSeparator = { fg = User_bg, bg = User_bg },
     NvimTreeNormal = { bg = User_bg },
     NvimTreeNormalNC = { bg = User_bg },
     NvDashAscii = { fg = User_accent },
     TabLineSel = { bg = User_bg },
+    TbFill = { bg = User_bg },
+    -- TbBufOn = { bg = User_accent, fg = User_bg },
+    TbThemeToggleBtn = { bg = User_bg },
+    BufferLineBackground = { bg = User_bg },
     StatusLine = { bg = User_bg },
     St_NormalMode = { bg = User_accent },
     St_NormalModeSep = { fg = User_accent, bg = User_accent },
@@ -74,10 +80,11 @@ M.base46 = {
     St_lspWarning = { bg = User_bg },
     St_lspHints = { bg = User_bg },
     St_lspInfo = { bg = User_bg },
+    TelescopeNormal = { bg = User_bg },
+    TelescopeBorder = { fg = User_bg, bg = User_bg },
+    TelescopeResultsTitle = { fg = User_bg, bg = User_bg },
+    TelescopeSelection = { bg = User__bg },
   },
-  -- vim.api.nvim_set_hl(0, "TideBg", { bg = User_bg }),
-  -- vim.api.nvim_set_hl(0, "TideHeader", { fg = User_accent, bold = true }),
-  -- vim.api.nvim_set_hl(0, "TideSeparator", { fg = User_bg }),
 }
 
 M.ui = {

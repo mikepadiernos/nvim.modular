@@ -128,6 +128,7 @@
   "oil-gitsigns": { "branch": "main", "commit": "b2a9f59a7fa2e10aac8e1c6862551c82670cbf5c" },
   "oil-image-preview.nvim": { "branch": "master", "commit": "f1da1c2925026d1a0b6618209af24ab4e03ebe8b" },
   "oil-nerdfont": { "branch": "main", "commit": "8bae618698e8d2ace25c7159dfadc70c01c5fae1" },
+  "onedarkpro": { "branch": "main", "commit": "fd55a42bb3df353274e03cadeb8aec7a8c7a14f1" },
   "overseer": { "branch": "master", "commit": "e734140137cdd25b4c31c0fb9bf22faa9c115dcc" },
   "paste": { "branch": "master", "commit": "d43d9b76afa657ee37f24312bba0142c3529de95" },
   "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },

@@ -7,7 +7,16 @@ return {
         left = "none",
         main = "none",
         right = "none",
-        up = { " ", " ", " ", " ", " ", " ", " ", " " },
+        up = {
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+          " ",
+        },
       },
       derfault_keymaps = true,
       keymaps = {
@@ -23,6 +32,28 @@ return {
       },
       preview = {
         image = true, -- for previewing image (for v0.7+ only)
+      },
+      win_opt = {
+        up = {
+          -- winhighlight = "Normal",
+        },
+        right = {
+          wrap = false,
+        },
+        main = {
+          number = true,
+          relativenumber = true,
+        },
+      },
+      gap = {
+        h = 0,
+        v = 0,
+      },
+      margin = {
+        up = 2,
+        down = 2,
+        left = 7,
+        right = 7,
       },
     }
   end,
