@@ -42,7 +42,7 @@ return {
     "hrsh7th/cmp-nvim-lsp",
   },
   config = function()
-    require("core.lspconfig").setup {}
+    require "core.lspconfig"
     require("mason-nvim-lint").setup()
   end,
 }
