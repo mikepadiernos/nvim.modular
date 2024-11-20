@@ -21,6 +21,7 @@ return {
   { enabled = true, name = "dial", "monaqa/dial.nvim" },
   { enabled = true, name = "diffview", "sindrets/diffview.nvim" },
   { enabled = true, name = "direnv", "NotAShelf/direnv.nvim" },
+  { enabled = false, name = "drawer", "mikew/nvim-drawer" },
   { enabled = true, name = "dressing", "stevearc/dressing.nvim", lazy = false },
   { enabled = true, name = "dropbar", "Bekaboo/dropbar.nvim" },
   { enabled = true, name = "early-retirement", "chrisgrieser/nvim-early-retirement" },
@@ -59,6 +60,7 @@ return {
   { enabled = true, name = "none-ls", "nvimtools/none-ls.nvim" },
   { enabled = true, name = "nui-components", "grapp-dev/nui-components.nvim" },
   { enabled = true, name = "null-ls", "brain-fuel/null-ls.nvim" },
+
   { enabled = true, name = "oil", "stevearc/oil.nvim" },
   { enabled = true, name = "oil-gitsigns", "FerretDetective/oil-git-signs.nvim" },
   { enabled = true, name = "oil-nerdfont", "Omochice/oil-nerdfont" },
@@ -89,6 +91,7 @@ return {
   { enabled = true, name = "ufo", "kevinhwang91/nvim-ufo" },
   { enabled = true, name = "undotree", "jiaoshijie/undotree" },
   { enabled = true, name = "vgit", "tanvirtin/vgit.nvim" },
+  { enabled = true, name = "window-picker", "s1n7ax/nvim-window-picker" },
   { enabled = true, name = "workspaces", "natecraddock/workspaces.nvim" },
   { enabled = true, name = "yanky", "gbprod/yanky.nvim" },
   { enabled = true, name = "zebrazone", "notomo/zebrazone.nvim", lazy = false },

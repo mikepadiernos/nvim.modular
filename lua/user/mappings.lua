@@ -26,6 +26,8 @@ Keymap({ "n", "x" }, "<C-v>", [["+p]]) -- paste from system clipboard
 Keymap({ "n", "v" }, "<C-d>", '"+d') -- delete motion
 Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
 
+-- Drawer
+
 -- Grug FAR
 Keymap({ "n" }, "<C-S-g>", ",r", opts)
 
