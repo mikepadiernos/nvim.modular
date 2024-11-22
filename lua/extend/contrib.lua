@@ -87,6 +87,7 @@ return {
   { enabled = true, name = "tree-remote", "kiyoon/nvim-tree-remote.nvim" },
   { enabled = true, name = "treesj", "Wansmer/treesj" },
   { enabled = true, name = "trouble", "folke/trouble.nvim" },
+  { enabled = true, name = "tsugit", "mikavilpas/tsugit.nvim" },
   { enabled = true, name = "twilight", "folke/twilight.nvim", lazy = false },
   { enabled = true, name = "ufo", "kevinhwang91/nvim-ufo" },
   { enabled = true, name = "undotree", "jiaoshijie/undotree" },
