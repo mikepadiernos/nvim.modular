@@ -1,7 +1,7 @@
 return {
   --Contrib Modules
   { enabled = true, name = "aerial", "stevearc/aerial.nvim" },
-  { enabled = true, name = "alien", "joeyfitzpatrick/alien.nvim" },
+  { enabled = true, name = "alien", "joeyfitzpatrick/alien.nvim", lazy = false },
   { enabled = true, name = "arrow", "otavioschwanck/arrow.nvim" },
   { enabled = true, name = "autoclose", "m4xshen/autoclose.nvim" },
   { enabled = true, name = "barbecue", "utilyre/barbecue.nvim" },
@@ -52,7 +52,7 @@ return {
   { enabled = true, name = "neoclip", "AckslD/nvim-neoclip.lua" },
   { enabled = true, name = "neocolumn", "parmeniong/neocolumn.nvim" },
   { enabled = true, name = "neogen", "danymat/neogen" },
-  { enabled = true, name = "neogit", "NeogitOrg/neogit" },
+  { enabled = true, name = "neogit", "NeogitOrg/neogit", lazy = false },
   { enabled = true, name = "neoscroll", "karb94/neoscroll.nvim" },
   { enabled = true, name = "neotab", "kawre/neotab.nvim" },
   { enabled = true, name = "nerdy", "2kabhishek/nerdy.nvim" },
@@ -90,7 +90,7 @@ return {
   { enabled = true, name = "twilight", "folke/twilight.nvim", lazy = false },
   { enabled = true, name = "ufo", "kevinhwang91/nvim-ufo" },
   { enabled = true, name = "undotree", "jiaoshijie/undotree" },
-  { enabled = true, name = "vgit", "tanvirtin/vgit.nvim" },
+  { enabled = false, name = "vgit", "tanvirtin/vgit.nvim" },
   { enabled = true, name = "window-picker", "s1n7ax/nvim-window-picker" },
   { enabled = true, name = "workspaces", "natecraddock/workspaces.nvim" },
   { enabled = true, name = "yanky", "gbprod/yanky.nvim" },
