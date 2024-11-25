@@ -65,7 +65,6 @@ M.base46 = {
     -- TbBufOn = { bg = User_accent, fg = User_bg },
     TbBufOff = { bg = User_bg },
     TbBufOffClose = { bg = User_bg },
-
     TbThemeToggleBtn = { bg = User_bg },
     BufferLineBackground = { bg = User_bg },
     StatusLine = { bg = User_bg },
@@ -85,11 +84,13 @@ M.base46 = {
     St_lspWarning = { bg = User_bg },
     St_lspHints = { bg = User_bg },
     St_lspInfo = { bg = User_bg },
-    TelescopeNormal = { bg = User_bgd },
-    TelescopeBorder = { fg = User_bgd, bg = User_bgd },
-    TelescopeResultsTitle = { fg = User_bgd, bg = User_bgd },
+    TelescopeNormal = { bg = User_bg2 },
+    TelescopeBorder = { fg = User_bg2, bg = User_bg2 },
+    TelescopeResultsTitle = { fg = User_bg2, bg = User_bg2 },
     TelescopeResultsNormal = { fg = "#ffffff" },
     TelescopeSelection = { bg = User__bg },
+    TelescopePromptNormal = { bg = User__bg },
+    TelescopePromptBorder = { fg = User__bg, bg = User__bg },
   },
 }
 
