@@ -1,4 +1,5 @@
 -- This file needs to have same structure as nvconfig.lua
+Keymap("n", "<leader>oy", '<cmd>lua require("yanklist").yanklist()<CR>', { desc = "Show Yanklist" })
 -- https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua
 -- Please read that file to know all available options :(
 
@@ -54,6 +55,7 @@ M.base46 = {
     Normal = { bg = User_bg },
     NormalNC = { bg = User_bg },
     NormalFloat = { bg = User_bg },
+    WinSeparator = { fg = User_bg, bg = User_bg },
     NvimTreeWinSeparator = { fg = User_bg, bg = User_bg },
     NvimTreeNormal = { bg = User_bg },
     NvimTreeNormalNC = { bg = User_bg },
@@ -61,6 +63,9 @@ M.base46 = {
     TabLineSel = { bg = User_bg },
     TbFill = { bg = User_bg },
     -- TbBufOn = { bg = User_accent, fg = User_bg },
+    TbBufOff = { bg = User_bg },
+    TbBufOffClose = { bg = User_bg },
+
     TbThemeToggleBtn = { bg = User_bg },
     BufferLineBackground = { bg = User_bg },
     StatusLine = { bg = User_bg },
