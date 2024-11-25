@@ -13,7 +13,7 @@ return {
     local oip = require "oil-image-preview"
     require("oil").setup {
       keymaps = {
-        ["g<leader>"] = oip.openWithQuickLook,
+        ["<leader>ol"] = oip.openWithQuickLook,
         ["gp"] = oip.weztermPreview,
       },
     }

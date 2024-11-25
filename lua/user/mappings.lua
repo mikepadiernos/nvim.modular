@@ -36,7 +36,7 @@ Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeFocus<CR>", opts)
 Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
 
 -- Oil
-Keymap("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }, opts)
+Keymap("n", "<leader>ol", ":Oil<CR>", { desc = "Open parent directory" }, opts)
 
 -- Simply File Manager
 Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
