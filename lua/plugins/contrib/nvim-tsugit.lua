@@ -4,14 +4,16 @@ return {
   "mikavilpas/tsugit.nvim",
   keys = {
     {
-      "<right>",
+      -- "<right>",
+      "<leader>gl",
       function()
         require("tsugit").toggle()
       end,
       { silent = true, desc = "toggle lazygit" },
     },
     {
-      "<leader>gl",
+      -- "<leader>gl",
+      "<leader>gc",
       function()
         local absolutePath = vim.api.nvim_buf_get_name(0)
         require("tsugit").toggle_for_file(absolutePath)
@@ -25,7 +27,8 @@ return {
     -- The key mappings that are active when lazygit is open. They are
     -- completely unusable by lazygit, so set the to rare keys.
     keys = {
-      toggle = "<right>",
+      -- toggle = "<right>",
+      toggle = "<A-l>",
       force_quit = "<c-c>",
     },
   },
