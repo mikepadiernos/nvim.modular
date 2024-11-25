@@ -36,7 +36,7 @@ Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeFocus<CR>", opts)
 Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
 
 -- Oil
-Keymap("n", "<leader>ol", ":Oil<CR>", { desc = "Open parent directory" }, opts)
+Keymap("n", "<leader>ol", ":Oil<CR>", { desc = "Open parent directory" })
 
 -- Simply File Manager
 Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
@@ -50,7 +50,9 @@ Keymap("n", "<Leader>iy", "<cmd>IconPickerYank<cr>", opts) --> Yank the selected
 Keymap("i", "<C-i>", "<cmd>IconPickerInsert<cr>", opts)
 
 -- Telescope
-Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
+Keymap("n", "<leader>fj", ":Telescope jumplist<CR>", opts)
 Keymap("n", "<leader>fl", ":Telescope oil<CR>", opts)
+Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
+Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
 Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
 Keymap("n", "<leader>fy", '<cmd>lua require("yanklist").yanklist()<CR>', { desc = "Show Yanklist" })
