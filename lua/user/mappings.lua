@@ -29,7 +29,7 @@ Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
 -- Drawer
 
 -- Grug FAR
-Keymap({ "n" }, "<C-S-g>", ",r", opts)
+Keymap({ "n" }, "<A-S-g>", ":GrugFar<CR>", opts)
 
 -- Nvim Tree
 Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeFocus<CR>", opts)
@@ -51,4 +51,5 @@ Keymap("i", "<C-i>", "<cmd>IconPickerInsert<cr>", opts)
 
 -- Telescope
 Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
-Keymap("n", "<leader>fl", "<cmd>Telescope oil<CR>", opts)
+Keymap("n", "<leader>fl", ":Telescope oil<CR>", opts)
+Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)

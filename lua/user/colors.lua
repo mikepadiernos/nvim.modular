@@ -3,4 +3,4 @@ User_fg = "#ffffff"
 User__fg = "#ffffff"
 User_bg = "#000000"
 User__bg = "#171717"
-
+User_bgd = "#020202"

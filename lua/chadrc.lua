@@ -80,9 +80,10 @@ M.base46 = {
     St_lspWarning = { bg = User_bg },
     St_lspHints = { bg = User_bg },
     St_lspInfo = { bg = User_bg },
-    TelescopeNormal = { bg = User_bg },
-    TelescopeBorder = { fg = User_bg, bg = User_bg },
-    TelescopeResultsTitle = { fg = User_bg, bg = User_bg },
+    TelescopeNormal = { bg = User_bgd },
+    TelescopeBorder = { fg = User_bgd, bg = User_bgd },
+    TelescopeResultsTitle = { fg = User_bgd, bg = User_bgd },
+    TelescopeResultsNormal = { fg = "#ffffff" },
     TelescopeSelection = { bg = User__bg },
   },
 }

@@ -58,10 +58,16 @@ return {
 
       cmp.setup {
         mapping = {
-          ["<CR>"] = cmp.mapping.confirm {
-            behavior = cmp.ConfirmBehavior.Insert,
-            select = false,
-          },
+          -- ["<CR>"] = cmp.mapping.confirm {
+          --   behavior = cmp.ConfirmBehavior.Insert,
+          --   select = false,
+          -- },
+          -- ["<CR>"] = cmp.config.disable,
+          ["<CR>"] = cmp.mapping.confirm { select = false },
+          ["<C-p>"] = cmp.mapping.select_prev_item(),
+          ["<C-n>"] = cmp.mapping.select_next_item(),
+          ["<C-e>"] = cmp.mapping.abort(),
+          ["<C-y>"] = cmp.mapping.confirm(),
         },
         snippet = {
           expand = function(args)
