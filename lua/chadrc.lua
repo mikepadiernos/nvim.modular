@@ -64,6 +64,7 @@ M.base46 = {
     -- TbBufOn = { bg = User_accent, fg = User_bg },
     TbBufOff = { bg = User_bg },
     TbBufOffClose = { bg = User_bg },
+    TbBufOffModified = { bg = User_bg },
     TbThemeToggleBtn = { bg = User_bg },
     BufferLineBackground = { bg = User_bg },
     StatusLine = { bg = User_bg },

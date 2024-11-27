@@ -81,6 +81,7 @@ return {
   { enabled = true, name = "sensions", "natecraddock/sessions.nvim" },
   { enabled = true, name = "session-manager", "The-Plottwist/nvim-session-manager" },
   { enabled = true, name = "simplefile", "Rizwanelansyah/simplyfile.nvim", lazy = false },
+  { enabled = true, name = "tfm", "rolv-apneseth/tfm.nvim" },
   { enabled = true, name = "tide", "jackMort/tide.nvim", lazy = false },
   { enabled = true, name = "todo-comments", "folke/todo-comments.nvim" },
   { enabled = true, name = "tree-remote", "kiyoon/nvim-tree-remote.nvim" },
@@ -94,6 +95,7 @@ return {
   { enabled = true, name = "window-picker", "s1n7ax/nvim-window-picker" },
   { enabled = true, name = "workspaces", "natecraddock/workspaces.nvim" },
   { enabled = true, name = "yanky", "gbprod/yanky.nvim" },
+  { enabled = false, name = "yazi", "mikavilpas/yazi.nvim" },
   { enabled = true, name = "zebrazone", "notomo/zebrazone.nvim", lazy = false },
   { enabled = true, name = "zen-mode", "folke/zen-mode.nvim" },
 }
