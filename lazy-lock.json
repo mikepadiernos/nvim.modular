@@ -194,6 +194,7 @@
   "ui": { "branch": "v3.0", "commit": "7905539f1e10f460811dc0db800355611f8a527a" },
   "undotree": { "branch": "main", "commit": "eab459ab87dd249617b5f7187bb69e614a083047" },
   "vgit": { "branch": "main", "commit": "9afe79a3ae65594ca483c2e6161690ff9b85123b" },
+  "vim-calendar": { "branch": "master", "commit": "a7e73e02c92566bf427b2a1d6a61a8f23542cc21" },
   "vim-gitgutter": { "branch": "main", "commit": "7b0b5098e3e57be86bb96cfbf2b8902381eef57c" },
   "vim-nerdfont": { "branch": "master", "commit": "6319ac33673c6f39dfe07c10027b071b69dd73fe" },
   "vim-stylus": { "branch": "master", "commit": "2dbab1bffde3132f74a02322cb9fbf27643c9631" },

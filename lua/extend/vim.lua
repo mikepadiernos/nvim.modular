@@ -1,5 +1,6 @@
 return {
   -- Vim Modules
+  { enabled = true, name = "vim-calendar", "nvim-telekasten/calendar-vim" },
   { enabled = false, name = "vim-ctrlspace", "vim-ctrlspace/vim-ctrlspace" },
   { enabled = true, name = "vim-gitgutter", "airblade/vim-gitgutter", lazy = false },
   { enabled = true, name = "vim-nerdfont", "lambdalisue/vim-nerdfont" },
