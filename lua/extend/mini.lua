@@ -6,7 +6,7 @@ return {
   -- Extensions
   { enabled = true, name = "mini.ai", "echasnovski/mini.ai" },
   { enabled = true, name = "mini.align", "echasnovski/mini.align", lazy = false },
-  { enabled = true, name = "mini.animate", "echasnovski/mini.animate" },
+  { enabled = true, name = "mini.animate", "echasnovski/mini.animate", lazy = false },
   { enabled = false, name = "mini.base16", "echasnovski/mini.base16" },
   { enabled = true, name = "mini.basics", "echasnovski/mini.basics" },
   { enabled = false, name = "mini.bracketed", "echasnovski/mini.bracketed" },

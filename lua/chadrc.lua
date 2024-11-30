@@ -25,13 +25,14 @@ M.nvdash = {
     "                            ",
   },
   buttons = {
-    { txt = "   Recent Projects", keys = "_ fp", cmd = "Telescope projects" },
-    { txt = "   Recent Files", keys = "_ fo", cmd = "Telescope oldfiles" },
-    { txt = "   Find File", keys = "_ ff", cmd = "Telescope find_files" },
-    { txt = "   File Manager", keys = "_ fs", cmd = "SimplyFileOpen" },
-    -- { txt = "󰈭  Find Word", keys = "fw", cmd = "Telescope live_grep" },
-    -- { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('nvchad.themes').open()" },
-    { txt = "   Keyboard Shortcuts", keys = "_ ch", cmd = "NvCheatsheet" },
+    { txt = "   Recent Projects", keys = "󱁐 fp", cmd = "Telescope projects" },
+    -- { txt = "   Recent Files", keys = "󱁐 fo", cmd = "Telescope oldfiles" },
+    -- { txt = "   Find File", keys = "󱁐 ff", cmd = "Telescope find_files" },
+    -- { txt = "󰛳   Connect Remote", keys = "󱁐 fv", cmd = "Telescope remote-sshfs" },
+    { txt = "   File Manager", keys = "󱁐 fs", cmd = "SimplyFileOpen" },
+    { txt = " ", no_gap = true, rep = true },
+    { txt = "󰞋   Help", keys = "󱁐 fh", cmd = "Telescope help_tags" },
+    { txt = "   Keyboard Shortcuts", keys = "󱁐 ch", cmd = "NvCheatsheet" },
 
     { txt = " ", hl = "NvDashFooter", no_gap = true, rep = true },
     {
@@ -68,7 +69,7 @@ M.base46 = {
     TbThemeToggleBtn = { bg = User_bg },
     BufferLineBackground = { bg = User_bg },
     StatusLine = { bg = User_bg },
-    St_NormalMode = { bg = User_accent },
+    St_NormalMode = { fg = User_bg, bg = User_accent },
     St_NormalModeSep = { fg = User_accent, bg = User_accent },
     -- St_file = { bg = User__bg },
     -- St_file_sep = { bg = User__bg },
@@ -88,9 +89,11 @@ M.base46 = {
     TelescopeBorder = { fg = User_bg2, bg = User_bg2 },
     TelescopeResultsTitle = { fg = User_bg2, bg = User_bg2 },
     TelescopeResultsNormal = { fg = "#ffffff" },
-    TelescopeSelection = { bg = User__bg },
+    TelescopeSelection = { fg = User_accent, bg = User_bg2 },
     TelescopePromptNormal = { bg = User__bg },
     TelescopePromptBorder = { fg = User__bg, bg = User__bg },
+    NoiceCmdlinePopup = { fg = User__bg },
+    NoiceCompletionItemKindDefault = { fg = User_bg2, bg = User_bg2 },
   },
 }
 
