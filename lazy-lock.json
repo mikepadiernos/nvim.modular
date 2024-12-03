@@ -58,6 +58,8 @@
   "grug-far": { "branch": "main", "commit": "9a2f78219390b47d67795ab09390d7f092e23976" },
   "guess-indent": { "branch": "main", "commit": "6cd61f7a600bb756e558627cd2e740302c58e32d" },
   "hererocks": { "branch": "master", "commit": "c9c5444dea1e07e005484014a8231aa667be30b6" },
+  "hologram": { "branch": "main", "commit": "f5194f71ec1578d91b2e3119ff08e574e2eab542" },
+  "hologram-math": { "branch": "tectonic", "commit": "a7b4a1b7f8f4892b8d580bfef22dee7162092fd8" },
   "image": { "branch": "master", "commit": "5f8fceca2d1be96a45b81de21c2f98bf6084fb34" },
   "image.nvim": { "branch": "master", "commit": "5f8fceca2d1be96a45b81de21c2f98bf6084fb34" },
   "inc-rename": { "branch": "main", "commit": "1871ca49ae6ee3e9ebee37955ba10c7b1425974f" },

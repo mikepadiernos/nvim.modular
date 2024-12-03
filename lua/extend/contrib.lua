@@ -32,6 +32,8 @@ return {
   { enabled = true, name = "gitignore", "wintermute-cell/gitignore.nvim" },
   { enabled = true, name = "grug-far", "MagicDuck/grug-far.nvim", lazy = false },
   { enabled = true, name = "guess-indent", "nmac427/guess-indent.nvim" },
+  { enabled = true, name = "hologram", "edluffy/hologram.nvim" },
+  { enabled = true, name = "hologram-math", "Vaisakhkm2625/hologram-math-preview.nvim" },
   { enabled = true, name = "image", "3rd/image.nvim" },
   { enabled = true, name = "inc-rename", "smjonas/inc-rename.nvim" },
   { enabled = true, name = "json", "Sup3Legacy/json.nvim" },
