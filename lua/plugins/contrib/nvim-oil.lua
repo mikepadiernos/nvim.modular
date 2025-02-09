@@ -1,9 +1,21 @@
 return {
-  'stevearc/oil.nvim',
+  "stevearc/oil.nvim",
   -- @module 'oil'
   -- @type oil.SetupOpts
   opts = {},
   -- Optional dependencies
   -- dependencies = { { "echasnovski/mini.icons", opts = {} } },
-  dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
+  dependencies = {
+    "mimikun/oil-image-preview.nvim",
+    "nvim-tree/nvim-web-devicons",
+  }, -- use if prefer nvim-web-devicons
+  config = function()
+    local oip = require "oil-image-preview"
+    require("oil").setup {
+      keymaps = {
+        ["<leader>ol"] = oip.openWithQuickLook,
+        ["gp"] = oip.weztermPreview,
+      },
+    }
+  end,
 }

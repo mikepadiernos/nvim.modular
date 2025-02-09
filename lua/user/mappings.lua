@@ -1,4 +1,5 @@
 Keymap = vim.keymap.set
+
 local opts = { noremap = true, silent = true }
 
 Keymap("n", "<leader>1", "<esc>:Lazy<CR>", opts)
@@ -9,8 +10,8 @@ Keymap({ "n", "v", "i", "x" }, "<C-S-Left>", ":bprev<CR>", opts)
 
 Keymap({ "n", "i" }, "<C-s>", "<esc>:w<CR>", opts)
 Keymap({ "n", "v", "i" }, "<C-q>", "<esc>:q<CR>", opts)
-Keymap({ "n", "v", "i" }, "<C-A-z>", "<esc>:q!<CR>", opts)
-Keymap({ "n", "v", "i" }, "<C-A-q>", "<esc>:qa<CR>", opts)
+Keymap({ "n", "v", "i" }, "<C-A-q>", "<esc>:q!<CR>", opts)
+Keymap({ "n", "v", "i" }, "<C-A-S-q>", "<esc>:qa<CR>", opts)
 
 -- Yank into system clipboard
 Keymap({ "n", "v" }, "<leader>c", '"+y') -- yank motion
@@ -26,20 +27,35 @@ Keymap({ "n", "x" }, "<C-v>", [["+p]]) -- paste from system clipboard
 Keymap({ "n", "v" }, "<C-d>", '"+d') -- delete motion
 Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
 
--- Telescope
-Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
+-- Drawer
 
--- Simply File Manager
-Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
+-- Grug FAR
+Keymap({ "n" }, "<A-S-g>", ":GrugFar<CR>", opts)
 
 -- Nvim Tree
-Keymap({ "n", "v", "i" }, "\\", ":NvimTreeFocus<CR>", opts)
-Keymap({ "n", "v", "i" }, "<C-\\>", ":NvimTreeToggle<CR>", opts)
+Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeFocus<CR>", opts)
+Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
+
+-- Oil
+Keymap("n", "<leader>ol", ":Oil<CR>", { desc = "Open parent directory" })
+
+-- Simply File Manager
+-- :Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
 
 -- Scratch
 Keymap("n", "<C-S-s>", "<cmd>Scratch<cr>")
 Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<cr>")
 
-Keymap("n", "<Leader>ic", "<cmd>IconPickerNormal<cr>", opts)
-Keymap("n", "<Leader>iy", "<cmd>IconPickerYank<cr>", opts) --> Yank the selected icon into register
-Keymap("i", "<C-i>", "<cmd>IconPickerInsert<cr>", opts)
+-- Telescope
+Keymap("n", "<leader>fj", ":Telescope jumplist<CR>", opts)
+Keymap("n", "<leader>fl", ":Telescope oil<CR>", opts)
+Keymap("n", "<leader>fn", ":Nerdy<CR>", opts)
+Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
+Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
+Keymap({ "n", "v", "i" }, "<leader>fs", '<cmd>lua require("tfm").open()<CR>', opts)
+Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
+Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
+Keymap("n", "<leader>fy", '<cmd>lua require("yanklist").yanklist()<CR>', { desc = "Show Yanklist" })
+
+-- Twilight
+Keymap("n", "<leader>`", ":Twilight<CR>", opts)

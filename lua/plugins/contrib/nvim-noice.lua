@@ -1,25 +1,25 @@
 return {
-  'folke/noice.nvim',
-  event = 'VeryLazy',
+  "folke/noice.nvim",
+  event = "VeryLazy",
   opts = {
     lsp = {
       override = {
-        ['vim.lsp.util.convert_input_to_markdown_lines'] = true,
-        ['vim.lsp.util.stylize_markdown'] = true,
-        ['cmp.entry.get_documentation'] = true,
+        ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+        ["vim.lsp.util.stylize_markdown"] = true,
+        ["cmp.entry.get_documentation"] = true,
       },
     },
     routes = {
       {
         filter = {
-          event = 'msg_show',
+          event = "msg_show",
           any = {
-            { find = '%d+L, %d+B' },
-            { find = '; after #%d+' },
-            { find = '; before #%d+' },
+            { find = "%d+L, %d+B" },
+            { find = "; after #%d+" },
+            { find = "; before #%d+" },
           },
         },
-        view = 'mini',
+        view = "mini",
       },
     },
     presets = {
@@ -30,39 +30,65 @@ return {
   },
   dependencies = {
     -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-    'MunifTanjim/nui.nvim',
+    "MunifTanjim/nui.nvim",
     -- OPTIONAL:
     --   `nvim-notify` is only needed, if you want to use the notification view.
     --   If not available, we use `mini` as the fallback
     -- "rcarriga/nvim-notify",
   },
   config = function()
-    require('noice').setup {
+    require("noice").setup {
       lsp = {
         -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
         override = {
-          ['vim.lsp.util.convert_input_to_markdown_lines'] = true,
-          ['vim.lsp.util.stylize_markdown'] = true,
-          ['cmp.entry.get_documentation'] = true, -- requires hrsh7th/nvim-cmp
-          ['vim.lsp.handlers["textDocument/signatureHelp"]'] = false,
+          ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+          ["vim.lsp.util.stylize_markdown"] = true,
+          ["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
+          ['vim.lsp.handlers["textDocument/signatureHelp"]'] = true,
         },
       },
       views = {
         cmdline_popup = {
+          position = {
+            row = 8,
+            col = "50%",
+          },
+          size = {
+            width = 60,
+            height = "auto",
+          },
           border = {
-            style = 'none',
+            style = "none",
+            padding = { 1, 3 },
+          },
+          filter_options = {},
+          win_options = {
+            winhighlight = { Normal = "TelescopeNormal", FloatBorder = "TelescopeNormal" },
           },
         },
-        hover = {
+        popupmenu = {
+          relative = "editor",
+          position = {
+            row = 10,
+            col = "50%",
+          },
+          size = {
+            width = 60,
+            height = "auto",
+          },
           border = {
-            style = 'none',
+            style = "none",
+            padding = { 1, 3 },
+          },
+          win_options = {
+            winhighlight = { Normal = "TelescopeNormal", FloatBorder = "TelescopeNormal" },
           },
         },
       },
       -- you can enable a preset for easier configuration
       presets = {
         bottom_search = true, -- use a classic bottom cmdline for search
-        command_palette = true, -- position the cmdline and popupmenu together
+        command_palette = false, -- position the cmdline and popupmenu together
         long_message_to_split = true, -- long messages will be sent to a split
         inc_rename = false, -- enables an input dialog for inc-rename.nvim
         lsp_doc_border = false, -- add a border to hover docs and signature help
@@ -70,4 +96,3 @@ return {
     }
   end,
 }
-

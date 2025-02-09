@@ -31,6 +31,8 @@ return {
     }, -- NOTE: Must be loaded before dependants
     "williamboman/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
+    "mfussenegger/nvim-lint",
+    "rshkarin/mason-nvim-lint",
 
     -- Useful status updates for LSP.
     -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
@@ -41,5 +43,6 @@ return {
   },
   config = function()
     require "core.lspconfig"
+    require("mason-nvim-lint").setup()
   end,
 }
