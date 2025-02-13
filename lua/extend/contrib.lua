@@ -86,6 +86,8 @@ return {
   { enabled = true, name = "sensions", "natecraddock/sessions.nvim" },
   { enabled = true, name = "session-manager", "The-Plottwist/nvim-session-manager" },
   { enabled = false, name = "simplyfile", "Rizwanelansyah/simplyfile.nvim", lazy = false },
+  { enabled = true, name = "sudo", "denialofsandwich/sudo.nvim", lazy = false },
+  { enabled = true, name = "suedit", "Grafcube/suedit.nvim", lazy = false },
   { enabled = true, name = "tfm", "rolv-apneseth/tfm.nvim", lazy = false },
   { enabled = true, name = "tide", "jackMort/tide.nvim", lazy = false },
   { enabled = true, name = "todo-comments", "folke/todo-comments.nvim" },
