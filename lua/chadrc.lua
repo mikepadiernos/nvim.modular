@@ -55,6 +55,7 @@ M.base46 = {
     Normal = { bg = User_bg },
     NormalNC = { bg = User_bg },
     NormalFloat = { bg = User_bg },
+    FloatBorder = { bg = User_bg },
     WinSeparator = { fg = User_bg, bg = User_bg },
     TabLineSel = { bg = User_bg },
     TbFill = { bg = User_bg },
@@ -92,6 +93,9 @@ M.base46 = {
     NvimTreeWinSeparator = { fg = User_bg, bg = User_bg },
     NvimTreeNormal = { bg = User_bg },
     NvimTreeNormalNC = { bg = User_bg },
+    ToggleTerm1Normal = { fg = User_bg, bg = User_bg },
+    ToggleTerm1EndOfBuffer = { fg = User_bg, bg = User_bg },
+    ToggleTerm1SignColumn = { fg = User_bg, bg = User_bg },
   },
 }
 

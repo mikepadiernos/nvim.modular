@@ -5,7 +5,7 @@ return {
   keys = {
     {
       -- "<right>",
-      "<leader>gl",
+      "<leader>lg",
       function()
         require("tsugit").toggle()
       end,
@@ -13,7 +13,7 @@ return {
     },
     {
       -- "<leader>gl",
-      "<leader>gc",
+      "<leader>ll",
       function()
         local absolutePath = vim.api.nvim_buf_get_name(0)
         require("tsugit").toggle_for_file(absolutePath)

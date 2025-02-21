@@ -57,5 +57,10 @@ Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
 Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
 Keymap("n", "<leader>fy", '<cmd>lua require("yanklist").yanklist()<CR>', { desc = "Show Yanklist" })
 
+-- ToggleTerm
+Keymap({ "n", "v", "i" }, "<leader>zh", ":ToggleTerm direction=horizontal<CR>", { desc = "Terminal: Horizontal" })
+Keymap({ "n", "v", "i" }, "<leader>zv", ":ToggleTerm direction=vertical size=80<CR>", { desc = "Terminal: Vertical" })
+Keymap({ "n", "v", "i" }, "<leader>zf", ":ToggleTerm direction=float<CR>", { desc = "Terminal: Float" })
+
 -- Twilight
 Keymap("n", "<leader>`", ":Twilight<CR>", opts)
