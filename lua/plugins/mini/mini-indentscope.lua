@@ -1,1 +1,1 @@
-return { 'echasnovski/mini.indentscope', version = false }
+return { "echasnovski/mini.indentscope", version = false }

@@ -25,7 +25,7 @@ return {
   { enabled = false, name = "mini.hipatterns", "echasnovski/mini.hipatterns" },
   { enabled = false, name = "mini.hues", "echasnovski/mini.hues" },
   { enabled = false, name = "mini.icons", "echasnovski/mini.icons" },
-  { enabled = false, name = "mini.indentscope", "echasnovski/mini.indentscope" },
+  { enabled = true, name = "mini.indentscope", "echasnovski/mini.indentscope", lazy = false },
   { enabled = true, name = "mini.jump", "echasnovski/mini.jump", lazy = false },
   { enabled = false, name = "mini.jump2d", "echasnovski/mini.jump2d" },
   { enabled = false, name = "mini.map", "echasnovski/mini.map" },
