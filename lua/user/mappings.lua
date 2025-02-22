@@ -52,15 +52,25 @@ Keymap("n", "<leader>fl", ":Telescope oil<CR>", opts)
 Keymap("n", "<leader>fn", ":Nerdy<CR>", opts)
 Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
-Keymap({ "n", "v", "i" }, "<leader>fs", '<cmd>lua require("tfm").open()<CR>', opts)
+Keymap({ "n", "v", "i" }, "<leader>fs", '<cmd>lua require("tfm").open()<CR>', { desc = "Open Yazi" })
 Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
 Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
 Keymap("n", "<leader>fy", '<cmd>lua require("yanklist").yanklist()<CR>', { desc = "Show Yanklist" })
 
 -- ToggleTerm
-Keymap({ "n", "v", "i" }, "<leader>zh", ":ToggleTerm direction=horizontal<CR>", { desc = "Terminal: Horizontal" })
-Keymap({ "n", "v", "i" }, "<leader>zv", ":ToggleTerm direction=vertical size=80<CR>", { desc = "Terminal: Vertical" })
-Keymap({ "n", "v", "i" }, "<leader>zi", ":ToggleTerm direction=float<CR>", { desc = "Terminal: Float" })
+Keymap(
+  { "n", "v", "i" },
+  "<leader>zh",
+  ":ToggleTerm direction=horizontal<CR>",
+  { desc = "Toggle Terminal: Horizontal" }
+)
+Keymap(
+  { "n", "v", "i" },
+  "<leader>zv",
+  ":ToggleTerm direction=vertical size=80<CR>",
+  { desc = "Toggle Terminal: Vertical" }
+)
+Keymap({ "n", "v", "i" }, "<leader>zi", ":ToggleTerm direction=float<CR>", { desc = "Toggle Terminal: Float" })
 
 -- Twilight
 Keymap("n", "<leader>`", ":Twilight<CR>", opts)
