@@ -1,26 +1,38 @@
 return {
   "akinsho/toggleterm.nvim",
   version = "*",
+  dependencies = {
+    "bwpge/toggleterm-ext.nvim",
+    dependencies = { "MunifTanjim/nui.nvim" },
+    opts = {},
+  },
   config = function()
     require("toggleterm").setup {
       open_mapping = [[<c-\>]],
       autochdir = true,
       highlights = {
         Normal = {
-          guibg = User_bg,
+          link = "Normal",
         },
         NormalFloat = {
           link = "Normal",
         },
-        FloatBorder = {
-          guifg = "#000000",
-          guibg = "#000000",
-        },
         EndOfBuffer = {
-          guibg = "#000000",
+          link = "Normal",
+        },
+        FloatBorder = {
+          guifg = User_bg,
+          guibg = User_bg,
+        },
+        SignColumn = {
+          link = "Normal",
         },
       },
       shade_terminal = false,
+      float_opts = {
+        winblend = 3,
+        background = "Normal",
+      },
     }
   end,
 }
