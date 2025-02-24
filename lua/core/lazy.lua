@@ -42,6 +42,7 @@ return {
         "compiler",
         "bugreport",
         "ftplugin",
+        "nvui.term",
       },
     },
   },

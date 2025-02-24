@@ -92,6 +92,10 @@ M.base46 = {
   },
 }
 
+M.term = {
+  winopts = { winfixbuf = true },
+}
+
 M.ui = {
   tabufline = {
     lazy = false,
