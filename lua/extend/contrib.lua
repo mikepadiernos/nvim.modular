@@ -95,6 +95,7 @@ return {
   { enabled = false, name = "vgit", "tanvirtin/vgit.nvim" },
   { enabled = true, name = "window-picker", "s1n7ax/nvim-window-picker" },
   { enabled = true, name = "workspaces", "natecraddock/workspaces.nvim" },
+  { enabled = true, name = "wormhole", "irohn/wormhole.nvim" },
   { enabled = true, name = "yanky", "gbprod/yanky.nvim" },
   { enabled = false, name = "yazi", "mikavilpas/yazi.nvim" },
   { enabled = true, name = "zebrazone", "notomo/zebrazone.nvim", lazy = false },
