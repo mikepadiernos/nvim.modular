@@ -17,7 +17,6 @@ return {
   { require "extend.drupal" },
 
   -- configs
-  { import = "plugins.contrib" },
   { import = "plugins.cmp" },
   { import = "plugins.lsp" },
   { import = "plugins.vim" },

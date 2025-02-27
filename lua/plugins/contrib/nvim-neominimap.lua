@@ -2,7 +2,6 @@
 return {
   "Isrothy/neominimap.nvim",
   version = "v3.*.*",
-  enabled = true,
   lazy = false, -- NOTE: NO NEED to Lazy load
   -- Optional
   keys = {
@@ -53,21 +52,21 @@ return {
         window_border = "none",
         margin = {
           top = 1,
-        }
+        },
       },
       -- Minimap will not be created for buffers of these types
       ---@type string[]
       exclude_filetypes = {
-          "help",
+        "help",
       },
       -- Minimap will not be created for buffers of these types
       ---@type string[]
       exclude_buftypes = {
-          "nofile",
-          "nowrite",
-          "quickfix",
-          "terminal",
-          "prompt",
+        "nofile",
+        "nowrite",
+        "quickfix",
+        "terminal",
+        "prompt",
       },
     }
   end,
