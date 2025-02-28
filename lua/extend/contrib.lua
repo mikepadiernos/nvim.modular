@@ -512,6 +512,11 @@ return {
     "riku-ri/valign.nvim",
     require "plugins.contrib.nvim-valign",
   },
+  -- {
+  --   name = "wormhole",
+  --   "irohn/wormhole.nvim",
+  --   require "plugins.contrib.nvim-wormhole",
+  -- },
   {
     name = "yanky",
     "gbprod/yanky.nvim",
@@ -519,7 +524,7 @@ return {
   },
   {
     name = "yazi",
-    "Kicamon/yazi.nvim",
+    "mikavilpas/yazi.nvim",
     require "plugins.contrib.nvim-yazi",
   },
   {
