@@ -52,10 +52,12 @@ Keymap("n", "<leader>fl", ":Telescope oil<CR>", opts)
 Keymap("n", "<leader>fn", ":Nerdy<CR>", opts)
 Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
-Keymap({ "n", "v", "i" }, "<leader>fs", '<cmd>lua require("tfm").open()<CR>', { desc = "Open Yazi" })
 Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
 Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
 Keymap("n", "<leader>fy", '<cmd>lua require("yanklist").yanklist()<CR>', { desc = "Show Yanklist" })
+Keymap({ "n", "v" }, "<leader>yz", "<cmd>Yazi<CR>", { desc = "Open Yazi" })
+Keymap({ "n", "v" }, "<leader>yw", "<cmd>Yazi cwd<CR>", { desc = "Open Yazi in working directory" })
+Keymap({ "n", "v" }, "<leader>yn", "<cmd>Yazi toggle<CR>", { desc = "Resume Yazi" })
 
 -- ToggleTerm
 Keymap(
