@@ -1,5 +1,4 @@
 return {
-
   -- core
   { require "extend.core" },
 
@@ -15,11 +14,4 @@ return {
   { require "extend.vim" },
   { require "extend.mini" },
   { require "extend.drupal" },
-
-  -- configs
-  { import = "plugins.cmp" },
-  { import = "plugins.lsp" },
-  { import = "plugins.vim" },
-  { import = "plugins.mini" },
-  { import = "plugins.drupal" },
 }
