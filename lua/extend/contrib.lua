@@ -481,12 +481,12 @@ return {
     "mikavilpas/tsugit.nvim",
     require "plugins.contrib.nvim-tsugit",
   },
-  {
-    name = "twilight",
-    "folke/twilight.nvim",
-    require "plugins.contrib.nvim-twilight",
-    lazy = false,
-  },
+  -- {
+  --   name = "twilight",
+  --   "folke/twilight.nvim",
+  --   require "plugins.contrib.nvim-twilight",
+  --   lazy = false,
+  -- },
   {
     name = "ufo",
     "kevinhwang91/nvim-ufo",
@@ -511,6 +511,17 @@ return {
     name = "valign",
     "riku-ri/valign.nvim",
     require "plugins.contrib.nvim-valign",
+  },
+  {
+    name = "visual-whitespace",
+    "mcauley-penney/visual-whitespace.nvim",
+    require "plugins.contrib.nvim-visual-whitespace",
+    lazy = false,
+  },
+  {
+    name = "vs-tasks",
+    "EthanJWright/vs-tasks.nvim",
+    require "plugins.contrib.nvim-vs-tasks",
   },
   -- {
   --   name = "wormhole",

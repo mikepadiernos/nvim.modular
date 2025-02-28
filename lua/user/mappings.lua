@@ -54,7 +54,7 @@ Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
 Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
 Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
-Keymap("n", "<leader>fy", '<cmd>lua require("yanklist").yanklist()<CR>', { desc = "Show Yanklist" })
+Keymap("n", "<leader>fy", "<cmd>lua require('yanklist').yanklist()<CR>", { desc = "Show Yanklist" })
 Keymap({ "n", "v" }, "<leader>yz", "<cmd>Yazi<CR>", { desc = "Open Yazi" })
 Keymap({ "n", "v" }, "<leader>yw", "<cmd>Yazi cwd<CR>", { desc = "Open Yazi in working directory" })
 Keymap({ "n", "v" }, "<leader>yn", "<cmd>Yazi toggle<CR>", { desc = "Resume Yazi" })
@@ -76,3 +76,40 @@ Keymap({ "n", "v", "i" }, "<leader>zi", ":ToggleTerm direction=float<CR>", { des
 
 -- Twilight
 Keymap("n", "<leader>`", ":Twilight<CR>", opts)
+
+-- Visual Whitespace
+Keymap("n", "<leader>vw", "<cmd>lua require('visual-whitespace').toggle()<CR>", { desc = "Toggle visual whitespace" })
+
+-- VS Tasks
+Keymap("n", "<Leader>tt", "<cmd>lua require('telescope').extensions.vstask.tasks()<CR>", { desc = "Tasks" })
+Keymap(
+  "n",
+  "<Leader>ti",
+  "<cmd>lua require('telescope').extensions.vstask.inputs()<CR>",
+  { desc = "Tasks: Input Variables" }
+)
+Keymap(
+  "n",
+  "<Leader>tv",
+  "<cmd>lua require('telescope').extensions.vstask.clear_inputs()<CR>",
+  { desc = "Tasks: Clear Input Variables" }
+)
+Keymap("n", "<Leader>T", "<cmd>lua require('telescope').extensions.vstask.history()<CR>", { desc = "Tasks: History" })
+Keymap(
+  "n",
+  "<Leader>tl",
+  "<cmd>lua require('telescope').extensions.vstask.launch()<CR>",
+  { desc = "Tasks: Launch Configuration" }
+)
+Keymap(
+  "n",
+  "<Leader>tr",
+  "<cmd>lua require('telescope').extensions.vstask.jobs()<CR>",
+  { desc = "Tasks: Running Tasks" }
+)
+Keymap(
+  "n",
+  "<Leader>tc",
+  "<cmd>lua require('telescope').extensions.vstask.jobhistory()<CR>",
+  { desc = "Tasks: Completed Tasks" }
+)

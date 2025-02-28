@@ -70,6 +70,7 @@ M.base46 = {
     St_cwd_text = { fg = "#fe1a66", bg = "#1e030c" },
     St_gitIcons = { bg = User_bg },
     St_pos_text = { bg = "#001708" },
+    St_pos_sep = { bg = "#001708" },
     St_Lsp = { bg = "#0d0f19" },
     St_LspMsg = { bg = User_bg },
     St_lspError = { bg = User_bg },
