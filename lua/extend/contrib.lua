@@ -461,6 +461,11 @@ return {
     lazy = false,
   },
   {
+    name = "tree",
+    "nvim-tree/nvim-tree.lua",
+    require "plugins.contrib.nvim-tree",
+  },
+  {
     name = "tree-remote",
     "kiyoon/nvim-tree-remote.nvim",
     require "plugins.contrib.nvim-tree-remote",
