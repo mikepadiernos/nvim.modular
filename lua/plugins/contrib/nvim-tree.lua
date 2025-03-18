@@ -92,7 +92,7 @@ return {
         update_root = true,
       },
       view = {
-        width = 40,
+        width = 45,
         side = "right",
       },
       renderer = {
