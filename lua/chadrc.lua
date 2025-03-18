@@ -100,7 +100,7 @@ M.base46 = {
     NoiceCmdlinePopup = { fg = User__bg },
     NoiceCompletionItemKindDefault = { fg = User_bg2, bg = User_bg2 },
     NvimTreeWinSeparator = { fg = User_bg, bg = User_bg },
-
+    NvimTreeNormal = { bg = User_bg },
     NvimTreeNormalNC = { bg = User_bg },
   },
 }
