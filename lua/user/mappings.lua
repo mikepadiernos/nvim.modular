@@ -59,6 +59,11 @@ Keymap({ "n", "v" }, "<leader>yz", "<cmd>Yazi<CR>", { desc = "Open Yazi" })
 Keymap({ "n", "v" }, "<leader>yw", "<cmd>Yazi cwd<CR>", { desc = "Open Yazi in working directory" })
 Keymap({ "n", "v" }, "<leader>yn", "<cmd>Yazi toggle<CR>", { desc = "Resume Yazi" })
 
+-- Tmux-switch
+Keymap("n", "<C-f>", "<CMD>TmuxSwitch<CR>")
+Keymap("n", "<leader>cs", "<CMD>TmuxCreateSession<CR>")
+Keymap("n", "<leader>rs", "<CMD>TmuxRenameSession<CR>")
+
 -- ToggleTerm
 Keymap(
   { "n", "v", "i" },
@@ -113,3 +118,8 @@ Keymap(
   "<cmd>lua require('telescope').extensions.vstask.jobhistory()<CR>",
   { desc = "Tasks: Completed Tasks" }
 )
+
+-- Yeet
+Keymap("n", "<leader>yy", function()
+  require("yeet").execute("source venv/bin/activate", { clear_before_yeet = false })
+end, { desc = "Yeet: activate" })

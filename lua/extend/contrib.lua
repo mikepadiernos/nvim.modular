@@ -60,6 +60,12 @@ return {
     "royanirudd/clipboard-history.nvim",
     require "plugins.contrib.nvim-clipboard-history",
   },
+  -- {
+  --   name = "cmus",
+  --   "cmus-enjoyers/cmus.nvim",
+  --   require "plugins.contrib.nvim-cmus",
+  --   lazy = false,
+  -- },
   {
     name = "colorizer",
     "norcalli/nvim-colorizer.lua",
@@ -420,6 +426,11 @@ return {
     require "plugins.contrib.nvim-session-manager",
   },
   {
+    name = "smart-splits",
+    "mrjones2014/smart-splits.nvim",
+    require "plugins.contrib.nvim-smart-splits",
+  },
+  {
     name = "smear-cursor",
     "sphamba/smear-cursor.nvim",
     require "plugins.contrib.nvim-smear-cursor",
@@ -448,6 +459,11 @@ return {
     "jackMort/tide.nvim",
     require "plugins.contrib.nvim-tide",
     lazy = false,
+  },
+  {
+    name = "tmuxer",
+    "dkooll/tmuxer.nvim",
+    require "plugins.contrib.nvim-tmuxer",
   },
   {
     name = "todo-comments",
@@ -544,11 +560,16 @@ return {
     require "plugins.contrib.nvim-yazi",
   },
   {
-    name = "zebrazone",
-    "notomo/zebrazone.nvim",
-    require "plugins.contrib.nvim-zebrazone",
-    lazy = false,
+    name = "yeet",
+    "samharju/yeet.nvim",
+    require "plugins.contrib.nvim-yeet",
   },
+  -- {
+  --   name = "zebrazone",
+  --   "notomo/zebrazone.nvim",
+  --   require "plugins.contrib.nvim-zebrazone",
+  --   lazy = false,
+  -- },
   {
     name = "zen-mode",
     "folke/zen-mode.nvim",
