@@ -60,12 +60,12 @@ return {
     "royanirudd/clipboard-history.nvim",
     require "plugins.contrib.nvim-clipboard-history",
   },
-  -- {
-  --   name = "cmus",
-  --   "cmus-enjoyers/cmus.nvim",
-  --   require "plugins.contrib.nvim-cmus",
-  --   lazy = false,
-  -- },
+  {
+    name = "cmus",
+    "cmus-enjoyers/cmus.nvim",
+    require "plugins.contrib.nvim-cmus",
+    lazy = false,
+  },
   {
     name = "colorizer",
     "norcalli/nvim-colorizer.lua",
@@ -263,6 +263,12 @@ return {
     require "plugins.contrib.nvim-multicursor",
   },
   {
+    name = "music-controls",
+    "AntonVanAssche/music-controls.nvim",
+    require "plugins.contrib.nvim-music-controls",
+    lazy = false,
+  },
+  {
     name = "namespace",
     "ccaglak/namespace.nvim",
     require "plugins.contrib.nvim-namespace",
@@ -446,6 +452,12 @@ return {
     name = "suedit",
     "Grafcube/suedit.nvim",
     require "plugins.contrib.nvim-suedit",
+    lazy = false,
+  },
+  {
+    name = "switch-project",
+    "raresica1234/switch-project.nvim",
+    require "plugins.contrib.nvim-switch-project",
     lazy = false,
   },
   -- {

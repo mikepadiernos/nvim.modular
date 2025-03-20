@@ -43,8 +43,11 @@ Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
 -- :Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
 
 -- Scratch
-Keymap("n", "<C-S-s>", "<cmd>Scratch<cr>")
-Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<cr>")
+Keymap("n", "<C-S-s>", "<cmd>Scratch<cr>", { desc = "[S]cracth: New" })
+Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<cr>", { desc = "Scratch: [O]pen" })
+
+-- Switch-project
+Keymap("n", "<leader>ps", "<cmd>SwitchProjects<cr>", { desc = "[P]roject [S]witch" })
 
 -- Telescope
 Keymap("n", "<leader>fj", ":Telescope jumplist<CR>", opts)
@@ -54,7 +57,7 @@ Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
 Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
 Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
-Keymap("n", "<leader>fy", "<cmd>lua require('yanklist').yanklist()<CR>", { desc = "Show Yanklist" })
+Keymap("n", "<leader>fy", "<cmd>lua require('yanklist').yanklist()<CR>", { desc = "Open Yanklist" })
 Keymap({ "n", "v" }, "<leader>yz", "<cmd>Yazi<CR>", { desc = "Open Yazi" })
 Keymap({ "n", "v" }, "<leader>yw", "<cmd>Yazi cwd<CR>", { desc = "Open Yazi in working directory" })
 Keymap({ "n", "v" }, "<leader>yn", "<cmd>Yazi toggle<CR>", { desc = "Resume Yazi" })
@@ -65,19 +68,25 @@ Keymap("n", "<leader>cs", "<CMD>TmuxCreateSession<CR>")
 Keymap("n", "<leader>rs", "<CMD>TmuxRenameSession<CR>")
 
 -- ToggleTerm
-Keymap(
-  { "n", "v", "i" },
-  "<leader>zh",
-  ":ToggleTerm direction=horizontal<CR>",
-  { desc = "Toggle Terminal: Horizontal" }
-)
-Keymap(
-  { "n", "v", "i" },
-  "<leader>zv",
-  ":ToggleTerm direction=vertical size=80<CR>",
-  { desc = "Toggle Terminal: Vertical" }
-)
-Keymap({ "n", "v", "i" }, "<leader>zi", ":ToggleTerm direction=float<CR>", { desc = "Toggle Terminal: Float" })
+-- Keymap(
+--   { "n", "v", "i" },
+--   "<leader>zh",
+--   ":ToggleTerm direction=horizontal<CR>",
+--   { desc = "Toggle Terminal: Horizontal" }
+-- )
+-- Keymap(
+--   { "n", "v", "i" },
+--   "<leader>zv",
+--   ":ToggleTerm direction=vertical size=80<CR>",
+--   { desc = "Toggle Terminal: Vertical" }
+-- )
+Keymap({ "n", "v", "i" }, "<leader>tf", ":ToggleTerm direction=float<CR>", { desc = "[T]oggle Terminal: [F]loat" })
+
+-- Treesj
+Keymap({ "n", "v" }, "<leader>te", require("treesj").toggle, { desc = "[T]reesj: Toggl[E]" })
+Keymap({ "n", "v" }, "<leader>ts", function()
+  require("treesj").toggle { split = { recursive = true } }
+end, { desc = "[T]reesj: [S]plit" })
 
 -- Twilight
 Keymap("n", "<leader>`", ":Twilight<CR>", opts)

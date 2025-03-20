@@ -1,4 +1,5 @@
 return {
   "cmus-enjoyers/cmus.nvim",
-  config = true,
+  lazy = false,
+  config = function() end,
 }

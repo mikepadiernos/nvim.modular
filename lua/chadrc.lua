@@ -53,6 +53,11 @@ M.nvdash = {
 
 M.base46 = {
   theme = "onedark",
+  hl_add = {
+    St_MusicInfo = { fg = "#FFFB54", bg = "#0a0d0f" },
+    St_MusicState = { fg = "#FFFB54", bg = "#0a0d0f" },
+    St_MusicSep = { fg = "#070707", bg = "#0a0d0f" },
+  },
   hl_override = {
     Normal = { bg = User_bg },
     NormalNC = { bg = User_bg },
@@ -81,7 +86,7 @@ M.base46 = {
     St_VisualModeSep = { fg = "#9D9DE5", bg = "#9D9DE5" },
     St_cwd_text = { fg = "#fe1a66", bg = "#1e030c" },
     St_gitIcons = { bg = User_bg },
-    t_pos_text = { bg = "#001708" },
+    St_pos_text = { bg = "#001708" },
     St_pos_sep = { bg = "#001708" },
     St_Lsp = { bg = "#0d0f19" },
     St_LspMsg = { bg = User_bg },
@@ -145,6 +150,26 @@ M.ui = {
         local mode_sep1 = "%#St_" .. modes[m][2] .. "ModeSep#" .. " "
         return current_mode .. mode_sep1
       end,
+      music_controls = function()
+        local config = require "music-controls.config"
+        local controls = require "music-controls.controls"
+
+        local _player = config.config.default_player
+        local state, title, artist = controls.current(_player)
+        local state_info = string.format("%s", state)
+        local music_info = string.format("%s - %s", artist, title)
+        local music = "%#St_MusicSep#"
+          .. ""
+          .. "%#St_MusicState#"
+          .. " "
+          .. state_info
+          .. "  "
+          .. "%#St_MusicInfo#"
+          .. music_info
+          .. "%#St_MusicSep#"
+          .. ""
+        return music
+      end,
     },
     order = {
       "left_mode",
@@ -153,6 +178,7 @@ M.ui = {
       "%=",
       "lsp_msg",
       "%=",
+      "music_controls",
       "diagnostics",
       "lsp",
       -- "cursor",
