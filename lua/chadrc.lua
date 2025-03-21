@@ -1,8 +1,3 @@
--- local custom_config = require("nvconfig").ui.statusline
--- local custom_sep = custom_config.separator_style
-local custom_utils = require "nvchad.stl.utils"
--- local separators = (type(sep_style) == "table" and sep_style) or sep_icons[sep_style]
--- local sep_right = separators["right"]
 ---@type ChadrcConfig
 ---@class M
 
@@ -84,16 +79,22 @@ M.base46 = {
     St_ReplaceModeSep = { fg = "#FEAFAE", bg = "#FEAFAE" },
     St_TerminalModeSep = { fg = "#86D687", bg = "#86D687" },
     St_VisualModeSep = { fg = "#9D9DE5", bg = "#9D9DE5" },
-    St_cwd_text = { fg = "#fe1a66", bg = "#1e030c" },
+    St_cwd_text = { fg = "#fe1a66", bg = "#2c141c" },
+    -- St_cwd_sep = { fg = "#fe1a66", bg = "#1e030c" },
+    -- St_file = { bg = "#0d021d" },
+    -- St_file_sep = { fg = "#0d021d", bg = "#0d021d" },
+    St_file = { fg = "#61afaf", bg = User_bg },
+    St_file_sep = { fg = User_bg, bg = User_bg },
     St_gitIcons = { bg = User_bg },
-    St_pos_text = { bg = "#001708" },
+    St_pos_text = { bg = "#092f09" },
+    St_pos_icon = { fg = "#001708" },
     St_pos_sep = { bg = "#001708" },
     St_Lsp = { bg = "#0d0f19" },
     St_LspMsg = { bg = User_bg },
-    St_LspError = { bg = User_bg },
-    St_LspWarning = { bg = User_bg },
     St_LspHints = { bg = User_bg },
     St_LspInfo = { bg = User_bg },
+    St_lspError = { bg = User_bg },
+    St_lspWarning = { bg = User_bg },
     NvDashAscii = { fg = User_accent },
     TelescopeNormal = { bg = User_bg2 },
     TelescopeBorder = { fg = User_bg2, bg = User_bg2 },
@@ -119,10 +120,10 @@ M.ui = {
     enabled = true,
     lazyload = true,
     order = { "buffers", "tabs", "btns" },
-    -- overriden_modules = function(modules)
-    --   table.insert(modules, modules[1]) -- adds nvimtree module ( its at index 1 ) , to end of the table
-    --   table.remove(modules, 1) -- removes nvimtree module at index 1
-    -- end,
+    overriden_modules = function(modules)
+      table.insert(modules, modules[1]) -- adds nvimtree module ( its at index 1 ) , to end of the table
+      table.remove(modules, 1) -- removes nvimtree module at index 1
+    end,
   },
   statusline = {
     enabled = true,
@@ -167,22 +168,22 @@ M.ui = {
           .. "%#St_MusicInfo#"
           .. music_info
           .. "%#St_MusicSep#"
-          .. ""
+          .. " "
         return music
       end,
     },
     order = {
       "left_mode",
+      "music_controls",
       "file",
       "git",
       "%=",
-      "lsp_msg",
       "%=",
-      "music_controls",
+      "lsp_msg",
       "diagnostics",
       "lsp",
-      -- "cursor",
       "cwd",
+      "cursor",
       "right_mode",
     },
   },

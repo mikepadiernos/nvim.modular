@@ -1,5 +1,5 @@
 return {
   "stevearc/dressing.nvim",
-  opts = {},
+  lazy = false,
   config = function() end,
 }

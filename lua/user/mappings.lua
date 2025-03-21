@@ -8,11 +8,11 @@ Keymap("n", "<leader>2", "<esc>:Mason<CR>", opts)
 Keymap({ "n", "v", "i", "x" }, "<C-S-Right>", ":bnext<CR>", opts)
 Keymap({ "n", "v", "i", "x" }, "<C-S-Left>", ":bprev<CR>", opts)
 
-Keymap({ "n", "i" }, "<C-s>", "<esc>:w!<CR>", opts)
-Keymap({ "n", "v", "i" }, "<C-q>", "<esc>:q<CR>", opts)
-Keymap({ "n", "v", "i" }, "<C-A-q>", "<esc>:q!<CR>", opts)
-Keymap({ "n", "v", "i" }, "<C-A-S-q>", "<esc>:qa!<CR>", opts)
-
+Keymap({ "n", "i" }, "<C-s>", "<esc>:w<CR>", opts)
+Keymap({ "n", "v", "i" }, "<C-q>", "<esc>:qa!<CR>", opts)
+Keymap({ "n", "v", "i" }, "<C-A-q>", "<esc>:q<CR>", opts)
+-- Keymap({ "n", "v", "i" }, "<C-A-S-q>", "<esc>:qa!<CR>", opts)
+--
 -- Yank into system clipboard
 Keymap({ "n", "v" }, "<leader>c", '"+y') -- yank motion
 Keymap({ "n", "v" }, "<leader>C", '"+Y') -- yank line
@@ -26,6 +26,9 @@ Keymap({ "n", "x" }, "<C-v>", [["+p]]) -- paste from system clipboard
 -- Delete into system clipboard
 Keymap({ "n", "v" }, "<C-d>", '"+d') -- delete motion
 Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
+
+-- Aerial
+Keymap("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 
 -- Drawer
 

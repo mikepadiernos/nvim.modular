@@ -8,7 +8,6 @@ return {
     name = "alien",
     "joeyfitzpatrick/alien.nvim",
     require "plugins.contrib.nvim-alien",
-    lazy = false,
   },
   {
     name = "arrow",
@@ -24,6 +23,11 @@ return {
     name = "autoclose",
     "m4xshen/autoclose.nvim",
     require "plugins.contrib.nvim-autoclose",
+  },
+  {
+    name = "autosave",
+    "0x00-ketsu/autosave.nvim",
+    require "plugins.contrib.nvim-autosave",
   },
   {
     name = "barbecue",
@@ -64,7 +68,6 @@ return {
     name = "cmus",
     "cmus-enjoyers/cmus.nvim",
     require "plugins.contrib.nvim-cmus",
-    lazy = false,
   },
   {
     name = "colorizer",
@@ -90,7 +93,6 @@ return {
     name = "ctrlsf",
     "dyng/ctrlsf.vim",
     require "plugins.contrib.nvim-ctrlsf",
-    lazy = false,
   },
   {
     name = "ctrlsf-ui",
@@ -121,7 +123,6 @@ return {
     name = "dressing",
     "stevearc/dressing.nvim",
     require "plugins.contrib.nvim-dressing",
-    lazy = false,
   },
   {
     name = "dropbar",
@@ -167,7 +168,6 @@ return {
     name = "grug-far",
     "MagicDuck/grug-far.nvim",
     require "plugins.contrib.nvim-grug-far",
-    lazy = false,
   },
   {
     name = "guess-indent",
@@ -188,6 +188,11 @@ return {
     name = "image",
     "3rd/image.nvim",
     require "plugins.contrib.nvim-image",
+  },
+  {
+    name = "img-clip",
+    "HakonHarnes/img-clip.nvim",
+    require "plugins.contrib.nvim-img-clip",
   },
   {
     name = "inc-rename",
@@ -223,13 +228,11 @@ return {
     name = "markdown",
     "MeanderingProgrammer/render-markdown.nvim",
     require "plugins.contrib.nvim-markdown",
-    lazy = false,
   },
   {
     name = "markdown-preview",
     "iamcco/markdown-preview.nvim",
     require "plugins.contrib.nvim-markdown-preview",
-    lazy = false,
   },
   {
     name = "marks",
@@ -255,7 +258,6 @@ return {
     name = "modicator",
     "mawkler/modicator.nvim",
     require "plugins.contrib.nvim-modicator",
-    lazy = false,
   },
   {
     name = "multicursor",
@@ -266,7 +268,6 @@ return {
     name = "music-controls",
     "AntonVanAssche/music-controls.nvim",
     require "plugins.contrib.nvim-music-controls",
-    lazy = false,
   },
   {
     name = "namespace",
@@ -292,7 +293,6 @@ return {
     name = "neogit",
     "NeogitOrg/neogit",
     require "plugins.contrib.nvim-neogit",
-    lazy = false,
   },
   {
     name = "neominimap",
@@ -343,6 +343,11 @@ return {
     name = "oil-nerdfont",
     "Omochice/oil-nerdfont",
     require "plugins.contrib.nvim-oil-nerdfont",
+  },
+  {
+    name = "outline",
+    "hedyhli/outline.nvim",
+    require "plugins.contrib.nvim-outline",
   },
   {
     name = "overseer",
@@ -409,7 +414,6 @@ return {
     name = "search-replace",
     "roobert/search-replace.nvim",
     require "plugins.contrib.nvim-search-replace",
-    lazy = false,
   },
   {
     name = "select-multi-line",
@@ -440,37 +444,36 @@ return {
     name = "smear-cursor",
     "sphamba/smear-cursor.nvim",
     require "plugins.contrib.nvim-smear-cursor",
-    lazy = false,
+  },
+  {
+    name = "stay-centered",
+    "arnamak/stay-centered.nvim",
+    require "plugins.contrib.nvim-stay-centered",
   },
   {
     name = "sudo",
     "denialofsandwich/sudo.nvim",
     require "plugins.contrib.nvim-sudo",
-    lazy = false,
   },
   {
     name = "suedit",
     "Grafcube/suedit.nvim",
     require "plugins.contrib.nvim-suedit",
-    lazy = false,
   },
   {
     name = "switch-project",
     "raresica1234/switch-project.nvim",
     require "plugins.contrib.nvim-switch-project",
-    lazy = false,
   },
   -- {
   --   name = "tfm",
   --   "rolv-apneseth/tfm.nvim",
   --   require "plugins.contrib.nvim-tfm",
-  --   lazy = false
   -- },
   {
     name = "tide",
     "jackMort/tide.nvim",
     require "plugins.contrib.nvim-tide",
-    lazy = false,
   },
   {
     name = "tmuxer",
@@ -483,10 +486,9 @@ return {
     require "plugins.contrib.nvim-todo-comments",
   },
   {
-    name = "toggleterm.nvim",
+    name = "toggleterm",
     "akinsho/toggleterm.nvim",
     require "plugins.contrib.nvim-toggleterm",
-    lazy = false,
   },
   {
     name = "tree",
@@ -507,7 +509,6 @@ return {
     name = "trouble",
     "folke/trouble.nvim",
     require "plugins.contrib.nvim-trouble",
-    lazy = false,
   },
   {
     name = "tsugit",
@@ -549,7 +550,6 @@ return {
     name = "visual-whitespace",
     "mcauley-penney/visual-whitespace.nvim",
     require "plugins.contrib.nvim-visual-whitespace",
-    lazy = false,
   },
   {
     name = "vs-tasks",

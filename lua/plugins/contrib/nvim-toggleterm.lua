@@ -1,5 +1,6 @@
 return {
   "akinsho/toggleterm.nvim",
+  lazy = false,
   version = "*",
   dependencies = {
     "bwpge/toggleterm-ext.nvim",
