@@ -515,12 +515,11 @@ return {
     "mikavilpas/tsugit.nvim",
     require "plugins.contrib.nvim-tsugit",
   },
-  -- {
-  --   name = "twilight",
-  --   "folke/twilight.nvim",
-  --   require "plugins.contrib.nvim-twilight",
-  --   lazy = false,
-  -- },
+  {
+    name = "twilight",
+    "folke/twilight.nvim",
+    require "plugins.contrib.nvim-twilight",
+  },
   {
     name = "ufo",
     "kevinhwang91/nvim-ufo",
