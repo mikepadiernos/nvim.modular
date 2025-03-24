@@ -46,11 +46,14 @@ Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
 -- :Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
 
 -- Scratch
-Keymap("n", "<C-S-s>", "<cmd>Scratch<cr>", { desc = "[S]cracth: New" })
-Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<cr>", { desc = "Scratch: [O]pen" })
+Keymap("n", "<C-S-s>", "<cmd>Scratch<CR>", { desc = "[S]cracth: New" })
+Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<CR>", { desc = "Scratch: [O]pen" })
+
+-- Sidebar
+Keymap({ "n", "v", "i" }, "<leader>;", "<cmd>SidebarNvimToggle<CR>", { desc = "Sidebar: Open" })
 
 -- Switch-project
-Keymap("n", "<leader>ps", "<cmd>SwitchProjects<cr>", { desc = "[P]roject [S]witch" })
+Keymap("n", "<leader>ps", "<cmd>SwitchProjects<CR>", { desc = "[P]roject [S]witch" })
 
 -- Telescope
 Keymap("n", "<leader>fj", ":Telescope jumplist<CR>", opts)

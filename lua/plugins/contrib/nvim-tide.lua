@@ -8,6 +8,7 @@ return {
   config = function()
     require("tide").setup {
       -- optional configuration
+      width = 45,
       keys = {
         leader = ";", -- Leader key to prefix all Tide commands
         panel = ";", -- Open the panel (uses leader key as prefix)

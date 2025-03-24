@@ -6,6 +6,7 @@ return {
       library = {
         -- See the configuration section for more details
         -- Load luvit types when the `vim.uv` word is found
+        { "nvim-dap-ui" },
         { path = "luvit-meta/library", words = { "vim%.uv" } },
       },
     },

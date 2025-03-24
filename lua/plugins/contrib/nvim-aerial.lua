@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "stevearc/aerial.nvim",
   opts = {},
   -- Optional dependencies

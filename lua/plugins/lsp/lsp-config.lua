@@ -33,6 +33,7 @@ return {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     "mfussenegger/nvim-lint",
     "rshkarin/mason-nvim-lint",
+    "jay-babu/mason-nvim-dap.nvim",
 
     -- Useful status updates for LSP.
     -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`

@@ -370,6 +370,11 @@ return {
     require "plugins.contrib.nvim-precognition",
   },
   {
+    name = "persistent-breakpoints",
+    "Weissle/persistent-breakpoints.nvim",
+    require "plugins.contrib.nvim-persistent-breakpoints",
+  },
+  {
     name = "project",
     "ahmedkhalf/project.nvim",
     require "plugins.contrib.nvim-project",
@@ -434,6 +439,11 @@ return {
     name = "session-manager",
     "The-Plottwist/nvim-session-manager",
     require "plugins.contrib.nvim-session-manager",
+  },
+  {
+    name = "sidebar",
+    "michaelpadiernos-forks/sidebar.nvim",
+    require "plugins.contrib.nvim-sidebar",
   },
   {
     name = "smart-splits",

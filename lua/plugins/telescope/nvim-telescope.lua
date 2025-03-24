@@ -3,6 +3,7 @@ return {
   event = "VimEnter",
   branch = "0.1.x",
   dependencies = {
+    "nvim-telescope/telescope-dap.nvim",
     "nvim-lua/plenary.nvim",
     { -- If encountering errors, see telescope-fzf-native README for installation instructions
       "nvim-telescope/telescope-fzf-native.nvim",
@@ -80,6 +81,7 @@ return {
     vim.keymap.set("n", "<leader>vh", builtin.help_tags, {})
 
     -- Enable Telescope extensions if they are installed
+    pcall(require("telescope").load_extension, "dap")
     -- pcall(require('telescope').load_extension, 'file_browser')
     pcall(require("telescope").load_extension, "frecency")
     pcall(require("telescope").load_extension, "fzf")
@@ -89,7 +91,6 @@ return {
     -- require('telescope').load_extension('remote-sshfs')
     -- pcall(require('telescope').load_extension, 'session')
     -- pcall(require('telescope').load_extension, 'sessions_picker')
-
     pcall(require("telescope").load_extension, "ui-select")
 
     -- See `:help telescope.builtin`
