@@ -14,15 +14,17 @@ return {
       hide_statusline = false,
       update_interval = 1000,
       sections = {
-        "datetime",
-        "todos",
-        "diagnostics",
+        -- "datetime",
+        -- "todos",
         "git",
+        "diagnostics",
         require "dap-sidebar-nvim.breakpoints",
       },
       section_separator = {
         -- "",
         "",
+        "",
+        "ⲻⲻⲻ",
       },
       section_title_separator = { "" },
       containers = {

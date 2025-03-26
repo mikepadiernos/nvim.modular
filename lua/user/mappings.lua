@@ -12,7 +12,7 @@ Keymap({ "n", "i" }, "<C-s>", "<esc>:w<CR>", opts)
 Keymap({ "n", "v", "i" }, "<C-q>", "<esc>:qa!<CR>", opts)
 Keymap({ "n", "v", "i" }, "<C-A-q>", "<esc>:q<CR>", opts)
 -- Keymap({ "n", "v", "i" }, "<C-A-S-q>", "<esc>:qa!<CR>", opts)
---
+
 -- Yank into system clipboard
 Keymap({ "n", "v" }, "<leader>c", '"+y') -- yank motion
 Keymap({ "n", "v" }, "<leader>C", '"+Y') -- yank line
@@ -35,15 +35,34 @@ Keymap("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 -- Grug FAR
 Keymap({ "n" }, "<A-S-g>", ":GrugFar<CR>", opts)
 
+-- Neomusic
+Keymap({ "n", "v", "i" }, "<leader>om", ":Neomusic toggle_playlist_menu<CR>", { desc = "Ne[o]music: Playlist [M]enu" })
+Keymap({ "n", "v", "i" }, "<leader>oc", ":Neomusic toggle_controls<CR>", { desc = "Ne[o]music: [C]ontrols" })
+Keymap({ "n", "v", "i" }, "<leader>oo", ":Neomusic unpause_song<CR>", { desc = "Ne[o]music: Unpause Song" })
+Keymap({ "n", "v", "i" }, "<leader>oo", ":Neomusic pause_song<CR>", { desc = "Ne[o]music: Pause Song" })
+Keymap({ "n", "v", "i" }, "<leader>ol", ":Neomusic next_song<CR>", { desc = "Ne[o]music: Next Song" })
+Keymap({ "n", "v", "i" }, "<leader>oh", ":Neomusic prev_song<CR>", { desc = "Ne[o]music: Previous Song" })
+Keymap({ "n", "v", "i" }, "<leader>ok", ":Neomusic increase_volume 5<CR>", { desc = "Ne[o]music: Volume Increase" })
+Keymap({ "n", "v", "i" }, "<leader>oj", ":Neomusic decrease_volume 5<CR>", { desc = "Ne[o]music: Volume Decrease" })
+Keymap({ "n", "v", "i" }, "<leader>ov", ":Neomusic toggle_queue_view<CR>", { desc = "Ne[o]music: Queue [V]iew" })
+Keymap({ "n", "v", "i" }, "<leader>oq", ":Neomusic play_queue<CR>", { desc = "Ne[o]music: [Q]ueue" })
+Keymap({ "n", "v", "i" }, "<leader>os", ":Neomusic search_playlists<CR>", { desc = "Ne[o]music: [S]earch Playlist" })
+
+-- Neowords
+-- Keymap({ "n", "x", "o" }, "w", Hops.forward_start)
+-- Keymap({ "n", "x", "o" }, "e", Hops.forward_end)
+-- Keymap({ "n", "x", "o" }, "b", Hops.backward_start)
+-- Keymap({ "n", "x", "o" }, "ge", Hops.backward_end)
+
 -- Nvim Tree
 Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeFocus<CR>", opts)
 Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
 
 -- Oil
--- Keymap("n", "<leader>ol", ":Oil<CR>", { desc = "Open parent directory" })
+Keymap("n", "<leader>op", ":Oil --float<CR>", { desc = "[O]il: Open [P]arent Directory" })
 
--- Simply File Manager
--- :Keymap({ "n", "v", "i" }, "<leader>fs", ":SimplyFileOpen<CR>", opts)
+-- Outline
+Keymap("n", "<leader>ot", "<cmd>Outline<CR>", { desc = "T[o]ggle Ou[t]line" })
 
 -- Scratch
 Keymap("n", "<C-S-s>", "<cmd>Scratch<CR>", { desc = "[S]cracth: New" })
@@ -64,9 +83,6 @@ Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
 Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
 Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
 Keymap("n", "<leader>fy", "<cmd>lua require('yanklist').yanklist()<CR>", { desc = "Open Yanklist" })
-Keymap({ "n", "v" }, "<leader>yz", "<cmd>Yazi<CR>", { desc = "Open Yazi" })
-Keymap({ "n", "v" }, "<leader>yw", "<cmd>Yazi cwd<CR>", { desc = "Open Yazi in working directory" })
-Keymap({ "n", "v" }, "<leader>yn", "<cmd>Yazi toggle<CR>", { desc = "Resume Yazi" })
 
 -- Tmux-switch
 Keymap("n", "<C-f>", "<CMD>TmuxSwitch<CR>")
@@ -133,6 +149,11 @@ Keymap(
   "<cmd>lua require('telescope').extensions.vstask.jobhistory()<CR>",
   { desc = "Tasks: Completed Tasks" }
 )
+
+-- Yazi
+Keymap({ "n", "v" }, "<leader>yz", "<cmd>Yazi<CR>", { desc = "Open Yazi" })
+Keymap({ "n", "v" }, "<leader>yw", "<cmd>Yazi cwd<CR>", { desc = "Open Yazi in working directory" })
+Keymap({ "n", "v" }, "<leader>yn", "<cmd>Yazi toggle<CR>", { desc = "Resume Yazi" })
 
 -- Yeet
 Keymap("n", "<leader>yy", function()

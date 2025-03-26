@@ -9,3 +9,5 @@ which is:
 * Modular
 * Comprehensive
 * Geared towards [Drupal](https://drupal.org) development
+
+![nvim.modular screenshot](nvim.modular.png)

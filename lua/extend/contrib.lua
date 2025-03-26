@@ -14,11 +14,11 @@ return {
     "otavioschwanck/arrow.nvim",
     require "plugins.contrib.nvim-arrow",
   },
-  {
-    name = "asdf",
-    "bry-guy/asdf-lsp.nvim",
-    require "plugins.contrib.nvim-asdf",
-  },
+  -- {
+  --   name = "asdf",
+  --   "bry-guy/asdf-lsp.nvim",
+  --   require "plugins.contrib.nvim-asdf",
+  -- },
   {
     name = "autoclose",
     "m4xshen/autoclose.nvim",
@@ -54,6 +54,11 @@ return {
     "LunarVim/bigfile.nvim",
     require "plugins.contrib.nvim-bigfile",
   },
+  -- {
+  --   name = "bunnyhop",
+  --   "PLAZMAMA/bunnyhop.nvim",
+  --   require "plugins.contrib.nvim-bunnyhop",
+  -- },
   {
     name = "ccc",
     "uga-rosa/ccc.nvim",
@@ -299,6 +304,11 @@ return {
     "Isrothy/neominimap.nvim",
     require "plugins.contrib.nvim-neominimap",
   },
+  -- {
+  --   name = "neomusic",
+  --   "aroario2003/neomusic.nvim",
+  --   require "plugins.contrib.nvim-neomusic",
+  -- },
   {
     name = "neoscroll",
     "karb94/neoscroll.nvim",
@@ -309,6 +319,11 @@ return {
     "kawre/neotab.nvim",
     require "plugins.contrib.nvim-neotab",
   },
+  -- {
+  --   name = "neowords",
+  --   "backdround/neowords.nvim",
+  --   require "plugins.contrib.nvim-neowords",
+  -- },
   {
     name = "noice",
     "folke/noice.nvim",
@@ -330,21 +345,6 @@ return {
     require "plugins.contrib.nvim-null-ls",
   },
   {
-    name = "oil",
-    "stevearc/oil.nvim",
-    require "plugins.contrib.nvim-oil",
-  },
-  {
-    name = "oil-gitsigns",
-    "FerretDetective/oil-git-signs.nvim",
-    require "plugins.contrib.nvim-oil-gitsigns",
-  },
-  {
-    name = "oil-nerdfont",
-    "Omochice/oil-nerdfont",
-    require "plugins.contrib.nvim-oil-nerdfont",
-  },
-  {
     name = "outline",
     "hedyhli/outline.nvim",
     require "plugins.contrib.nvim-outline",
@@ -358,6 +358,11 @@ return {
     name = "paste",
     "kjwsl/paste.nvim",
     require "plugins.contrib.nvim-paste",
+  },
+  {
+    name = "pathfinder",
+    "HawkinsT/pathfinder.nvim",
+    require "plugins.contrib.nvim-pathfinder",
   },
   {
     name = "praise",
@@ -445,6 +450,11 @@ return {
     "michaelpadiernos-forks/sidebar.nvim",
     require "plugins.contrib.nvim-sidebar",
   },
+  -- {
+  --   name = "smart-motion",
+  --   "FluxxField/smart-motion.nvim",
+  --   require "plugins.contrib.nvim-smart-motion",
+  -- },
   {
     name = "smart-splits",
     "mrjones2014/smart-splits.nvim",

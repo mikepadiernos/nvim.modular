@@ -49,9 +49,10 @@ M.nvdash = {
 M.base46 = {
   theme = "onedark",
   hl_add = {
-    St_MusicInfo = { fg = "#FFFB54", bg = "#0a0d0f" },
-    St_MusicState = { fg = "#FFFB54", bg = "#0a0d0f" },
-    St_MusicSep = { fg = "#070707", bg = "#0a0d0f" },
+    St_MusicInfo = { fg = "#FFFB54", bg = "#000000" },
+    -- St_MusicState = { fg = "#FFFB54", bg = "#0a0d0f" },
+    St_MusicState = { fg = "#FFFB54", bg = "#000000" },
+    St_MusicSep = { fg = "#070707", bg = "#000000" },
   },
   hl_override = {
     Normal = { bg = User_bg },
@@ -81,10 +82,10 @@ M.base46 = {
     St_VisualModeSep = { fg = "#9D9DE5", bg = "#9D9DE5" },
     St_cwd_text = { fg = "#fe1a66", bg = "#2c141c" },
     -- St_cwd_sep = { fg = "#fe1a66", bg = "#1e030c" },
-    -- St_file = { bg = "#0d021d" },
-    -- St_file_sep = { fg = "#0d021d", bg = "#0d021d" },
-    St_file = { fg = "#61afaf", bg = User_bg },
-    St_file_sep = { fg = User_bg, bg = User_bg },
+    St_file = { fg = "#61afaf", bg = "#0d021d" },
+    St_file_sep = { fg = "#0d021d", bg = "#0d021d" },
+    -- St_file = { fg = "#61afaf", bg = User_bg },
+    -- St_file_sep = { fg = User_bg, bg = User_bg },
     St_gitIcons = { bg = User_bg },
     St_pos_text = { bg = "#092f09" },
     St_pos_icon = { fg = "#001708" },
@@ -114,6 +115,7 @@ M.base46 = {
 M.term = {
   winopts = { winfixbuf = true },
 }
+
 local utils = require "nvchad.stl.utils"
 M.ui = {
   tabufline = {
@@ -160,23 +162,29 @@ M.ui = {
         local state_info = string.format("%s", state)
         local music_info = string.format("%s - %s", artist, title)
         local music = "%#St_MusicSep#"
-          .. ""
+          .. " "
           .. "%#St_MusicState#"
-          .. " "
+          -- .. " "
           .. state_info
-          .. "  "
-          .. "%#St_MusicInfo#"
-          .. music_info
-          .. "%#St_MusicSep#"
           .. " "
-        return music
+          .. "%#St_MusicSep#"
+          -- .. " "
+          .. "%#St_MusicInfo#"
+          .. " "
+          .. music_info
+          .. " "
+        if state_info == "Unknown" then
+          return nil
+        else
+          return music
+        end
       end,
     },
     order = {
       "left_mode",
-      "music_controls",
       "file",
       "git",
+      "music_controls",
       "%=",
       "%=",
       "lsp_msg",
