@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "echasnovski/mini.pick",
   version = false,
   config = function()

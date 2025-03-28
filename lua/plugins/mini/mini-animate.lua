@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "echasnovski/mini.animate",
   version = false,
   config = function()

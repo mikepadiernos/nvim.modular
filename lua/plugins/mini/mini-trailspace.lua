@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "echasnovski/mini.trailspace",
   version = false,
   config = function()

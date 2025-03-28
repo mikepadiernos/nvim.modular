@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "echasnovski/mini.statusline",
   version = false,
   config = function()

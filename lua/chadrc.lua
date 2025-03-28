@@ -3,7 +3,7 @@
 
 local M = {}
 
-require "user.colors"
+require("user.colors")
 
 M.lsp = { signature = false }
 
@@ -73,8 +73,8 @@ M.base46 = {
     StatusLine = { bg = User_bg },
     St_NormalMode = { fg = User_bg, bg = User_accent },
     St_NormalModeSep = { fg = User_accent, bg = User_accent },
-    St_CommandMode = { fg = "#efe100", bg = User_bg },
-    St_CommandModeSep = { fg = User_bg, bg = User_bg },
+    St_CommandMode = { fg = User_bg, bg = "#ffffff" },
+    St_CommandModeSep = { fg = "#ffffff", bg = "#ffffff" },
     St_InsertModeSep = { fg = "#D786D6", bg = "#D786D6" },
     St_NTerminalModeSep = { fg = "#D6D687", bg = "#D6D687" },
     St_ReplaceModeSep = { fg = "#FEAFAE", bg = "#FEAFAE" },
@@ -84,8 +84,6 @@ M.base46 = {
     -- St_cwd_sep = { fg = "#fe1a66", bg = "#1e030c" },
     St_file = { fg = "#61afaf", bg = "#0d021d" },
     St_file_sep = { fg = "#0d021d", bg = "#0d021d" },
-    -- St_file = { fg = "#61afaf", bg = User_bg },
-    -- St_file_sep = { fg = User_bg, bg = User_bg },
     St_gitIcons = { bg = User_bg },
     St_pos_text = { bg = "#092f09" },
     St_pos_icon = { fg = "#001708" },
@@ -116,7 +114,7 @@ M.term = {
   winopts = { winfixbuf = true },
 }
 
-local utils = require "nvchad.stl.utils"
+local utils = require("nvchad.stl.utils")
 M.ui = {
   tabufline = {
     enabled = true,
@@ -140,7 +138,7 @@ M.ui = {
         local m = vim.api.nvim_get_mode().mode
         local current_mode = "%#St_" .. modes[m][2] .. "Mode#  " .. modes[m][1]
         local mode_sep1 = "%#St_" .. modes[m][2] .. "ModeSep#" .. " "
-        return current_mode .. mode_sep1
+        return current_mode .. mode_sep1 .. " "
       end,
       right_mode = function()
         if not utils.is_activewin() then
@@ -154,8 +152,8 @@ M.ui = {
         return current_mode .. mode_sep1
       end,
       music_controls = function()
-        local config = require "music-controls.config"
-        local controls = require "music-controls.controls"
+        local config = require("music-controls.config")
+        local controls = require("music-controls.controls")
 
         local _player = config.config.default_player
         local state, title, artist = controls.current(_player)
@@ -182,15 +180,15 @@ M.ui = {
     },
     order = {
       "left_mode",
+      "cwd",
       "file",
       "git",
+      "%=",
+      "%=",
       "music_controls",
-      "%=",
-      "%=",
       "lsp_msg",
       "diagnostics",
       "lsp",
-      "cwd",
       "cursor",
       "right_mode",
     },

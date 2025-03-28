@@ -1,1 +1,5 @@
-return { 'echasnovski/mini.fuzzy', version = false }
+return {
+  lazy = false,
+  "echasnovski/mini.fuzzy",
+  version = false,
+}

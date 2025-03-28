@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "echasnovski/mini.operators",
   version = false,
   config = function()

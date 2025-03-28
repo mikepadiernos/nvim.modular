@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "echasnovski/mini.visits",
   version = false,
   config = function()

@@ -1,1 +1,5 @@
-return { 'echasnovski/mini.jump2d', version = false }
+return {
+  lazy = false,
+  "echasnovski/mini.jump2d",
+  version = false,
+}

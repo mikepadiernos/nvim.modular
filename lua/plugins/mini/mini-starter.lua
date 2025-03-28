@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "echasnovski/mini.starter",
   version = false,
   config = function()

@@ -1,1 +1,5 @@
-return { 'echasnovski/mini.files', version = false }
+return {
+  lazy = false,
+  "echasnovski/mini.files",
+  version = false,
+}

@@ -9,8 +9,8 @@ Keymap({ "n", "v", "i", "x" }, "<C-S-Right>", ":bnext<CR>", opts)
 Keymap({ "n", "v", "i", "x" }, "<C-S-Left>", ":bprev<CR>", opts)
 
 Keymap({ "n", "i" }, "<C-s>", "<esc>:w<CR>", opts)
-Keymap({ "n", "v", "i" }, "<C-q>", "<esc>:qa!<CR>", opts)
-Keymap({ "n", "v", "i" }, "<C-A-q>", "<esc>:q<CR>", opts)
+Keymap({ "n", "v", "i" }, "<C-x>", "<esc>:qa!<CR>", opts)
+Keymap({ "n", "v", "i" }, "<C-q>", "<esc>:q<CR>", opts)
 -- Keymap({ "n", "v", "i" }, "<C-A-S-q>", "<esc>:qa!<CR>", opts)
 
 -- Yank into system clipboard
@@ -107,7 +107,7 @@ Keymap({ "n", "v", "i" }, "<leader>tf", ":ToggleTerm direction=float<CR>", { des
 -- Treesj
 Keymap({ "n", "v" }, "<leader>te", require("treesj").toggle, { desc = "[T]reesj: Toggl[E]" })
 Keymap({ "n", "v" }, "<leader>ts", function()
-  require("treesj").toggle { split = { recursive = true } }
+  require("treesj").toggle({ split = { recursive = true } })
 end, { desc = "[T]reesj: [S]plit" })
 
 -- Twilight

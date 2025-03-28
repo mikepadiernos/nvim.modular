@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "echasnovski/mini.surround",
   version = false,
   config = function()

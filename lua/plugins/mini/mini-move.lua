@@ -1,1 +1,5 @@
-return { 'echasnovski/mini.move', version = false }
+return {
+  lazy = false,
+  "echasnovski/mini.move",
+  version = false,
+}

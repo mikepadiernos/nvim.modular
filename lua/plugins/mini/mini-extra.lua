@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "echasnovski/mini.extra",
   version = false,
   config = function()

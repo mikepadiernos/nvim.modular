@@ -1,7 +1,8 @@
 return {
+  lazy = false,
   "echasnovski/mini.pairs",
   version = false,
   config = function()
-    require("mini.pairs").setup {}
+  --  require("mini.pairs").setup {}
   end,
 }
