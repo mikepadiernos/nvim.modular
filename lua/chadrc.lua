@@ -177,7 +177,7 @@ M.ui = {
         local state_info = string.format("%s", state)
         local music_info = string.format("%s - %s", artist, title)
         local music = "%#St_MusicSep#"
-          .. " "
+          .. "  "
           .. "%#St_MusicState#"
           -- .. " "
           .. state_info
@@ -187,7 +187,6 @@ M.ui = {
           .. "%#St_MusicInfo#"
           .. " "
           .. music_info
-          .. " "
         if state_info == "Unknown" then
           return nil
         else
@@ -195,10 +194,20 @@ M.ui = {
         end
       end,
       diagnostics = function()
-        return " " .. utils.diagnostics() .. ""
+        if not utils.diagnostics() then
+          return nil
+        else
+          local diag_block = "  " .. utils.diagnostics() .. ""
+          return diag_block
+        end
       end,
       lsp = function()
-        return "%#St_Lsp#" .. utils.lsp() .. " "
+        if not utils.lsp() then
+          return nil
+        else
+          local lsp_block = "%#St_Lsp#" .. utils.lsp() .. "  "
+          return lsp_block
+        end
       end,
       cursor = "%#St_pos_sep#" .. "" .. "%#St_pos_icon#  %#St_pos_text#  %l / %v  ",
     },
@@ -207,9 +216,9 @@ M.ui = {
       "cwd",
       "file",
       "git",
-      "%=",
-      "%=",
       "music_controls",
+      "%=",
+      "%=",
       "lsp_msg",
       "diagnostics",
       "lsp",
