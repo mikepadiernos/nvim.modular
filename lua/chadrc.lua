@@ -81,8 +81,8 @@ M.base46 = {
     St_TerminalModeSep = { fg = "#86D687", bg = "#86D687" },
     St_VisualModeSep = { fg = "#9D9DE5", bg = "#9D9DE5" },
     St_cwd_text = { fg = "#fe1a66", bg = "#2c141c" },
-    St_cwd_icon = { fg = "#fe1a66", bg = "#1e030c" },
-    St_cwd_sep = { fg = "#1e030c", bg = "#1e030c" },
+    St_cwd_icon = { fg = "#fe1a66", bg = "#2c141c" },
+    St_cwd_sep = { fg = "#2c141c", bg = "#2c141c" },
     -- St_cwd_sep = { fg = "#1e030c", bg = "#1e030c" },
     St_file = { fg = "#61afaf", bg = "#0d021d" },
     St_file_sep = { fg = "#0d021d", bg = "#0d021d" },
@@ -90,7 +90,8 @@ M.base46 = {
     St_pos_text = { bg = "#092f09" },
     St_pos_icon = { fg = "#001708" },
     St_pos_sep = { bg = "#001708" },
-    St_Lsp = { bg = "#0d0f19" },
+    -- St_Lsp = { bg = "#0d0f19" },
+    St_Lsp = { fg = "#61afaf", bg = User_bg },
     St_LspMsg = { bg = User_bg },
     St_LspHints = { bg = User_bg },
     St_LspInfo = { bg = User_bg },
@@ -153,6 +154,20 @@ M.ui = {
         local mode_sep1 = "%#St_" .. modes[m][2] .. "ModeSep#" .. " "
         return current_mode .. mode_sep1
       end,
+      cwd = function()
+        local icon = "%#St_cwd_icon#" .. "󰉋 "
+        local name = vim.uv.cwd()
+        name = "%#St_cwd_text#" .. " " .. (name:match("([^/\\]+)[/\\]*$") or name) .. " "
+        return (vim.o.columns > 85 and ("%#St_cwd_sep#" .. "  " .. icon .. name .. " ")) or ""
+      end,
+      file = function()
+        local x = utils.file()
+        local name = " " .. x[2] .. ""
+        return "%#St_file#  " .. x[1] .. name .. "%#St_file_sep#" .. "  "
+      end,
+      git = function()
+        return "%#St_gitIcons# " .. utils.git()
+      end,
       music_controls = function()
         local config = require("music-controls.config")
         local controls = require("music-controls.controls")
@@ -179,6 +194,13 @@ M.ui = {
           return music
         end
       end,
+      diagnostics = function()
+        return " " .. utils.diagnostics() .. ""
+      end,
+      lsp = function()
+        return "%#St_Lsp#" .. utils.lsp() .. " "
+      end,
+      cursor = "%#St_pos_sep#" .. "" .. "%#St_pos_icon#  %#St_pos_text#  %l / %v  ",
     },
     order = {
       "left_mode",

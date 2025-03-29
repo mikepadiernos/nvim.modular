@@ -530,6 +530,11 @@ return {
     "Wansmer/treesj",
     require("plugins.contrib.nvim-treesj"),
   },
+  -- {
+  --   name = "treewalker",
+  --   "aaronik/treewalker.nvim",
+  --   require "plugins.contrib.nvim-treewalker",
+  -- },
   {
     name = "trouble",
     "folke/trouble.nvim",
@@ -606,9 +611,9 @@ return {
   --   require "plugins.contrib.nvim-zebrazone",
   --   lazy = false,
   -- },
-  {
-    name = "zen-mode",
-    "folke/zen-mode.nvim",
-    require("plugins.contrib.nvim-zen-mode"),
-  },
+  -- {
+  --   name = "zen-mode",
+  --   "folke/zen-mode.nvim",
+  --   require("plugins.contrib.nvim-zen-mode"),
+  -- },
 }

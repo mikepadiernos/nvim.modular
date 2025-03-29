@@ -1,5 +1,5 @@
 return {
-  lazy = false,
+  -- lazy = false,
   "echasnovski/mini.files",
   version = false,
 }
