@@ -88,7 +88,7 @@ M.lsp = function()
 end
 
 M.cursor = function()
-  return "%#St_pos_sep#" .. "" .. "%#St_pos_icon#  %#St_pos_text#  %l / %v  "
+  return "%#St_pos_sep#" .. "" .. "%#St_pos_icon#  %#St_pos_text#  %l ⬝ %v  "
 end
 
 return M

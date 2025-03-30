@@ -28,11 +28,11 @@ return {
     "lukas-reineke/lsp-format.nvim",
     require("plugins.lsp.lsp-format"),
   },
-  {
-    name = "lsp-lens",
-    "VidocqH/lsp-lens.nvim",
-    require "plugins.lsp.lsp-lens"
-  },
+  -- {
+  --   name = "lsp-lens",
+  --   "VidocqH/lsp-lens.nvim",
+  --   require "plugins.lsp.lsp-lens"
+  -- },
   {
     name = "lsp-progress",
     "linrongbin16/lsp-progress.nvim",

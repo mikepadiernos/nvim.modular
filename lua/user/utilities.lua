@@ -81,7 +81,8 @@ M.modes = {
 
 -- credits to ii14 for str:match func
 M.file = function()
-  local icon = "󰈚"
+  -- local icon = "󰈚"
+  local icon = "󱟱 "
   local path = vim.api.nvim_buf_get_name(M.stbufnr())
   local name = (path == "" and "Empty") or path:match("([^/\\]+)[/\\]*$")
 
