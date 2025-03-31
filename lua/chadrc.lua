@@ -13,34 +13,43 @@ M.lsp = { signature = false }
 M.nvdash = {
   load_on_startup = true,
   header = {
-    "                            ",
-    "    █████████████████████   ",
-    "                      ███   ",
-    "    ███   ███   ███   ███   ",
-    "    ███   ███   ███   ███   ",
-    "    ███   ███   █████████   ",
-    "    ███   ███   ███         ",
-    "    ███   ███   ███         ",
-    "                            ",
-    "                            ",
-    "                            ",
+    "  ████████████████████████████   ",
+    "                          ████   ",
+    "  ████    ████    ████    ████   ",
+    "  ████    ████    ████    ████   ",
+    "  ████    ████    ████████████   ",
+    "  ████    ████    ████           ",
+    "  ████    ████    ████           ",
+    "                                 ",
+    "                                 ",
+    "                                 ",
   },
   buttons = {
-    { txt = "   Projects", keys = "󱁐 fp", cmd = "Telescope projects" },
-    -- { txt = "   Recent Files", keys = "󱁐 fo", cmd = "Telescope oldfiles" },
+    { txt = "󰄸   Projects", keys = "    󱁐 fp", cmd = "Telescope projects" },
+    { txt = "󱙓   Live Grep", keys = "    󱁐 fw", cmd = "Telescope live_grep" },
+    { txt = "   File History", keys = "    󱁐 fo", cmd = "Telescope oldfiles" },
     -- { txt = "   Find File", keys = "󱁐 ff", cmd = "Telescope find_files" },
     -- { txt = "󰛳   Connect Remote", keys = "󱁐 fv", cmd = "Telescope remote-sshfs" },
-    { txt = "   File Manager", keys = "󱁐 fs", cmd = "SimplyFileOpen" },
-    { txt = " ", no_gap = true, rep = true },
-    { txt = "󰞋   Help", keys = "󱁐 fh", cmd = "Telescope help_tags" },
-    { txt = "   Keyboard Shortcuts", keys = "󱁐 ch", cmd = "NvCheatsheet" },
+    -- { txt = "   File Manager", keys = "󱁐 fs", cmd = "SimplyFileOpen" },
+    { txt = "   File Manager (Yazi)", keys = "    󱁐 fs", cmd = "Yazi" },
 
-    { txt = " ", hl = "NvDashFooter", no_gap = true, rep = true },
+    -- { txt = " ", no_gap = true, rep = true },
+
+    { txt = "󰞋   Help", keys = "    󱁐 fh", cmd = "Telescope help_tags" },
+    { txt = "   Highlights", keys = "    󱁐 ft", cmd = "Telescope highlights" },
+
+    -- { txt = " ", no_gap = true, rep = true },
+
+    { txt = "󰪿   Keyboard Shortcuts", keys = "    󱁐 ch", cmd = "NvCheatsheet" },
+
+    -- { txt = " ", no_gap = true, rep = true },
+
+    { txt = "", hl = "NvDashFooter", no_gap = true, rep = true },
     {
       txt = function()
         local stats = require("lazy").stats()
         local ms = math.floor(stats.startuptime) .. " ms"
-        return "  Loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms
+        return "   Loaded " .. stats.loaded .. " / " .. stats.count .. " plugins in " .. ms
       end,
       hl = "NvDashFooter",
       no_gap = true,

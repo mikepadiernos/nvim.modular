@@ -81,8 +81,9 @@ Keymap("n", "<leader>fn", ":Nerdy<CR>", opts)
 Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
 Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
-Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
+-- Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
 Keymap("n", "<leader>fy", "<cmd>lua require('yanklist').yanklist()<CR>", { desc = "Open Yanklist" })
+Keymap({ "n", "v" }, "<leader>fs", "<cmd>Yazi<CR>", { desc = "Open Yazi" })
 
 -- Tmux-switch
 Keymap("n", "<C-f>", "<CMD>TmuxSwitch<CR>")
