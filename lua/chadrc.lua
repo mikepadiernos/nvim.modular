@@ -13,11 +13,10 @@ M.lsp = { signature = false }
 M.nvdash = {
   load_on_startup = true,
   header = {
-    "   ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄   ",
     "   ████████████████████████████   ",
     "                           ████   ",
     "   ████    ████    ████    ████   ",
-    "   ████    ████    ████▄▄▄▄████   ",
+    "   ████    ████    ████    ████   ",
     "   ████    ████    ████████████   ",
     "   ████    ████    ████           ",
     "   ████    ████    ████           ",
@@ -26,20 +25,20 @@ M.nvdash = {
     "                                  ",
   },
   buttons = {
-    { txt = "󰄸   Projects", keys = "    󱁐 fp", cmd = "Telescope projects" },
-    { txt = "󱙓   Live Grep", keys = "    󱁐 fw", cmd = "Telescope live_grep" },
-    { txt = "   File History", keys = "    󱁐 fo", cmd = "Telescope oldfiles" },
+    { txt = "󰄸   Projects", keys = "󱁐 fp", cmd = "Telescope projects" },
+    { txt = "󱙓   Live Grep", keys = "󱁐 fw", cmd = "Telescope live_grep" },
+    { txt = "   File History", keys = "󱁐 fo", cmd = "Telescope oldfiles" },
     -- { txt = "   Find File", keys = "󱁐 ff", cmd = "Telescope find_files" },
     -- { txt = "󰛳   Connect Remote", keys = "󱁐 fv", cmd = "Telescope remote-sshfs" },
     -- { txt = "   File Manager", keys = "󱁐 fs", cmd = "SimplyFileOpen" },
-    { txt = "   File Manager (Yazi)", keys = "    󱁐 fs", cmd = "Yazi" },
+    { txt = "   File Manager (Yazi)", keys = "󱁐 fs", cmd = "Yazi" },
 
     { txt = "", no_gap = true, rep = true },
     { txt = "", no_gap = true, rep = true },
 
-    { txt = "󰞋   Help", keys = "    󱁐 fh", cmd = "Telescope help_tags" },
-    { txt = "󰪿   Cheatsheet", keys = "    󱁐 ch", cmd = "NvCheatsheet" },
-    { txt = "   Highlights", keys = "    󱁐 ft", cmd = "Telescope highlights" },
+    { txt = "󰞋   Help", keys = "󱁐 fh", cmd = "Telescope help_tags" },
+    { txt = "󰪿   Cheatsheet", keys = "󱁐 ch", cmd = "NvCheatsheet" },
+    { txt = "   Highlights", keys = "󱁐 ft", cmd = "Telescope highlights" },
 
     -- { txt = "", no_gap = true, rep = true },
     -- { txt = "", no_gap = true, rep = true },
@@ -115,6 +114,7 @@ M.base46 = {
     TelescopeResultsTitle = { fg = User_bg2, bg = User_bg2 },
     TelescopeResultsNormal = { fg = "#ffffff" },
     TelescopeSelection = { fg = User_accent, bg = User_bg2 },
+    TelescopePromptPrefix = { bg = User__bg },
     TelescopePromptNormal = { bg = User__bg },
     TelescopePromptBorder = { fg = User__bg, bg = User__bg },
     NoiceCmdlinePopup = { fg = User__bg },

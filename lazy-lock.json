@@ -8,7 +8,7 @@
   "autoclose.nvim": { "branch": "main", "commit": "b2077aa2c83df7ebc19b2a20a3a0654b24ae9c8f" },
   "autosave.nvim": { "branch": "main", "commit": "348f72cf0241e3e736e3396c4834def2f8ef8d10" },
   "barbecue.nvim": { "branch": "main", "commit": "cd7e7da622d68136e13721865b4d919efd6325ed" },
-  "base46": { "branch": "v2.5", "commit": "fde7a2cd54599e148d376f82980407c2d24b0fa2" },
+  "base46": { "branch": "v3.0", "commit": "94c03adaf7d2efa0e36f405cf44f9ff8d773cb50" },
   "better-comments.nvim": { "branch": "main", "commit": "c807f7bbde40ea5548394572eaf5426760c80a9a" },
   "better-escape.nvim": { "branch": "master", "commit": "9738a470d93e2e52815bc46b4042372ca198cbd6" },
   "betterquit.nvim": { "branch": "master", "commit": "4efe9f9c78b718cd581cc13a54a2105523dc2a7a" },
