@@ -215,6 +215,11 @@ return {
     require("plugins.contrib.nvim-lazydev"),
   },
   {
+    name = "lazydocker",
+    "crnvl96/lazydocker.nvim",
+    require("plugins.contrib.nvim-lazydocker"),
+  },
+  {
     name = "lint",
     "mfussenegger/nvim-lint",
     require("plugins.contrib.nvim-lint"),
@@ -624,7 +629,6 @@ return {
   --   name = "zebrazone",
   --   "notomo/zebrazone.nvim",
   --   require "plugins.contrib.nvim-zebrazone",
-  --   lazy = false,
   -- },
   -- {
   --   name = "zen-mode",

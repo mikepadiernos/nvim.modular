@@ -30,10 +30,25 @@ Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
 -- Aerial
 Keymap("n", "<leader>a", "<cmd>AerialToggle!<CR>")
 
--- Drawer
-
 -- Grug FAR
 Keymap({ "n" }, "<A-S-g>", ":GrugFar<CR>", opts)
+
+-- LazyDocker
+Keymap("n", "<leader>ld", "<cmd>LazyDocker<CR>", { desc = "Toggle [L]azy[D]ocker", noremap = true, silent = true })
+
+-- LazyGit
+Keymap(
+  "n",
+  "<leader>lg",
+  ":lua require('tsugit').toggle()<cr>",
+  { desc = "Toggle [L]azy[G]it", noremap = true, silent = true }
+)
+Keymap(
+  "n",
+  "<leader>ll",
+  ":lua require('tsugit').toggle_for_file(absolutePath)<cr>",
+  { desc = "[L]azyGit: [L]ist Commits", noremap = true, silent = true }
+)
 
 -- Neomusic
 -- Keymap({ "n", "v", "i" }, "<leader>om", ":Neomusic toggle_playlist_menu<CR>", { desc = "Ne[o]music: Playlist [M]enu" })
@@ -59,20 +74,30 @@ Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeFocus<CR>", opts)
 Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
 
 -- Oil
-Keymap("n", "<leader>op", ":Oil --float<CR>", { desc = "[O]il: Open [P]arent Directory" })
+Keymap(
+  "n",
+  "<leader>op",
+  ":Oil --float<CR>",
+  { desc = "[O]il: Open [P]arent Directory", noremap = true, silent = true }
+)
 
 -- Outline
-Keymap("n", "<leader>ot", "<cmd>Outline<CR>", { desc = "T[o]ggle Ou[t]line" })
+Keymap("n", "<leader>ot", "<cmd>Outline<CR>", { desc = "T[o]ggle Ou[t]line", noremap = true, silent = true })
 
 -- Scratch
-Keymap("n", "<C-S-s>", "<cmd>Scratch<CR>", { desc = "[S]cracth: New" })
-Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<CR>", { desc = "Scratch: [O]pen" })
+Keymap("n", "<C-S-s>", "<cmd>Scratch<CR>", { desc = "[S]cracth: New", noremap = true, silent = true })
+Keymap("n", "<C-S-o>", "<cmd>ScratchOpen<CR>", { desc = "Scratch: [O]pen", noremap = true, silent = true })
 
 -- Sidebar
-Keymap({ "n", "v", "i" }, "<leader>;", "<cmd>SidebarNvimToggle<CR>", { desc = "Sidebar: Open" })
+Keymap(
+  { "n", "v", "i" },
+  "<leader>;",
+  "<cmd>SidebarNvimToggle<CR>",
+  { desc = "Sidebar: Open", noremap = true, silent = true }
+)
 
 -- Switch-project
-Keymap("n", "<leader>ps", "<cmd>SwitchProjects<CR>", { desc = "[P]roject [S]witch" })
+Keymap("n", "<leader>ps", "<cmd>SwitchProjects<CR>", { desc = "[P]roject [S]witch", noremap = true, silent = true })
 
 -- Telescope
 Keymap("n", "<leader>fj", ":Telescope jumplist<CR>", opts)
@@ -82,8 +107,13 @@ Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
 Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
 -- Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
-Keymap("n", "<leader>fy", "<cmd>lua require('yanklist').yanklist()<CR>", { desc = "Open Yanklist" })
-Keymap({ "n", "v" }, "<leader>fs", "<cmd>Yazi<CR>", { desc = "Open Yazi" })
+Keymap(
+  "n",
+  "<leader>fy",
+  "<cmd>lua require('yanklist').yanklist()<CR>",
+  { desc = "Open Yanklist", noremap = true, silent = true }
+)
+Keymap({ "n", "v" }, "<leader>fs", "<cmd>Yazi<CR>", { desc = "Open Yazi", noremap = true, silent = true })
 
 -- Tmux-switch
 Keymap("n", "<C-f>", "<CMD>TmuxSwitch<CR>")
@@ -103,60 +133,90 @@ Keymap("n", "<leader>rs", "<CMD>TmuxRenameSession<CR>")
 --   ":ToggleTerm direction=vertical size=80<CR>",
 --   { desc = "Toggle Terminal: Vertical" }
 -- )
-Keymap({ "n", "v", "i" }, "<leader>tf", ":ToggleTerm direction=float<CR>", { desc = "[T]oggle Terminal: [F]loat" })
+Keymap(
+  { "n", "v", "i" },
+  "<leader>tf",
+  ":ToggleTerm direction=float<CR>",
+  { desc = "[T]oggle Terminal: [F]loat", noremap = true, silent = true }
+)
 
 -- Treesj
-Keymap({ "n", "v" }, "<leader>te", require("treesj").toggle, { desc = "[T]reesj: Toggl[E]" })
+Keymap(
+  { "n", "v" },
+  "<leader>te",
+  require("treesj").toggle,
+  { desc = "[T]reesj: Toggl[E]", noremap = true, silent = true }
+)
 Keymap({ "n", "v" }, "<leader>ts", function()
   require("treesj").toggle({ split = { recursive = true } })
-end, { desc = "[T]reesj: [S]plit" })
+end, { desc = "[T]reesj: [S]plit", noremap = true, silent = true })
 
 -- Twilight
 Keymap("n", "<leader>`", ":Twilight<CR>", opts)
 
 -- Visual Whitespace
-Keymap("n", "<leader>vw", "<cmd>lua require('visual-whitespace').toggle()<CR>", { desc = "Toggle visual whitespace" })
+Keymap(
+  "n",
+  "<leader>vw",
+  "<cmd>lua require('visual-whitespace').toggle()<CR>",
+  { desc = "Toggle [V]isual [W]hitespace", noremap = true, silent = true }
+)
 
 -- VS Tasks
-Keymap("n", "<Leader>tt", "<cmd>lua require('telescope').extensions.vstask.tasks()<CR>", { desc = "Tasks" })
+Keymap(
+  "n",
+  "<Leader>tt",
+  "<cmd>lua require('telescope').extensions.vstask.tasks()<CR>",
+  { desc = "[T]oggle [T]asks", noremap = true, silent = true }
+)
 Keymap(
   "n",
   "<Leader>ti",
   "<cmd>lua require('telescope').extensions.vstask.inputs()<CR>",
-  { desc = "Tasks: Input Variables" }
+  { desc = "[T]asks: [I]nput Variables", noremap = true, silent = true }
 )
 Keymap(
   "n",
   "<Leader>tv",
   "<cmd>lua require('telescope').extensions.vstask.clear_inputs()<CR>",
-  { desc = "Tasks: Clear Input Variables" }
+  { desc = "[T]asks: Clear Input [V]ariables", noremap = true, silent = true }
 )
-Keymap("n", "<Leader>T", "<cmd>lua require('telescope').extensions.vstask.history()<CR>", { desc = "Tasks: History" })
+Keymap(
+  "n",
+  "<Leader>T",
+  "<cmd>lua require('telescope').extensions.vstask.history()<CR>",
+  { desc = "[[T]]asks: History", noremap = true, silent = true }
+)
 Keymap(
   "n",
   "<Leader>tl",
   "<cmd>lua require('telescope').extensions.vstask.launch()<CR>",
-  { desc = "Tasks: Launch Configuration" }
+  { desc = "[T]asks: [L]aunch Configuration", noremap = true, silent = true }
 )
 Keymap(
   "n",
   "<Leader>tr",
   "<cmd>lua require('telescope').extensions.vstask.jobs()<CR>",
-  { desc = "Tasks: Running Tasks" }
+  { desc = "[T]asks: [R]unning Tasks", noremap = true, silent = true }
 )
 Keymap(
   "n",
   "<Leader>tc",
   "<cmd>lua require('telescope').extensions.vstask.jobhistory()<CR>",
-  { desc = "Tasks: Completed Tasks" }
+  { desc = "[T]asks: [C]ompleted Tasks", noremap = true, silent = true }
 )
 
 -- Yazi
-Keymap({ "n", "v" }, "<leader>yz", "<cmd>Yazi<CR>", { desc = "Open Yazi" })
-Keymap({ "n", "v" }, "<leader>yw", "<cmd>Yazi cwd<CR>", { desc = "Open Yazi in working directory" })
-Keymap({ "n", "v" }, "<leader>yn", "<cmd>Yazi toggle<CR>", { desc = "Resume Yazi" })
+Keymap({ "n", "v" }, "<leader>yz", "<cmd>Yazi<CR>", { desc = "[Y]a[z]i: Open", noremap = true, silent = true })
+Keymap(
+  { "n", "v" },
+  "<leader>yw",
+  "<cmd>Yazi cwd<CR>",
+  { desc = "[Y]azi: [W]orking Directory", noremap = true, silent = true }
+)
+Keymap({ "n", "v" }, "<leader>yr", "<cmd>Yazi toggle<CR>", { desc = "[Y]azi: [R]esume", noremap = true, silent = true })
 
 -- Yeet
 Keymap("n", "<leader>yy", function()
   require("yeet").execute("source venv/bin/activate", { clear_before_yeet = false })
-end, { desc = "Yeet: activate" })
+end, { desc = "[[Y]]eet: Toggle", noremap = true, silent = true })
