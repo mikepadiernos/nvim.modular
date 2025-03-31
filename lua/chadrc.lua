@@ -33,17 +33,16 @@ M.nvdash = {
     -- { txt = "   File Manager", keys = "󱁐 fs", cmd = "SimplyFileOpen" },
     { txt = "   File Manager (Yazi)", keys = "    󱁐 fs", cmd = "Yazi" },
 
-    -- { txt = " ", no_gap = true, rep = true },
+    { txt = "", no_gap = true, rep = true },
+    { txt = "", no_gap = true, rep = true },
 
     { txt = "󰞋   Help", keys = "    󱁐 fh", cmd = "Telescope help_tags" },
+    { txt = "󰪿   Cheatsheet", keys = "    󱁐 ch", cmd = "NvCheatsheet" },
     { txt = "   Highlights", keys = "    󱁐 ft", cmd = "Telescope highlights" },
 
-    -- { txt = " ", no_gap = true, rep = true },
-
-    { txt = "󰪿   Keyboard Shortcuts", keys = "    󱁐 ch", cmd = "NvCheatsheet" },
-
-    -- { txt = " ", no_gap = true, rep = true },
-
+    -- { txt = "", no_gap = true, rep = true },
+    -- { txt = "", no_gap = true, rep = true },
+    --
     { txt = "", hl = "NvDashFooter", no_gap = true, rep = true },
     {
       txt = function()
