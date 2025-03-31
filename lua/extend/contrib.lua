@@ -69,11 +69,11 @@ return {
     "royanirudd/clipboard-history.nvim",
     require("plugins.contrib.nvim-clipboard-history"),
   },
-  {
-    name = "cmus",
-    "cmus-enjoyers/cmus.nvim",
-    require("plugins.contrib.nvim-cmus"),
-  },
+  -- {
+  --   name = "cmus",
+  --   "cmus-enjoyers/cmus.nvim",
+  --   require("plugins.contrib.nvim-cmus"),
+  -- },
   {
     name = "colorizer",
     "norcalli/nvim-colorizer.lua",
@@ -249,6 +249,11 @@ return {
     "artempyanykh/marksman",
     require("plugins.contrib.nvim-marksman"),
   },
+  -- {
+  --   name = "markspace",
+  --   "amarz45/nvim-markspace",
+  --   require("plugins.contrib.nvim-markspace"),
+  -- },
   -- {
   --   name = "md-img-insert",
   --   "junaydb/md-img-insert.nvim",
@@ -586,9 +591,19 @@ return {
     require("plugins.contrib.nvim-vs-tasks"),
   },
   -- {
+  --   name = "vshow",
+  --   "oxtna/vshow.nvim",
+  --   require("plugins.contrib.nvim-vshow"),
+  -- },
+  -- {
   --   name = "wormhole",
   --   "irohn/wormhole.nvim",
   --   require "plugins.contrib.nvim-wormhole",
+  -- },
+  -- {
+  --   name = "whitespace",
+  --   "johnfrankmorgan/whitespace.nvim",
+  --   require("plugins.contrib.nvim-whitespace"),
   -- },
   {
     name = "yanky",
