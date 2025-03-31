@@ -9,9 +9,11 @@ M.left_mode = function()
 
   local modes = utils.modes
   local m = vim.api.nvim_get_mode().mode
-  local current_mode = "%#St_" .. modes[m][2] .. "Mode#  " .. modes[m][1]
-  local mode_sep1 = "%#St_" .. modes[m][2] .. "ModeSep#" .. " "
-  return current_mode .. mode_sep1 .. " "
+  -- local current_mode = "%#St_" .. modes[m][2] .. "Mode#   " .. modes[m][1]
+  -- local current_mode = "%#St_" .. modes[m][2] .. "Mode#  " .. modes[m][1]
+  local current_mode = "%#St_" .. modes[m][2] .. "Mode#  "
+  local mode_sep1 = "%#St_" .. modes[m][2] .. "ModeSep#" .. ""
+  return current_mode .. mode_sep1 .. ""
 end
 
 M.right_mode = function()
