@@ -115,6 +115,12 @@ Keymap(
 )
 Keymap({ "n", "v" }, "<leader>fs", "<cmd>Yazi<CR>", { desc = "Open Yazi", noremap = true, silent = true })
 
+-- Telescope: Mru
+Keymap("n", "<space>fu", ":Telescope mru_files<CR>", opts)
+Keymap("n", "<space>mu", function()
+  require("telescope").extensions.mru_files.mru_files({})
+end, opts) -- Alternatively, using lua API
+
 -- Tmux-switch
 Keymap("n", "<C-f>", "<CMD>TmuxSwitch<CR>")
 Keymap("n", "<leader>cs", "<CMD>TmuxCreateSession<CR>")

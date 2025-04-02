@@ -265,6 +265,11 @@ return {
   --   require "plugins.contrib.nvim-md-img-insert",
   -- },
   {
+    name = "mint",
+    "gabrielfruet/mint.nvim",
+    require("plugins.contrib.nvim-mint"),
+  },
+  {
     name = "mistake",
     "ck-zhang/mistake.nvim",
     require("plugins.contrib.nvim-mistake"),
@@ -375,6 +380,11 @@ return {
     require("plugins.contrib.nvim-pathfinder"),
   },
   {
+    name = "persistent-breakpoints",
+    "Weissle/persistent-breakpoints.nvim",
+    require("plugins.contrib.nvim-persistent-breakpoints"),
+  },
+  {
     name = "praise",
     "theoboldalex/praise.nvim",
     require("plugins.contrib.nvim-praise"),
@@ -385,15 +395,15 @@ return {
     require("plugins.contrib.nvim-precognition"),
   },
   {
-    name = "persistent-breakpoints",
-    "Weissle/persistent-breakpoints.nvim",
-    require("plugins.contrib.nvim-persistent-breakpoints"),
-  },
-  {
     name = "project",
     "ahmedkhalf/project.nvim",
     require("plugins.contrib.nvim-project"),
   },
+  -- {
+  --   name = "proot",
+  --   "zongben/proot.nvim",
+  --   require("plugins.contrib.nvim-proot"),
+  -- },
   {
     name = "rainbow-delimiters",
     "HiPhish/rainbow-delimiters.nvim",
