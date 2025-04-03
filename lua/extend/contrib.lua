@@ -210,6 +210,11 @@ return {
     require("plugins.contrib.nvim-lazydocker"),
   },
   {
+    name = "legendary",
+    "mrjones2014/legendary.nvim",
+    require("plugins.contrib.nvim-legendary"),
+  },
+  {
     name = "lint",
     "mfussenegger/nvim-lint",
     require("plugins.contrib.nvim-lint"),
@@ -334,21 +339,21 @@ return {
     "folke/noice.nvim",
     require("plugins.contrib.nvim-noice"),
   },
-  -- {
-  --   name = "none-ls",
-  --   "nvimtools/none-ls.nvim",
-  --   require("plugins.contrib.nvim-nonels"),
-  -- },
+  {
+    name = "none-ls",
+    "nvimtools/none-ls.nvim",
+    require("plugins.contrib.nvim-nonels"),
+  },
   {
     name = "nui-components",
     "grapp-dev/nui-components.nvim",
     require("plugins.contrib.nvim-nui-components"),
   },
-  -- {
-  --   name = "null-ls",
-  --   "brain-fuel/null-ls.nvim",
-  --   require("plugins.contrib.nvim-null-ls"),
-  -- },
+  {
+    name = "null-ls",
+    "brain-fuel/null-ls.nvim",
+    require("plugins.contrib.nvim-null-ls"),
+  },
   {
     name = "outline",
     "hedyhli/outline.nvim",

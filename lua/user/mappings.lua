@@ -28,7 +28,7 @@ Keymap({ "n", "v" }, "<C-d>", '"+d') -- delete motion
 Keymap({ "n", "v" }, "<C-D>", '"+D') -- delete line
 
 -- Aerial
-Keymap("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+Keymap("n", "<leader>a", "<cmd>AerialToggle!<CR>", opts)
 
 -- Grug FAR
 Keymap({ "n" }, "<A-S-g>", ":GrugFar<CR>", opts)
@@ -48,6 +48,14 @@ Keymap(
   "<leader>ll",
   ":lua require('tsugit').toggle_for_file(absolutePath)<cr>",
   { desc = "[L]azyGit: [L]ist Commits", noremap = true, silent = true }
+)
+
+-- Legendary
+Keymap(
+  { "n", "v", "i" },
+  "<leader>lr",
+  ":Legendary<cr>",
+  { desc = "Toggle [L]egenda[r]y", noremap = true, silent = true }
 )
 
 -- Neomusic
@@ -107,12 +115,6 @@ Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
 Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
 Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
 -- Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
-Keymap(
-  "n",
-  "<leader>fy",
-  "<cmd>lua require('yanklist').yanklist()<CR>",
-  { desc = "Open Yanklist", noremap = true, silent = true }
-)
 Keymap({ "n", "v" }, "<leader>fs", "<cmd>Yazi<CR>", { desc = "Open Yazi", noremap = true, silent = true })
 
 -- Telescope: Mru
@@ -120,6 +122,14 @@ Keymap("n", "<space>fu", ":Telescope mru_files<CR>", opts)
 Keymap("n", "<space>mu", function()
   require("telescope").extensions.mru_files.mru_files({})
 end, opts) -- Alternatively, using lua API
+
+-- Telescope: Yanklist
+Keymap(
+  "n",
+  "<leader>fy",
+  "<cmd>lua require('yanklist').yanklist()<CR>",
+  { desc = "Telescope: Yanklist", noremap = true, silent = true }
+)
 
 -- Tmux-switch
 Keymap("n", "<C-f>", "<CMD>TmuxSwitch<CR>")
