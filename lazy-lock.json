@@ -31,6 +31,7 @@
   "coc.nvim": { "branch": "master", "commit": "5866164fa1be317c6f757b9863e1580f06d6c313" },
   "code-refactor.nvim": { "branch": "main", "commit": "ba883636532634a34fd7639f7db3febdc1382fa8" },
   "commander.nvim": { "branch": "main", "commit": "84101e8eb1613a72bbdec655b734f891d8a00694" },
+  "composer.nvim": { "branch": "main", "commit": "6e7cd13cd3442f56c7f056544da4d3e3430bb58e" },
   "conform.nvim": { "branch": "master", "commit": "b1a75324ddf96b7bb84963a297b1ed334db087c0" },
   "ctrlsf-ui.nvim": { "branch": "main", "commit": "4afee49d999946f25b84de004aeec857f094fb6c" },
   "ctrlsf.vim": { "branch": "master", "commit": "32236a8b376d9311dec9b5fe795ca99d32060b13" },
