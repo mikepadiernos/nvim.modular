@@ -1,7 +1,32 @@
 return {
-  { enabled = true, name = "hologram", "edluffy/hologram.nvim" },
-  { enabled = true, name = "hologram-math", "Vaisakhkm2625/hologram-math-preview.nvim" },
-  { enabled = true, name = "neorg", "nvim-neorg/neorg" },
-  { enabled = true, name = "telekasten", "renerocksai/telekasten.nvim" },
-  { enabled = true, name = "todo-list", "smsimone/todolist.nvim" },
+  {
+    name = "down",
+    "clpi/down.nvim",
+    require("plugins.contrib.nvim-down"),
+  },
+  {
+    name = "hologram",
+    "edluffy/hologram.nvim",
+    require("plugins.contrib.nvim-hologram"),
+  },
+  {
+    name = "hologram-math",
+    "Vaisakhkm2625/hologram-math-preview.nvim",
+    require("plugins.contrib.nvim-hologram-math"),
+  },
+  -- {
+  --   name = "neorg",
+  --   "nvim-neorg/neorg",
+  --   require("plugins.contrib.nvim-neorg"),
+  -- },
+  {
+    name = "telekasten",
+    "renerocksai/telekasten.nvim",
+    require("plugins.contrib.nvim-telekasten"),
+  },
+  {
+    name = "todo-list",
+    "smsimone/todolist.nvim",
+    require("plugins.contrib.nvim-todolist"),
+  },
 }

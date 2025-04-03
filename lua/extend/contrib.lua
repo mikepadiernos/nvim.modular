@@ -611,15 +611,25 @@ return {
   --   require("plugins.contrib.nvim-vshow"),
   -- },
   -- {
-  --   name = "wormhole",
-  --   "irohn/wormhole.nvim",
-  --   require "plugins.contrib.nvim-wormhole",
-  -- },
-  -- {
   --   name = "whitespace",
   --   "johnfrankmorgan/whitespace.nvim",
   --   require("plugins.contrib.nvim-whitespace"),
   -- },
+  -- {
+  --   name = "wormhole",
+  --   "irohn/wormhole.nvim",
+  --   require "plugins.contrib.nvim-wormhole",
+  -- },
+  {
+    name = "wrapping",
+    "andrewferrier/wrapping.nvim",
+    require("plugins.contrib.nvim-wrapping"),
+  },
+  {
+    name = "wrapwords",
+    "GabrielNatucci/wrapwords.nvim",
+    require("plugins.contrib.nvim-wrapwords"),
+  },
   {
     name = "yanky",
     "gbprod/yanky.nvim",
