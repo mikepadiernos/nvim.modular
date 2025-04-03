@@ -27,12 +27,13 @@ M.nvdash = {
   buttons = {
     { txt = "󰄸   Projects", keys = "󱁐 fp", cmd = "Telescope projects" },
     { txt = "   File History", keys = "󱁐 fu", cmd = "Telescope mru_files" },
-    { txt = "    File History [Global]", keys = "󱁐 fo", cmd = "Telescope oldfiles" },
+    -- { txt = "    File History [Global]", keys = "󱁐 fo", cmd = "Telescope oldfiles" },
     -- { txt = "󰛳   Connect Remote", keys = "󱁐 fv", cmd = "Telescope remote-sshfs" },
-    { txt = "   Find Files", keys = "󱁐 ff", cmd = "Telescope find_files" },
+    -- { txt = "   Find Files", keys = "󱁐 ff", cmd = "Telescope find_files" },
+    -- { txt = "    Find Files [Live]", keys = "󱁐 fw", cmd = "Telescope live_grep" },
     -- { txt = "󱙓   Find Files [Live]", keys = "󱁐 fw", cmd = "Telescope live_grep" },
-    { txt = "    Find Files [Live]", keys = "󱁐 fw", cmd = "Telescope live_grep" },
-    { txt = "   File Manager [Yazi]", keys = "󱁐 fs", cmd = "Yazi" },
+    { txt = "   Find Files", keys = "󱁐 fw", cmd = "Telescope live_grep" },
+    { txt = "   File Manager", keys = "󱁐 fs", cmd = "Yazi" },
 
     { txt = "", no_gap = true, rep = true },
     { txt = "", no_gap = true, rep = true },

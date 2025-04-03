@@ -180,16 +180,6 @@ return {
     require("plugins.contrib.nvim-guess-indent"),
   },
   {
-    name = "hologram",
-    "edluffy/hologram.nvim",
-    require("plugins.contrib.nvim-hologram"),
-  },
-  {
-    name = "hologram-math",
-    "Vaisakhkm2625/hologram-math-preview.nvim",
-    require("plugins.contrib.nvim-hologram-math"),
-  },
-  {
     name = "image",
     "3rd/image.nvim",
     require("plugins.contrib.nvim-image"),
@@ -344,21 +334,21 @@ return {
     "folke/noice.nvim",
     require("plugins.contrib.nvim-noice"),
   },
-  {
-    name = "none-ls",
-    "nvimtools/none-ls.nvim",
-    require("plugins.contrib.nvim-nonels"),
-  },
+  -- {
+  --   name = "none-ls",
+  --   "nvimtools/none-ls.nvim",
+  --   require("plugins.contrib.nvim-nonels"),
+  -- },
   {
     name = "nui-components",
     "grapp-dev/nui-components.nvim",
     require("plugins.contrib.nvim-nui-components"),
   },
-  {
-    name = "null-ls",
-    "brain-fuel/null-ls.nvim",
-    require("plugins.contrib.nvim-null-ls"),
-  },
+  -- {
+  --   name = "null-ls",
+  --   "brain-fuel/null-ls.nvim",
+  --   require("plugins.contrib.nvim-null-ls"),
+  -- },
   {
     name = "outline",
     "hedyhli/outline.nvim",
@@ -465,11 +455,11 @@ return {
     "The-Plottwist/nvim-session-manager",
     require("plugins.contrib.nvim-session-manager"),
   },
-  {
-    name = "sidebar",
-    "michaelpadiernos-forks/sidebar.nvim",
-    require("plugins.contrib.nvim-sidebar"),
-  },
+  -- {
+  --   name = "sidebar",
+  --   "michaelpadiernos-forks/sidebar.nvim",
+  --   require("plugins.contrib.nvim-sidebar"),
+  -- },
   -- {
   --   name = "smart-motion",
   --   "FluxxField/smart-motion.nvim",

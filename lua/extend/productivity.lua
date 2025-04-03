@@ -1,9 +1,9 @@
 return {
-  {
-    name = "down",
-    "clpi/down.nvim",
-    require("plugins.contrib.nvim-down"),
-  },
+  -- {
+  --   name = "down",
+  --   "clpi/down.nvim",
+  --   require("plugins.contrib.nvim-down"),
+  -- },
   {
     name = "hologram",
     "edluffy/hologram.nvim",
