@@ -360,11 +360,6 @@ return {
     require("plugins.contrib.nvim-null-ls"),
   },
   {
-    name = "outline",
-    "hedyhli/outline.nvim",
-    require("plugins.contrib.nvim-outline"),
-  },
-  {
     name = "overseer",
     "stevearc/overseer.nvim",
     require("plugins.contrib.nvim-overseer"),
