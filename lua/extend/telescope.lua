@@ -60,7 +60,11 @@ return {
     "nvim-telescope/telescope-project.nvim",
     require("plugins.telescope.nvim-telescope-project"),
   },
-  -- { name = "telescope-remote-sshfs", "nosduco/remote-sshfs.nvim", require "plugins.telescope.nvim-telescope-remote-sshfs" lazy = false },
+  {
+    name = "telescope-remote-sshfs",
+    "nosduco/remote-sshfs.nvim",
+    require("plugins.telescope.nvim-telescope-remote-sshfs"),
+  },
   -- { name = "telescope-session", "HUAHUAI23/telescope-session.nvim", require "plugins.telescope.nvim-telescope-session" },
   -- { name = "telescope-sessions", "JoseConseco/telescope_sessions_picker.nvim", require "plugins.telescope.nvim-telescope-sessions" },
   {

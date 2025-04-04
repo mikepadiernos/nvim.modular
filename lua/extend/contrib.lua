@@ -89,11 +89,11 @@ return {
     "FeiyouG/commander.nvim",
     require("plugins.contrib.nvim-commander"),
   },
-  {
-    name = "composer",
-    "RVxLab/composer.nvim",
-    require("plugins.contrib.nvim-composer"),
-  },
+  -- {
+  --   name = "composer",
+  --   "RVxLab/composer.nvim",
+  --   require("plugins.contrib.nvim-composer"),
+  -- },
   {
     name = "conform",
     "stevearc/conform.nvim",

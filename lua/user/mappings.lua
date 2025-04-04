@@ -2,6 +2,11 @@ Keymap = vim.keymap.set
 
 local opts = { noremap = true, silent = true }
 
+-- require("user.mappings.tmux")
+require("user.mappings.telekasten")
+require("user.mappings.telescope")
+require("user.mappings.tmux")
+
 Keymap("n", "<leader>1", "<esc>:Lazy<CR>", opts)
 Keymap("n", "<leader>2", "<esc>:Mason<CR>", opts)
 
@@ -107,35 +112,6 @@ Keymap(
 -- Switch-project
 Keymap("n", "<leader>ps", "<cmd>SwitchProjects<CR>", { desc = "[P]roject [S]witch", noremap = true, silent = true })
 
--- Telescope
-Keymap("n", "<leader>fj", ":Telescope jumplist<CR>", opts)
-Keymap("n", "<leader>fl", ":Telescope oil<CR>", opts)
-Keymap("n", "<leader>fn", ":Nerdy<CR>", opts)
-Keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
-Keymap("n", "<leader>fr", ":Telescope frecency<CR>", opts)
-Keymap("n", "<leader>ft", ":Telescope highlights<CR>", opts)
--- Keymap("n", "<leader>fv", ":Telescope remote-sshfs<CR>", opts)
-Keymap({ "n", "v" }, "<leader>fs", "<cmd>Yazi<CR>", { desc = "Open Yazi", noremap = true, silent = true })
-
--- Telescope: Mru
-Keymap("n", "<space>fu", ":Telescope mru_files<CR>", opts)
-Keymap("n", "<space>mu", function()
-  require("telescope").extensions.mru_files.mru_files({})
-end, opts) -- Alternatively, using lua API
-
--- Telescope: Yanklist
-Keymap(
-  "n",
-  "<leader>fy",
-  "<cmd>lua require('yanklist').yanklist()<CR>",
-  { desc = "Telescope: Yanklist", noremap = true, silent = true }
-)
-
--- Tmux-switch
-Keymap("n", "<C-f>", "<CMD>TmuxSwitch<CR>")
-Keymap("n", "<leader>cs", "<CMD>TmuxCreateSession<CR>")
-Keymap("n", "<leader>rs", "<CMD>TmuxRenameSession<CR>")
-
 -- ToggleTerm
 -- Keymap(
 --   { "n", "v", "i" },
@@ -223,6 +199,7 @@ Keymap(
 )
 
 -- Yazi
+Keymap({ "n", "v" }, "<leader>fs", "<cmd>Yazi<CR>", { desc = "[Y]a[z]i: Open", noremap = true, silent = true })
 Keymap({ "n", "v" }, "<leader>yz", "<cmd>Yazi<CR>", { desc = "[Y]a[z]i: Open", noremap = true, silent = true })
 Keymap(
   { "n", "v" },

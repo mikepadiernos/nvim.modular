@@ -1,18 +1,19 @@
 return {
   -- core
-  { require "extend.core" },
-  { require "extend.themes" },
-  { require "extend.mini" },
+  { require("extend.core") },
+  { require("extend.themes") },
+  { require("extend.mini") },
 
   -- plugins
-  { require "extend.contrib" },
-  { require "extend.cmp" },
-  { require "extend.dap" },
-  { require "extend.drupal" },
-  { require "extend.icons" },
-  { require "extend.lsp" },
-  { require "extend.productivity" },
-  { require "extend.telescope" },
-  { require "extend.treesitter" },
-  { require "extend.vim" },
+  { require("extend.contrib") },
+  { require("extend.cmp") },
+  { require("extend.coc") },
+  { require("extend.dap") },
+  { require("extend.drupal") },
+  { require("extend.icons") },
+  { require("extend.lsp") },
+  { require("extend.productivity") },
+  { require("extend.telescope") },
+  { require("extend.treesitter") },
+  { require("extend.vim") },
 }

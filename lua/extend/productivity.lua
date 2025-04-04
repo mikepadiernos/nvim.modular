@@ -19,10 +19,20 @@ return {
     "jkallio/quick-kanban.nvim",
     require("plugins.contrib.nvim-quick-kanban"),
   },
+  {
+    name = "mkdnflow",
+    "jakewvincent/mkdnflow.nvim",
+    require("plugins.contrib.nvim-mkdnflow"),
+  },
   -- {
   --   name = "neorg",
   --   "nvim-neorg/neorg",
   --   require("plugins.contrib.nvim-neorg"),
+  -- },
+  -- {
+  --   name = "obsidian",
+  --   "epwalsh/obsidian.nvim",
+  --   require("plugins.contrib.nvim-obsidian")
   -- },
   {
     name = "outline",
@@ -34,14 +44,19 @@ return {
   --   "JockeKv/OutlineWiki.nvim",
   --   require("plugins.contrib.nvim-outline-wiki"),
   -- },
-  {
-    name = "telekasten",
-    "renerocksai/telekasten.nvim",
-    require("plugins.contrib.nvim-telekasten"),
-  },
+  -- {
+  --   name = "telekasten",
+  --   "renerocksai/telekasten.nvim",
+  --   require("plugins.contrib.nvim-telekasten"),
+  -- },
   {
     name = "todo-list",
     "smsimone/todolist.nvim",
     require("plugins.contrib.nvim-todolist"),
   },
+  -- {
+  --   name = "vault",
+  --   "oleksiiluchnikov/vault.nvim",
+  --   require("plugins.contrib.nvim-vault"),
+  -- },
 }

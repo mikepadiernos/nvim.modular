@@ -3,6 +3,7 @@
 
 -- local utils = require("nvchad.stl.utils")
 local modules = require("user.modules")
+local sshfs = require("remote-sshfs.api")
 
 local M = {}
 
@@ -26,9 +27,9 @@ M.nvdash = {
   },
   buttons = {
     { txt = "󰄸   Projects", keys = "󱁐 fp", cmd = "Telescope projects" },
+    -- { txt = "󰛳   Connect Remote", keys = "󱁐 fv", cmd = "lua sshfs.connect()" },
     { txt = "   File History", keys = "󱁐 fu", cmd = "Telescope mru_files" },
     -- { txt = "    File History [Global]", keys = "󱁐 fo", cmd = "Telescope oldfiles" },
-    -- { txt = "󰛳   Connect Remote", keys = "󱁐 fv", cmd = "Telescope remote-sshfs" },
     -- { txt = "   Find Files", keys = "󱁐 ff", cmd = "Telescope find_files" },
     -- { txt = "    Find Files [Live]", keys = "󱁐 fw", cmd = "Telescope live_grep" },
     -- { txt = "󱙓   Find Files [Live]", keys = "󱁐 fw", cmd = "Telescope live_grep" },

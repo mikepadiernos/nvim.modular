@@ -1,10 +1,5 @@
 return {
   {
-    name = "coc",
-    "neoclide/coc.nvim",
-    require("plugins.lsp.coc"),
-  },
-  {
     name = "lsp-config",
     "neovim/nvim-lspconfig",
     require("plugins.lsp.lsp-config"),
