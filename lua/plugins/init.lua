@@ -12,6 +12,7 @@ return {
   { require("extend.drupal") },
   { require("extend.icons") },
   { require("extend.lsp") },
+  { require("extend.oil") },
   { require("extend.productivity") },
   { require("extend.telescope") },
   { require("extend.treesitter") },

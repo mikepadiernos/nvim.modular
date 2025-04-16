@@ -1,8 +1,8 @@
 ---@module "neominimap.config.meta"
 return {
+  lazy = false, -- NOTE: NO NEED to Lazy load
   "Isrothy/neominimap.nvim",
   version = "v3.*.*",
-  lazy = false, -- NOTE: NO NEED to Lazy load
   -- Optional
   keys = {
     -- Global Minimap Controls
@@ -58,6 +58,7 @@ return {
       ---@type string[]
       exclude_filetypes = {
         "help",
+        "markdown",
       },
       -- Minimap will not be created for buffers of these types
       ---@type string[]
