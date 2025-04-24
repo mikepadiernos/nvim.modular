@@ -15,15 +15,20 @@ return {
     require("plugins.contrib.nvim-hologram-math"),
   },
   {
-    name = "quick-kanban",
-    "jkallio/quick-kanban.nvim",
-    require("plugins.contrib.nvim-quick-kanban"),
+    name = "microwiki",
+    "jmtd/nvim-microwiki",
+    require("plugins.contrib.nvim-microwiki"),
   },
   {
     name = "mkdnflow",
     "jakewvincent/mkdnflow.nvim",
     require("plugins.contrib.nvim-mkdnflow"),
   },
+  -- {
+  --   name = "neomark",
+  --   "mrbya/neomark",
+  --   require("plugins.contrib.nvim-neomark"),
+  -- },
   -- {
   --   name = "neorg",
   --   "nvim-neorg/neorg",
@@ -44,6 +49,11 @@ return {
   --   "JockeKv/OutlineWiki.nvim",
   --   require("plugins.contrib.nvim-outline-wiki"),
   -- },
+  {
+    name = "quick-kanban",
+    "jkallio/quick-kanban.nvim",
+    require("plugins.contrib.nvim-quick-kanban"),
+  },
   -- {
   --   name = "telekasten",
   --   "renerocksai/telekasten.nvim",

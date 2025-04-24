@@ -6,6 +6,7 @@ return {
   { name = "vim-gitgutter", "airblade/vim-gitgutter", require("plugins.vim.vim-gitgutter") },
   { name = "vim-nerdfont", "lambdalisue/vim-nerdfont", require("plugins.vim.vim-nerdfont") },
   { name = "vim-sleuth", "tpope/vim-sleuth", require("plugins.vim.vim-sleuth") },
+  { name = "vim-startuptime", "dstein64/vim-startuptime", require("plugins.vim.vim-startuptime") },
   { name = "vim-stylus", "acauamontiel/vim-stylus", require("plugins.vim.vim-stylus") },
   -- { name = "vim-stylus", "shirohana/vim-stylus", require("plugins.vim.vim-stylus") },
   -- { name = "vim-visual-multi", "mg979/vim-visual-multi", require("plugins.vim.vim-visual-multi") },

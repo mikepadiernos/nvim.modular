@@ -11,7 +11,7 @@ return {
         opts = { history = true, updateevents = "TextChanged,TextChangedI" },
         config = function(_, opts)
           require("luasnip").config.set_config(opts)
-          require "nvchad.configs.luasnip"
+          require("nvchad.configs.luasnip")
         end,
       },
       -- autopairing of (){}[] etc
@@ -25,7 +25,7 @@ return {
           require("nvim-autopairs").setup(opts)
 
           -- setup cmp for autopairs
-          local cmp_autopairs = require "nvim-autopairs.completion.cmp"
+          local cmp_autopairs = require("nvim-autopairs.completion.cmp")
           require("cmp").event:on("confirm_done", cmp_autopairs.on_confirm_done())
         end,
       },
@@ -51,19 +51,19 @@ return {
     },
     config = function()
       -- See `:help cmp`
-      local cmp = require "cmp"
+      local cmp = require("cmp")
       -- local config = require "plugins.cmp.cmp"
-      local luasnip = require "luasnip"
-      luasnip.config.setup {}
+      local luasnip = require("luasnip")
+      luasnip.config.setup({})
 
-      cmp.setup {
+      cmp.setup({
         mapping = {
           -- ["<CR>"] = cmp.mapping.confirm {
           --   behavior = cmp.ConfirmBehavior.Insert,
           --   select = false,
           -- },
           -- ["<CR>"] = cmp.config.disable,
-          ["<CR>"] = cmp.mapping.confirm { select = false },
+          ["<CR>"] = cmp.mapping.confirm({ select = false }),
           ["<C-p>"] = cmp.mapping.select_prev_item(),
           ["<C-n>"] = cmp.mapping.select_next_item(),
           ["<C-e>"] = cmp.mapping.abort(),
@@ -88,8 +88,16 @@ return {
           { name = "path" },
           { name = "css_vars" },
           { name = "nerdfonts" },
+          { name = "behat" },
+          { name = "form_options" },
+          { name = "html_class" },
+          { name = "symfony_routes" },
+          { name = "symfony_translations" },
+          { name = "twig" },
+          { name = "twig_constants" },
+          { name = "twig_templates" },
         },
-      }
+      })
     end,
   },
 }

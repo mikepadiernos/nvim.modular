@@ -49,11 +49,11 @@ return {
     "Dillonb/betterquit.nvim",
     require("plugins.contrib.nvim-betterquit"),
   },
-  {
-    name = "bigfile",
-    "LunarVim/bigfile.nvim",
-    require("plugins.contrib.nvim-bigfile"),
-  },
+  -- {
+  --   name = "bigfile",
+  --   "LunarVim/bigfile.nvim",
+  --   require("plugins.contrib.nvim-bigfile"),
+  -- },
   -- {
   --   name = "bunnyhop",
   --   "PLAZMAMA/bunnyhop.nvim",
@@ -160,9 +160,19 @@ return {
     require("plugins.contrib.nvim-eyeliner"),
   },
   {
+    name = "faster",
+    "pteroctopus/faster.nvim",
+    require("plugins.contrib.nvim-faster")
+  },
+  {
     name = "fidget",
     "j-hui/fidget.nvim",
     require("plugins.contrib.nvim-fidget"),
+  },
+  {
+    name = "foldline",
+    "DrDimon/nvim-foldline",
+    require("plugins.contrib.nvim-foldline"),
   },
   {
     name = "formatter",
@@ -214,11 +224,11 @@ return {
     "crnvl96/lazydocker.nvim",
     require("plugins.contrib.nvim-lazydocker"),
   },
-  {
-    name = "legendary",
-    "mrjones2014/legendary.nvim",
-    require("plugins.contrib.nvim-legendary"),
-  },
+  -- {
+  --   name = "legendary",
+  --   "mrjones2014/legendary.nvim",
+  --   require("plugins.contrib.nvim-legendary"),
+  -- },
   {
     name = "lint",
     "mfussenegger/nvim-lint",
@@ -239,10 +249,20 @@ return {
     "MeanderingProgrammer/render-markdown.nvim",
     require("plugins.contrib.nvim-markdown"),
   },
+  -- {
+  --   name = "markdown-preview",
+  --   "iamcco/markdown-preview.nvim",
+  --   require("plugins.contrib.nvim-markdown-preview"),
+  -- },
   {
-    name = "markdown-preview",
-    "iamcco/markdown-preview.nvim",
-    require("plugins.contrib.nvim-markdown-preview"),
+    name = "markdown-toggle",
+    "roodolv/markdown-toggle.nvim",
+    require("plugins.contrib.nvim-markdown-toggle"),
+  },
+  {
+    name = "marknav",
+    "daenikon/marknav.nvim",
+    require("plugins.contrib.nvim-marknav"),
   },
   {
     name = "marks",
@@ -258,6 +278,11 @@ return {
   --   name = "markspace",
   --   "amarz45/nvim-markspace",
   --   require("plugins.contrib.nvim-markspace"),
+  -- },
+  -- {
+  --   name = "markview",
+  --   "OXY2DEV/markview.nvim",
+  --   require("plugins.contrib.nvim-markview"),
   -- },
   -- {
   --   name = "md-img-insert",
@@ -407,8 +432,7 @@ return {
   -- {
   --   name = "remote-nvim",
   --   "amitds1997/remote-nvim.nvim",
-  --   require "plugins.contrib.nvim-remote",
-  --   lazy = false,
+  --   require("plugins.contrib.nvim-remote"),
   -- },
   {
     name = "renamer",
@@ -459,6 +483,11 @@ return {
     name = "session-manager",
     "The-Plottwist/nvim-session-manager",
     require("plugins.contrib.nvim-session-manager"),
+  },
+  {
+    name = "showkeys",
+    "nvzone/showkeys",
+    require("plugins.contrib.nvim-showkeys"),
   },
   -- {
   --   name = "sidebar",
