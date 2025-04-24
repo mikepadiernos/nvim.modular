@@ -15,12 +15,12 @@ Keymap("n", "<leader>a", "<cmd>AerialToggle!<CR>", opts)
 Keymap({ "n" }, "<A-S-g>", ":GrugFar<CR>", opts)
 
 -- Legendary
-Keymap(
-  { "n", "v", "i" },
-  "<leader>lr",
-  ":Legendary<cr>",
-  { desc = "Toggle [L]egenda[r]y", noremap = true, silent = true }
-)
+-- Keymap(
+--   { "n", "v", "i" },
+--   "<leader>lr",
+--   ":Legendary<cr>",
+--   { desc = "Toggle [L]egenda[r]y", noremap = true, silent = true }
+-- )
 
 -- Neomusic
 -- Keymap({ "n", "v", "i" }, "<leader>om", ":Neomusic toggle_playlist_menu<CR>", { desc = "Ne[o]music: Playlist [M]enu" })
@@ -40,6 +40,12 @@ Keymap(
 -- Keymap({ "n", "x", "o" }, "e", Hops.forward_end)
 -- Keymap({ "n", "x", "o" }, "b", Hops.backward_start)
 -- Keymap({ "n", "x", "o" }, "ge", Hops.backward_end)
+
+-- Notes
+-- Keymap("n", "<leader>nn", "<cmd>NewNote<CR>", { desc = "[N]ew [N]ote" })
+-- Keymap("n", "<leader>nh", "<cmd>SearchNotes<CR>", { desc = "[N]otes Searc[h]" })
+-- Keymap("n", "<leader>ne", "<cmd>ViewNotes<CR>", { desc = "[N]otes [E]xplorer" })
+-- Keymap("n", "<leader>nx", "<cmd>CloseNotes<CR>", { desc = "[N]otes E[x]it" })
 
 -- Oil
 Keymap(

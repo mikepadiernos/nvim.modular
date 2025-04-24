@@ -30,8 +30,8 @@ end
 
 M.cwd = function()
   local icon = "%#St_cwd_icon#" .. "󰉋 "
-  local name = vim.uv.cwd()
-  name = "%#St_cwd_text#" .. " " .. (name:match("([^/\\]+)[/\\]*$") or name) .. " "
+  -- local name = vim.uv.cwd()
+  local name = "%#St_cwd_text#" .. " " .. (vim.uv.cwd():match("([^/\\]+)[/\\]*$") or vim.uv.cwd()) .. " "
   return (vim.o.columns > 85 and ("%#St_cwd_sep#" .. "  " .. icon .. name .. " ")) or ""
 end
 
@@ -90,7 +90,7 @@ M.lsp = function()
 end
 
 M.cursor = function()
-  return "%#St_pos_sep#" .. "" .. "%#St_pos_icon#  %#St_pos_text#  %l ⬝ %v  "
+  return "%#St_pos_sep#" .. "" .. "%#St_pos_icon#  %#St_pos_text#  %l° . %v°  "
 end
 
 return M

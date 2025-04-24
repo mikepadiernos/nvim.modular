@@ -1,4 +1,5 @@
 return {
+  lazy = false,
   "nvzone/showkeys",
   cmd = "ShowkeysToggle",
   opts = {

@@ -1,5 +1,10 @@
 return {
   -- {
+  --   name = "dotmd",
+  --   "y3owk1n/dotmd.nvim",
+  --   require("plugins.contrib.nvim-dotmd"),
+  -- },
+  -- {
   --   name = "down",
   --   "clpi/down.nvim",
   --   require("plugins.contrib.nvim-down"),
@@ -33,6 +38,16 @@ return {
   --   name = "neorg",
   --   "nvim-neorg/neorg",
   --   require("plugins.contrib.nvim-neorg"),
+  -- },
+  {
+    name = "notekeeper",
+    "ricarim/notekeeper.nvim",
+    require("plugins.contrib.nvim-notekeeper"),
+  },
+  -- {
+  --   name = "notes",
+  --   "mikedupree/nvim-notes",
+  --   require("plugins.contrib.nvim-notes")
   -- },
   -- {
   --   name = "obsidian",
