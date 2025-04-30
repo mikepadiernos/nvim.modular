@@ -40,10 +40,9 @@ return {
     "koyashiro/cmp-uuid",
     require("plugins.cmp.cmp-uuid"),
   },
-
-  {
-    name = "emoji.nvim",
-    "allaman/emoji.nvim",
-    require("plugins.cmp.cmp-emoji"),
-  },
+  -- {
+  --   name = "emoji.nvim",
+  --   "allaman/emoji.nvim",
+  --   require("plugins.cmp.cmp-emoji"),
+  -- },
 }
