@@ -5,11 +5,11 @@ return {
     "prochri/telescope-all-recent.nvim",
     require("plugins.telescope.nvim-telescope-all-recent"),
   },
-  {
-    name = "telescope-emoji",
-    "allaman/emoji.nvim",
-    require("plugins.telescope.nvim-telescope-emoji"),
-  },
+  -- {
+  --   name = "telescope-emoji",
+  --   "allaman/emoji.nvim",
+  --   require("plugins.telescope.nvim-telescope-emoji"),
+  -- },
   -- {
   --   name = "telescope-file-browser",
   --   "nvim-telescope/telescope-file-browser.nvim",
