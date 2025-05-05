@@ -29,6 +29,11 @@ return {
     "jakewvincent/mkdnflow.nvim",
     require("plugins.contrib.nvim-mkdnflow"),
   },
+  {
+    name = "nb",
+    "shoebox/nb.nvim",
+    require("plugins.contrib.nvim-nb"),
+  },
   -- {
   --   name = "neomark",
   --   "mrbya/neomark",
