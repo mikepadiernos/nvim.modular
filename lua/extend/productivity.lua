@@ -20,6 +20,11 @@ return {
     require("plugins.contrib.nvim-hologram-math"),
   },
   {
+    name = "kiwi",
+    "serenevoid/kiwi.nvim",
+    require("plugins.contrib.nvim-kiwi"),
+  },
+  {
     name = "microwiki",
     "jmtd/nvim-microwiki",
     require("plugins.contrib.nvim-microwiki"),
@@ -29,11 +34,11 @@ return {
     "jakewvincent/mkdnflow.nvim",
     require("plugins.contrib.nvim-mkdnflow"),
   },
-  {
-    name = "nb",
-    "shoebox/nb.nvim",
-    require("plugins.contrib.nvim-nb"),
-  },
+  -- {
+  --   name = "nb",
+  --   "shoebox/nb.nvim",
+  --   require("plugins.contrib.nvim-nb"),
+  -- },
   -- {
   --   name = "neomark",
   --   "mrbya/neomark",

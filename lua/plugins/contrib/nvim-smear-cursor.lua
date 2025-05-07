@@ -1,6 +1,6 @@
 return {
-  "sphamba/smear-cursor.nvim",
   lazy = false,
+  "sphamba/smear-cursor.nvim",
   opts = {
     -- Smear cursor when switching buffers or windows.
     smear_between_buffers = true,
@@ -14,10 +14,19 @@ return {
 
     -- Set to `true` if your font supports legacy computing symbols (block unicode symbols).
     -- Smears will blend better on all backgrounds.
-    legacy_computing_symbols_support = false,
+    legacy_computing_symbols_support = true,
 
     -- Smear cursor in insert mode.
     -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
     smear_insert_mode = true,
   },
+  config = function()
+    require("smear_cursor").setup({
+      stiffness = 0.8,
+      trailing_stiffness = 0.5,
+      stiffness_insert_mode = 0.6,
+      trailing_stiffness_insert_mode = 0.6,
+      distance_stop_animating = 0.5,
+    })
+  end,
 }

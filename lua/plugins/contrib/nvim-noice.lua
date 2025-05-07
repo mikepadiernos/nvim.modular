@@ -10,6 +10,7 @@ return {
       },
     },
     routes = {
+      -- Remove search counter
       {
         filter = {
           event = "msg_show",
@@ -18,8 +19,34 @@ return {
             { find = "; after #%d+" },
             { find = "; before #%d+" },
           },
+          kind = "search_count",
         },
         view = "mini",
+        opts = { skip = true },
+      },
+      -- Remove save file message
+      {
+        filter = { find = " written" },
+        opts = { skip = true },
+      },
+      -- Remove undo/redo messages
+      {
+        filter = { find = " before #" },
+        opts = { skip = true },
+      },
+      {
+        filter = { find = " after #" },
+        opts = { skip = true },
+      },
+      -- Remove paste messages
+      {
+        filter = { find = " more lines" },
+        opts = { skip = true },
+      },
+      -- LSP hover messages
+      {
+        filter = { find = "No information available" },
+        opts = { skip = true },
       },
     },
     presets = {
@@ -37,7 +64,7 @@ return {
     -- "rcarriga/nvim-notify",
   },
   config = function()
-    require("noice").setup {
+    require("noice").setup({
       lsp = {
         -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
         override = {
@@ -93,6 +120,6 @@ return {
         inc_rename = false, -- enables an input dialog for inc-rename.nvim
         lsp_doc_border = false, -- add a border to hover docs and signature help
       },
-    }
+    })
   end,
 }
