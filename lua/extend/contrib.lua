@@ -4,11 +4,11 @@ return {
     "stevearc/aerial.nvim",
     require("plugins.contrib.nvim-aerial"),
   },
-  {
-    name = "alien",
-    "joeyfitzpatrick/alien.nvim",
-    require("plugins.contrib.nvim-alien"),
-  },
+  -- {
+  --   name = "alien",
+  --   "joeyfitzpatrick/alien.nvim",
+  --   require("plugins.contrib.nvim-alien"),
+  -- },
   {
     name = "arrow",
     "otavioschwanck/arrow.nvim",
@@ -168,6 +168,11 @@ return {
     name = "fidget",
     "j-hui/fidget.nvim",
     require("plugins.contrib.nvim-fidget"),
+  },
+  {
+    name = "firenvim",
+    "glacambre/firenvim",
+    require("plugins.contrib.nvim-firenvim"),
   },
   {
     name = "foldline",

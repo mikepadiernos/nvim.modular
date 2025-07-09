@@ -9,5 +9,6 @@ return {
   { name = "vim-startuptime", "dstein64/vim-startuptime", require("plugins.vim.vim-startuptime") },
   { name = "vim-stylus", "acauamontiel/vim-stylus", require("plugins.vim.vim-stylus") },
   -- { name = "vim-stylus", "shirohana/vim-stylus", require("plugins.vim.vim-stylus") },
+  { name = "vim-tridactyl", "tridactyl/vim-tridactyl", require("plugins.vim.vim-tridactyl") },
   -- { name = "vim-visual-multi", "mg979/vim-visual-multi", require("plugins.vim.vim-visual-multi") },
 }

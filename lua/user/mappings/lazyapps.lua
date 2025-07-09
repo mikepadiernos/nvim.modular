@@ -1,5 +1,11 @@
 -- LazyDocker
-Keymap("n", "<leader>ld", "<cmd>LazyDocker<CR>", { desc = "Toggle [L]azy[D]ocker", noremap = true, silent = true })
+-- Keymap("n", "<leader>ld", "<cmd>LazyDocker<CR>", { desc = "Toggle [L]azy[D]ocker", noremap = true, silent = true })
+Keymap(
+  "n",
+  "<leader>ld",
+  "<cmd>lua LazyDocker.toggle()<CR>",
+  { desc = "Toggle [L]azy[D]ocker", noremap = true, silent = true }
+)
 
 -- LazyGit
 Keymap(
