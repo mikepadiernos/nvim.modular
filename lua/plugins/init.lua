@@ -18,4 +18,7 @@ return {
   { require("extend.telescope") },
   { require("extend.treesitter") },
   { require("extend.vim") },
+
+  -- media plugins
+  { require("extend.media") },
 }
