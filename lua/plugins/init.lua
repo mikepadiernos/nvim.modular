@@ -2,6 +2,7 @@ return {
   -- core
   { require("extend.core") },
   { require("extend.themes") },
+  { require("extend.base") },
   { require("extend.mini") },
 
   -- plugins

@@ -1,40 +1,19 @@
 return {
-  -- Required to have lua-rocks loaded first
-  {
-    name = "lua-rocks",
-    "vhyrro/luarocks.nvim",
-    require("plugins.contrib.nvim-luarocks"),
-  },
   -- All other modules loaded in alphabetical order
   {
     name = "aerial",
     "stevearc/aerial.nvim",
     require("plugins.contrib.nvim-aerial"),
   },
-  -- {
-  --   name = "alien",
-  --   "joeyfitzpatrick/alien.nvim",
-  --   require("plugins.contrib.nvim-alien"),
-  -- },
   {
     name = "arrow",
     "otavioschwanck/arrow.nvim",
     require("plugins.contrib.nvim-arrow"),
   },
-  -- {
-  --   name = "asdf",
-  --   "bry-guy/asdf-lsp.nvim",
-  --   require "plugins.contrib.nvim-asdf",
-  -- },
   {
     name = "autoclose",
     "m4xshen/autoclose.nvim",
     require("plugins.contrib.nvim-autoclose"),
-  },
-  {
-    name = "autosave",
-    "0x00-ketsu/autosave.nvim",
-    require("plugins.contrib.nvim-autosave"),
   },
   {
     name = "barbecue",
@@ -57,11 +36,6 @@ return {
     require("plugins.contrib.nvim-betterquit"),
   },
   -- {
-  --   name = "bigfile",
-  --   "LunarVim/bigfile.nvim",
-  --   require("plugins.contrib.nvim-bigfile"),
-  -- },
-  -- {
   --   name = "bunnyhop",
   --   "PLAZMAMA/bunnyhop.nvim",
   --   require "plugins.contrib.nvim-bunnyhop",
@@ -76,11 +50,6 @@ return {
     "royanirudd/clipboard-history.nvim",
     require("plugins.contrib.nvim-clipboard-history"),
   },
-  -- {
-  --   name = "cmus",
-  --   "cmus-enjoyers/cmus.nvim",
-  --   require("plugins.contrib.nvim-cmus"),
-  -- },
   {
     name = "colorizer",
     "norcalli/nvim-colorizer.lua",
@@ -100,11 +69,6 @@ return {
     name = "composer",
     "RVxLab/composer.nvim",
     require("plugins.contrib.nvim-composer"),
-  },
-  {
-    name = "conform",
-    "stevearc/conform.nvim",
-    require("plugins.contrib.nvim-conform"),
   },
   {
     name = "ctrlsf",
@@ -167,16 +131,6 @@ return {
     require("plugins.contrib.nvim-eyeliner"),
   },
   {
-    name = "faster",
-    "pteroctopus/faster.nvim",
-    require("plugins.contrib.nvim-faster"),
-  },
-  {
-    name = "fidget",
-    "j-hui/fidget.nvim",
-    require("plugins.contrib.nvim-fidget"),
-  },
-  {
     name = "firenvim",
     "glacambre/firenvim",
     require("plugins.contrib.nvim-firenvim"),
@@ -206,15 +160,15 @@ return {
     "nmac427/guess-indent.nvim",
     require("plugins.contrib.nvim-guess-indent"),
   },
+  -- {
+  --   name = "headlines",
+  --   "lukas-reineke/headlines.nvim",
+  --   require("plugins.contrib.nvim-headlines"),
+  -- },
   {
     name = "highlightcolors",
-    'brenoprata10/nvim-highlight-colors',
+    "brenoprata10/nvim-highlight-colors",
     require("plugins.contrib.nvim-highlightcolors"),
-  },
-  {
-    name = "image",
-    "3rd/image.nvim",
-    require("plugins.contrib.nvim-image"),
   },
   {
     name = "img-clip",
@@ -302,11 +256,6 @@ return {
     require("plugins.contrib.nvim-mistake"),
   },
   {
-    name = "modicator",
-    "mawkler/modicator.nvim",
-    require("plugins.contrib.nvim-modicator"),
-  },
-  {
     name = "multicursor",
     "jake-stewart/multicursor.nvim",
     require("plugins.contrib.nvim-multicursor"),
@@ -361,11 +310,6 @@ return {
   --   "backdround/neowords.nvim",
   --   require "plugins.contrib.nvim-neowords",
   -- },
-  {
-    name = "noice",
-    "folke/noice.nvim",
-    require("plugins.contrib.nvim-noice"),
-  },
   {
     name = "none-ls",
     "nvimtools/none-ls.nvim",
@@ -522,11 +466,6 @@ return {
     require("plugins.contrib.nvim-sudo"),
   },
   {
-    name = "suedit",
-    "Grafcube/suedit.nvim",
-    require("plugins.contrib.nvim-suedit"),
-  },
-  {
     name = "switch-project",
     "raresica1234/switch-project.nvim",
     require("plugins.contrib.nvim-switch-project"),
@@ -605,16 +544,6 @@ return {
     name = "undotree",
     "jiaoshijie/undotree",
     require("plugins.contrib.nvim-undotree"),
-  },
-  {
-    name = "valign",
-    "riku-ri/valign.nvim",
-    require("plugins.contrib.nvim-valign"),
-  },
-  {
-    name = "visual-whitespace",
-    "mcauley-penney/visual-whitespace.nvim",
-    require("plugins.contrib.nvim-visual-whitespace"),
   },
   {
     name = "vs-tasks",
