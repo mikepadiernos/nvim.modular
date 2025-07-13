@@ -160,9 +160,9 @@ M.ui = {
       git = function()
         return modules.git()
       end,
-      -- music_controls = function()
-      --   return modules.music_controls()
-      -- end,
+      music_controls = function()
+        return modules.music_controls()
+      end,
       diagnostics = function()
         return modules.diagnostics()
       end,
