@@ -3,6 +3,10 @@ return {
   "echasnovski/mini.misc",
   version = false,
   config = function()
-    require("mini.misc").setup {}
+    local MiniMisc = require("mini.misc")
+
+    MiniMisc.setup_termbg_sync()
+
+    MiniMisc.setup()
   end,
 }

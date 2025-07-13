@@ -1,4 +1,11 @@
 return {
+  -- Required to have lua-rocks loaded first
+  {
+    name = "lua-rocks",
+    "vhyrro/luarocks.nvim",
+    require("plugins.contrib.nvim-luarocks"),
+  },
+  -- All other modules loaded in alphabetical order
   {
     name = "aerial",
     "stevearc/aerial.nvim",
@@ -200,6 +207,11 @@ return {
     require("plugins.contrib.nvim-guess-indent"),
   },
   {
+    name = "highlightcolors",
+    'brenoprata10/nvim-highlight-colors',
+    require("plugins.contrib.nvim-highlightcolors"),
+  },
+  {
     name = "image",
     "3rd/image.nvim",
     require("plugins.contrib.nvim-image"),
@@ -229,20 +241,10 @@ return {
     "crnvl96/lazydocker.nvim",
     require("plugins.contrib.nvim-lazydocker"),
   },
-  -- {
-  --   name = "legendary",
-  --   "mrjones2014/legendary.nvim",
-  --   require("plugins.contrib.nvim-legendary"),
-  -- },
   {
     name = "lint",
     "mfussenegger/nvim-lint",
     require("plugins.contrib.nvim-lint"),
-  },
-  {
-    name = "lua-rocks",
-    "vhyrro/luarocks.nvim",
-    require("plugins.contrib.nvim-luarocks"),
   },
   {
     name = "mapx",
@@ -254,11 +256,6 @@ return {
     "MeanderingProgrammer/render-markdown.nvim",
     require("plugins.contrib.nvim-markdown"),
   },
-  -- {
-  --   name = "markdown-preview",
-  --   "iamcco/markdown-preview.nvim",
-  --   require("plugins.contrib.nvim-markdown-preview"),
-  -- },
   {
     name = "markdown-toggle",
     "roodolv/markdown-toggle.nvim",
@@ -349,11 +346,6 @@ return {
     "Isrothy/neominimap.nvim",
     require("plugins.contrib.nvim-neominimap"),
   },
-  -- {
-  --   name = "neomusic",
-  --   "aroario2003/neomusic.nvim",
-  --   require "plugins.contrib.nvim-neomusic",
-  -- },
   {
     name = "neoscroll",
     "karb94/neoscroll.nvim",
@@ -509,11 +501,11 @@ return {
     "mrjones2014/smart-splits.nvim",
     require("plugins.contrib.nvim-smart-splits"),
   },
-  {
-    name = "smear-cursor",
-    "sphamba/smear-cursor.nvim",
-    require("plugins.contrib.nvim-smear-cursor"),
-  },
+  -- {
+  --   name = "smear-cursor",
+  --   "sphamba/smear-cursor.nvim",
+  --   require("plugins.contrib.nvim-smear-cursor"),
+  -- },
   -- {
   --   name = "snacks",
   --   "folke/snacks.nvim",
@@ -539,11 +531,6 @@ return {
     "raresica1234/switch-project.nvim",
     require("plugins.contrib.nvim-switch-project"),
   },
-  -- {
-  --   name = "tfm",
-  --   "rolv-apneseth/tfm.nvim",
-  --   require "plugins.contrib.nvim-tfm",
-  -- },
   {
     name = "tide",
     "jackMort/tide.nvim",

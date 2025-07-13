@@ -23,6 +23,11 @@ return {
     "lukas-reineke/lsp-format.nvim",
     require("plugins.lsp.lsp-format"),
   },
+  {
+    name = "lsp-mason-auto-install",
+    "owallb/mason-auto-install.nvim",
+    require("plugins.lsp.lsp-mason-auto-install")
+  },
   -- {
   --   name = "lsp-lens",
   --   "VidocqH/lsp-lens.nvim",

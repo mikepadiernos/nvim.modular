@@ -3,7 +3,7 @@
 
 -- local utils = require("nvchad.stl.utils")
 local modules = require("user.modules")
-local sshfs = require("remote-sshfs.api")
+-- local sshfs = require("remote-sshfs.api")
 
 local M = {}
 
@@ -14,16 +14,16 @@ M.lsp = { signature = false }
 M.nvdash = {
   load_on_startup = true,
   header = {
-    " ████████████████████████████   ",
-    "                         ████   ",
-    " ████    ████    ████    ████   ",
-    " ████    ████    ████    ████   ",
-    " ████    ████    ████████████   ",
-    " ████    ████    ████           ",
-    " ████    ████    ████           ",
-    "                                ",
-    "                                ",
-    "                                ",
+    -- " ████████████████████████████   ",
+    -- "                         ████   ",
+    -- " ████    ████    ████    ████   ",
+    -- " ████    ████    ████    ████   ",
+    -- " ████    ████    ████████████   ",
+    -- " ████    ████    ████           ",
+    -- " ████    ████    ████           ",
+    -- "                                ",
+    -- "                                ",
+    -- "                                ",
   },
   buttons = {
     { txt = "󰄸   Projects", keys = "󱁐 fp", cmd = "Telescope projects" },

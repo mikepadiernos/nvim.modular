@@ -4,6 +4,12 @@ return {
   rocks = { hererocks = true },
 
   ui = {
+    size = {
+      width = 0.85,
+      height = 0.85,
+    },
+    wrap = false,
+    border = "none",
     icons = {
       ft = "",
       lazy = "󰂠 ",
