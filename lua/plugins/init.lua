@@ -5,12 +5,15 @@ return {
   { require("extend.base") },
   { require("extend.mini") },
 
+  -- drupal
+  { require("extend.drupal") },
+
   -- plugins
   { require("extend.contrib") },
   { require("extend.cmp") },
   { require("extend.coc") },
   { require("extend.dap") },
-  { require("extend.drupal") },
+  { require("extend.development") },
   { require("extend.icons") },
   { require("extend.lsp") },
   { require("extend.oil") },

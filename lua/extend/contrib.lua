@@ -66,11 +66,6 @@ return {
     require("plugins.contrib.nvim-commander"),
   },
   {
-    name = "composer",
-    "RVxLab/composer.nvim",
-    require("plugins.contrib.nvim-composer"),
-  },
-  {
     name = "ctrlsf",
     "dyng/ctrlsf.vim",
     require("plugins.contrib.nvim-ctrlsf"),
@@ -79,11 +74,6 @@ return {
     name = "ctrlsf-ui",
     "P4Cu/ctrlsf-ui.nvim",
     require("plugins.contrib.nvim-ctrlsf-ui"),
-  },
-  {
-    name = "devtools",
-    "muhfaris/devtools.nvim",
-    require("plugins.contrib.nvim-devtools"),
   },
   {
     name = "dial",
@@ -96,9 +86,9 @@ return {
     require("plugins.contrib.nvim-diffview"),
   },
   {
-    name = "direnv",
-    "NotAShelf/direnv.nvim",
-    require("plugins.contrib.nvim-direnv"),
+    name = "diffy",
+    "dkooll/diffy.nvim",
+    require("plugins.contrib.nvim-diffy"),
   },
   {
     name = "dressing",
@@ -119,11 +109,6 @@ return {
     name = "easyword",
     "vanaigr/easyword.nvim",
     require("plugins.contrib.nvim-easyword"),
-  },
-  {
-    name = "emmet",
-    "olrtg/nvim-emmet",
-    require("plugins.contrib.nvim-emmet"),
   },
   {
     name = "eyeliner",
@@ -184,11 +169,6 @@ return {
     name = "json",
     "Sup3Legacy/json.nvim",
     require("plugins.contrib.nvim-json"),
-  },
-  {
-    name = "lazydev",
-    "folke/lazydev.nvim",
-    require("plugins.contrib.nvim-lazydev"),
   },
   {
     name = "lazydocker",
