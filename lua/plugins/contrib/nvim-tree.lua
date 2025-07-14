@@ -119,7 +119,7 @@ return {
           diagnostics_placement = "signcolumn",
           bookmarks_placement = "signcolumn",
           padding = " ",
-          symlink_arrow = " ➛ ",
+          symlink_arrow = " ➛  ",
           show = {
             file = true,
             folder = true,
@@ -131,8 +131,8 @@ return {
             bookmarks = true,
           },
           glyphs = {
-            default = "",
-            symlink = "",
+            default = "",
+            symlink = "",
             bookmark = "󰆤",
             modified = "●",
             hidden = "󰜌",

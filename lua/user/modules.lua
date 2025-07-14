@@ -2,6 +2,10 @@ local utils = require("user.utilities")
 
 local M = {}
 
+M.stbufnr = function()
+  return vim.api.nvim_win_get_buf(vim.g.statusline_winid or 0)
+end
+
 M.left_mode = function()
   if not utils.is_activewin() then
     return ""
@@ -29,7 +33,7 @@ M.right_mode = function()
 end
 
 M.cwd = function()
-  local icon = "%#St_cwd_icon#" .. "󰉋 "
+  local icon = "%#St_cwd_icon#" .. "󰉋"
   -- local name = vim.uv.cwd()
   local name = "%#St_cwd_text#" .. " " .. (vim.uv.cwd():match("([^/\\]+)[/\\]*$") or vim.uv.cwd()) .. " "
   return (vim.o.columns > 85 and ("%#St_cwd_sep#" .. "  " .. icon .. name .. " ")) or ""
@@ -37,8 +41,13 @@ end
 
 M.file = function()
   local x = utils.file()
-  local name = " " .. x[2] .. ""
-  return "%#St_file#  " .. x[1] .. name .. "%#St_file_sep#" .. "  "
+  local path = vim.api.nvim_buf_get_name(M.stbufnr())
+  local name = "" .. x[1] .. " " .. x[2] .. ""
+  if x[2] ~= "Empty" then
+    return "%#St_file#  " .. name .. "%#St_file_sep#" .. "  "
+  else
+    return nil
+  end
 end
 
 M.git = function()
