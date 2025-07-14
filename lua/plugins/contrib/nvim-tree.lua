@@ -49,12 +49,12 @@ return {
   },
   cmd = { "NvimTreeToggle", "NvimTreeFocus" },
   config = function(_)
-    local nvtree = require "nvim-tree"
-    local api = require "nvim-tree.api"
+    local nvtree = require("nvim-tree")
+    local api = require("nvim-tree.api")
 
     local function label(path)
-      path = path:gsub(os.getenv "HOME", "~", 1)
-      return path:gsub("([a-zA-Z])[a-z0-9]+", "%1") .. (path:match "[a-zA-Z]([a-z0-9]*)$" or "")
+      path = path:gsub(os.getenv("HOME"), "~", 1)
+      return path:gsub("([a-zA-Z])[a-z0-9]+", "%1") .. (path:match("[a-zA-Z]([a-z0-9]*)$") or "")
     end
 
     -- Add custom mappings
@@ -70,9 +70,9 @@ return {
       end
 
       api.config.mappings.default_on_attach(bufnr)
-      map("n", "+", api.tree.change_root_to_node, opts "CD")
-      map("n", "?", api.tree.toggle_help, opts "Help")
-      map("n", "<ESC>", api.tree.close, opts "Close")
+      map("n", "+", api.tree.change_root_to_node, opts("CD"))
+      map("n", "?", api.tree.toggle_help, opts("Help"))
+      map("n", "<ESC>", api.tree.close, opts("Close"))
     end
 
     -- Automatically open file upon creation
@@ -80,7 +80,7 @@ return {
       vim.cmd("edit " .. file.fname)
     end)
 
-    nvtree.setup {
+    nvtree.setup({
       on_attach = custom_on_attach,
       sync_root_with_cwd = true,
       respect_buf_cwd = true,
@@ -113,9 +113,9 @@ return {
           },
         },
         icons = {
-          git_placement = "after",
+          git_placement = "signcolumn",
           modified_placement = "before",
-          hidden_placement = "before",
+          hidden_placement = "signcolumn",
           diagnostics_placement = "signcolumn",
           bookmarks_placement = "signcolumn",
           padding = " ",
@@ -137,13 +137,13 @@ return {
             modified = "●",
             hidden = "󰜌",
             git = {
-              unstaged = "✗",
-              staged = "✓",
-              unmerged = "",
-              renamed = "➜",
-              untracked = "★",
-              deleted = "",
-              ignored = "◌",
+              unstaged = "",
+              staged = "",
+              unmerged = "",
+              renamed = "",
+              untracked = "",
+              deleted = "",
+              ignored = "",
             },
           },
         },
@@ -164,6 +164,6 @@ return {
       filesystem_watchers = {
         ignore_dirs = { "node_modules", "vendor" },
       },
-    }
+    })
   end,
 }
