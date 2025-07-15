@@ -2,10 +2,6 @@ local utils = require("user.utilities")
 
 local M = {}
 
-M.stbufnr = function()
-  return vim.api.nvim_win_get_buf(vim.g.statusline_winid or 0)
-end
-
 M.left_mode = function()
   if not utils.is_activewin() then
     return ""
@@ -41,7 +37,6 @@ end
 
 M.file = function()
   local x = utils.file()
-  local path = vim.api.nvim_buf_get_name(M.stbufnr())
   local name = "" .. x[1] .. " " .. x[2] .. ""
   if x[2] ~= "Empty" then
     return "%#St_file#  " .. name .. "%#St_file_sep#" .. "  "

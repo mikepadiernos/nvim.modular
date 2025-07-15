@@ -541,6 +541,11 @@ return {
   --   require "plugins.contrib.nvim-wormhole",
   -- },
   {
+    name = "wrapping-paper",
+    "benlubas/wrapping-paper.nvim",
+    require("plugins.contrib.nvim-wrapping-paper"),
+  },
+  {
     name = "wrapping",
     "andrewferrier/wrapping.nvim",
     require("plugins.contrib.nvim-wrapping"),

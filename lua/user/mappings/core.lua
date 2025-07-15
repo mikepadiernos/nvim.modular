@@ -3,8 +3,8 @@ local opts = { noremap = true, silent = true }
 Keymap("n", "<leader>1", "<esc>:Lazy<CR>", opts)
 Keymap("n", "<leader>2", "<esc>:Mason<CR>", opts)
 
-Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeFocus<CR>", opts)
-Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
+Keymap({ "n", "v", "i" }, "<leader>\\", ":NvimTreeToggle<CR>", opts)
+-- Keymap({ "n", "v", "i" }, "<leader><S-\\>", ":NvimTreeToggle<CR>", opts)
 
 Keymap({ "n", "v", "i", "x" }, "<C-S-Right>", ":bnext<CR>", opts)
 Keymap({ "n", "v", "i", "x" }, "<C-S-Left>", ":bprev<CR>", opts)

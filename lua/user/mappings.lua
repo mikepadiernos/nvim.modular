@@ -14,27 +14,6 @@ Keymap("n", "<leader>a", "<cmd>AerialToggle!<CR>", opts)
 -- Grug FAR
 Keymap({ "n" }, "<A-S-g>", ":GrugFar<CR>", opts)
 
--- Legendary
--- Keymap(
---   { "n", "v", "i" },
---   "<leader>lr",
---   ":Legendary<cr>",
---   { desc = "Toggle [L]egenda[r]y", noremap = true, silent = true }
--- )
-
--- Neomusic
--- Keymap({ "n", "v", "i" }, "<leader>om", ":Neomusic toggle_playlist_menu<CR>", { desc = "Ne[o]music: Playlist [M]enu" })
--- Keymap({ "n", "v", "i" }, "<leader>oc", ":Neomusic toggle_controls<CR>", { desc = "Ne[o]music: [C]ontrols" })
--- Keymap({ "n", "v", "i" }, "<leader>oo", ":Neomusic unpause_song<CR>", { desc = "Ne[o]music: Unpause Song" })
--- Keymap({ "n", "v", "i" }, "<leader>oo", ":Neomusic pause_song<CR>", { desc = "Ne[o]music: Pause Song" })
--- Keymap({ "n", "v", "i" }, "<leader>ol", ":Neomusic next_song<CR>", { desc = "Ne[o]music: Next Song" })
--- Keymap({ "n", "v", "i" }, "<leader>oh", ":Neomusic prev_song<CR>", { desc = "Ne[o]music: Previous Song" })
--- Keymap({ "n", "v", "i" }, "<leader>ok", ":Neomusic increase_volume 5<CR>", { desc = "Ne[o]music: Volume Increase" })
--- Keymap({ "n", "v", "i" }, "<leader>oj", ":Neomusic decrease_volume 5<CR>", { desc = "Ne[o]music: Volume Decrease" })
--- Keymap({ "n", "v", "i" }, "<leader>ov", ":Neomusic toggle_queue_view<CR>", { desc = "Ne[o]music: Queue [V]iew" })
--- Keymap({ "n", "v", "i" }, "<leader>oq", ":Neomusic play_queue<CR>", { desc = "Ne[o]music: [Q]ueue" })
--- Keymap({ "n", "v", "i" }, "<leader>os", ":Neomusic search_playlists<CR>", { desc = "Ne[o]music: [S]earch Playlist" })
-
 -- Neowords
 -- Keymap({ "n", "x", "o" }, "w", Hops.forward_start)
 -- Keymap({ "n", "x", "o" }, "e", Hops.forward_end)
@@ -158,6 +137,9 @@ Keymap(
   "<cmd>lua require('telescope').extensions.vstask.jobhistory()<CR>",
   { desc = "[T]asks: [C]ompleted Tasks", noremap = true, silent = true }
 )
+
+-- Wrapping
+Keymap({ "n" }, "<leader>w", ":ToggleWrapMode<CR>", { desc = "[W]rap Mode Toggle", noremap = true, silent = true })
 
 -- Yazi
 Keymap({ "n", "v" }, "<leader>fs", "<cmd>Yazi<CR>", { desc = "[Y]a[z]i: Open", noremap = true, silent = true })
