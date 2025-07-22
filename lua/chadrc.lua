@@ -36,7 +36,7 @@ M.nvdash = {
     { txt = "   Find Files", keys = "󱁐 fw", cmd = "Telescope live_grep" },
     { txt = "   File Manager", keys = "󱁐 fs", cmd = "Yazi" },
 
-    { txt = "", no_gap = true, rep = true },
+    -- { txt = "", no_gap = true, rep = true },
     { txt = "", no_gap = true, rep = true },
 
     { txt = "󰞋   Help", keys = "󱁐 fh", cmd = "Telescope help_tags" },
@@ -44,14 +44,14 @@ M.nvdash = {
     { txt = "   Highlights", keys = "󱁐 ft", cmd = "Telescope highlights" },
 
     -- { txt = "", no_gap = true, rep = true },
-    -- { txt = "", no_gap = true, rep = true },
-    --
+    { txt = "", no_gap = true, rep = true },
+
     { txt = "", hl = "NvDashFooter", no_gap = true, rep = true },
     {
       txt = function()
         local stats = require("lazy").stats()
         local ms = math.floor(stats.startuptime) .. " ms"
-        return "   Loaded " .. stats.loaded .. " / " .. stats.count .. " plugins in " .. ms
+        return "     Loaded " .. stats.loaded .. " / " .. stats.count .. " plugins in " .. ms .. "  "
       end,
       hl = "NvDashFooter",
       no_gap = true,

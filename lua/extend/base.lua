@@ -31,6 +31,11 @@ return {
     require("plugins.contrib.nvim-image"),
   },
   {
+    name = "mise",
+    "ejrichards/mise.nvim",
+    require("plugins.contrib.nvim-mise"),
+  },
+  {
     name = "modicator",
     "mawkler/modicator.nvim",
     require("plugins.contrib.nvim-modicator"),

@@ -40,11 +40,11 @@ return {
   --   "PLAZMAMA/bunnyhop.nvim",
   --   require "plugins.contrib.nvim-bunnyhop",
   -- },
-  {
-    name = "ccc",
-    "uga-rosa/ccc.nvim",
-    require("plugins.contrib.nvim-ccc"),
-  },
+  -- {
+  --   name = "ccc",
+  --   "uga-rosa/ccc.nvim",
+  --   require("plugins.contrib.nvim-ccc"),
+  -- },
   {
     name = "clipboard-history",
     "royanirudd/clipboard-history.nvim",
@@ -55,11 +55,11 @@ return {
     "norcalli/nvim-colorizer.lua",
     require("plugins.contrib.nvim-colorizer"),
   },
-  {
-    name = "colorpicker",
-    "tribhuwan-kumar/NVIMColorPicker",
-    require("plugins.contrib.nvim-colorpicker"),
-  },
+  -- {
+  --   name = "colorpicker",
+  --   "tribhuwan-kumar/NVIMColorPicker",
+  --   require("plugins.contrib.nvim-colorpicker"),
+  -- },
   {
     name = "commander",
     "FeiyouG/commander.nvim",
@@ -100,11 +100,11 @@ return {
     "Bekaboo/dropbar.nvim",
     require("plugins.contrib.nvim-dropbar"),
   },
-  {
-    name = "early-retirement",
-    "chrisgrieser/nvim-early-retirement",
-    require("plugins.contrib.nvim-early-retirement"),
-  },
+  -- {
+  --   name = "early-retirement",
+  --   "chrisgrieser/nvim-early-retirement",
+  --   require("plugins.contrib.nvim-early-retirement"),
+  -- },
   {
     name = "easyword",
     "vanaigr/easyword.nvim",
@@ -235,11 +235,11 @@ return {
     "ck-zhang/mistake.nvim",
     require("plugins.contrib.nvim-mistake"),
   },
-  {
-    name = "multicursor",
-    "jake-stewart/multicursor.nvim",
-    require("plugins.contrib.nvim-multicursor"),
-  },
+  -- {
+  --   name = "multicursor",
+  --   "jake-stewart/multicursor.nvim",
+  --   require("plugins.contrib.nvim-multicursor"),
+  -- },
   {
     name = "namespace",
     "ccaglak/namespace.nvim",
@@ -296,11 +296,6 @@ return {
     require("plugins.contrib.nvim-nui-components"),
   },
   {
-    name = "null-ls",
-    "brain-fuel/null-ls.nvim",
-    require("plugins.contrib.nvim-null-ls"),
-  },
-  {
     name = "overseer",
     "stevearc/overseer.nvim",
     require("plugins.contrib.nvim-overseer"),
@@ -315,10 +310,15 @@ return {
     "HawkinsT/pathfinder.nvim",
     require("plugins.contrib.nvim-pathfinder"),
   },
+  -- {
+  --   name = "persistent-breakpoints",
+  --   "Weissle/persistent-breakpoints.nvim",
+  --   require("plugins.contrib.nvim-persistent-breakpoints"),
+  -- },
   {
-    name = "persistent-breakpoints",
-    "Weissle/persistent-breakpoints.nvim",
-    require("plugins.contrib.nvim-persistent-breakpoints"),
+    name = "popup",
+    "nvim-lua/popup.nvim",
+    require("plugins.contrib.nvim-popup"),
   },
   {
     name = "praise",
@@ -380,11 +380,11 @@ return {
     "roobert/search-replace.nvim",
     require("plugins.contrib.nvim-search-replace"),
   },
-  {
-    name = "select-multi-line",
-    "Rasukarusan/nvim-select-multi-line",
-    require("plugins.contrib.nvim-select-multi-line"),
-  },
+  -- {
+  --   name = "select-multi-line",
+  --   "Rasukarusan/nvim-select-multi-line",
+  --   require("plugins.contrib.nvim-select-multi-line"),
+  -- },
   {
     name = "sensible",
     "basilgood/nvim-sensible",
@@ -400,11 +400,11 @@ return {
     "The-Plottwist/nvim-session-manager",
     require("plugins.contrib.nvim-session-manager"),
   },
-  {
-    name = "showkeys",
-    "nvzone/showkeys",
-    require("plugins.contrib.nvim-showkeys"),
-  },
+  -- {
+  --   name = "showkeys",
+  --   "nvzone/showkeys",
+  --   require("plugins.contrib.nvim-showkeys"),
+  -- },
   -- {
   --   name = "sidebar",
   --   "michaelpadiernos-forks/sidebar.nvim",
@@ -445,11 +445,11 @@ return {
     "raresica1234/switch-project.nvim",
     require("plugins.contrib.nvim-switch-project"),
   },
-  {
-    name = "tide",
-    "jackMort/tide.nvim",
-    require("plugins.contrib.nvim-tide"),
-  },
+  -- {
+  --   name = "tide",
+  --   "jackMort/tide.nvim",
+  --   require("plugins.contrib.nvim-tide"),
+  -- },
   {
     name = "tmuxer",
     "dkooll/tmuxer.nvim",
