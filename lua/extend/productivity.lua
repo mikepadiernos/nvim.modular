@@ -74,11 +74,11 @@ return {
   --   "JockeKv/OutlineWiki.nvim",
   --   require("plugins.contrib.nvim-outline-wiki"),
   -- },
-  {
-    name = "quick-kanban",
-    "jkallio/quick-kanban.nvim",
-    require("plugins.contrib.nvim-quick-kanban"),
-  },
+  -- {
+  --   name = "quick-kanban",
+  --   "jkallio/quick-kanban.nvim",
+  --   require("plugins.contrib.nvim-quick-kanban"),
+  -- },
   -- {
   --   name = "telekasten",
   --   "renerocksai/telekasten.nvim",

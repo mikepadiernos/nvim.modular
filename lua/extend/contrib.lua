@@ -131,6 +131,11 @@ return {
     require("plugins.contrib.nvim-formatter"),
   },
   {
+    name = "fyler",
+    "A7Lavinraj/fyler.nvim",
+    require("plugins.contrib.nvim-fyler"),
+  },
+  {
     name = "gitignore",
     "wintermute-cell/gitignore.nvim",
     require("plugins.contrib.nvim-gitignore"),

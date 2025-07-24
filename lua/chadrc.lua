@@ -35,13 +35,16 @@ M.nvdash = {
     -- { txt = "󱙓   Find Files [Live]", keys = "󱁐 fw", cmd = "Telescope live_grep" },
     { txt = "   Find Files", keys = "󱁐 fw", cmd = "Telescope live_grep" },
     { txt = "   File Manager", keys = "󱁐 fs", cmd = "Yazi" },
+    { txt = "   Highlights", keys = "󱁐 ft", cmd = "Telescope highlights" },
 
     -- { txt = "", no_gap = true, rep = true },
     { txt = "", no_gap = true, rep = true },
 
     { txt = "󰞋   Help", keys = "󱁐 fh", cmd = "Telescope help_tags" },
+
+    { txt = "", no_gap = true, rep = true },
+
     { txt = "󰪿   Cheatsheet", keys = "󱁐 ch", cmd = "NvCheatsheet" },
-    { txt = "   Highlights", keys = "󱁐 ft", cmd = "Telescope highlights" },
 
     -- { txt = "", no_gap = true, rep = true },
     { txt = "", no_gap = true, rep = true },
