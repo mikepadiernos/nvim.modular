@@ -1,5 +1,5 @@
 local opts = { noremap = true, silent = true }
-local sshfs = require("remote-sshfs.api")
+-- local sshfs = require("remote-sshfs.api")
 
 -- Telescope
 Keymap("n", "<leader>fj", ":Telescope jumplist<CR>", opts)
