@@ -1,5 +1,8 @@
 return {
+  -- mini.nvim: bootstrap main plugin
   { "echasnovski/mini.nvim" },
+
+  -- mini.nvim: individual mini modules
   { "echasnovski/mini.ai", require("plugins.mini.mini-ai") },
   -- { "echasnovski/mini.align", require "plugins.mini.mini-align" },
   -- { "echasnovski/mini.animate", require "plugins.mini.mini-animate" },
