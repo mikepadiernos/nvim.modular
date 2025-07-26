@@ -69,6 +69,13 @@ return {
         "terminal",
         "prompt",
       },
+
+      click = {
+        -- Enable mouse click on the minimap
+        enabled = true, ---@type boolean
+        -- Automatically switch focus to the minimap when clicked
+        auto_switch_focus = true, ---@type boolean
+      },
     }
   end,
 }
