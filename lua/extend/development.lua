@@ -9,11 +9,11 @@ return {
     "github/copilot.vim",
     require("plugins.contrib.nvim-copilot"),
   },
-  {
-    name = "copilotchat",
-    "CopilotC-Nvim/CopilotChat.nvim",
-    require("plugins.contrib.nvim-copilotchat"),
-  },
+  -- {
+  --   name = "copilotchat",
+  --   "CopilotC-Nvim/CopilotChat.nvim",
+  --   require("plugins.contrib.nvim-copilotchat"),
+  -- },
   -- {
   --   name = "devops-tools",
   --   "azratul/devops-tools.nvim",

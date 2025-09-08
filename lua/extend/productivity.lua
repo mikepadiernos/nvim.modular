@@ -19,21 +19,21 @@ return {
     "Vaisakhkm2625/hologram-math-preview.nvim",
     require("plugins.contrib.nvim-hologram-math"),
   },
-  {
-    name = "kiwi",
-    "serenevoid/kiwi.nvim",
-    require("plugins.contrib.nvim-kiwi"),
-  },
-  {
-    name = "microwiki",
-    "jmtd/nvim-microwiki",
-    require("plugins.contrib.nvim-microwiki"),
-  },
-  {
-    name = "mkdnflow",
-    "jakewvincent/mkdnflow.nvim",
-    require("plugins.contrib.nvim-mkdnflow"),
-  },
+  -- {
+  --   name = "kiwi",
+  --   "serenevoid/kiwi.nvim",
+  --   require("plugins.contrib.nvim-kiwi"),
+  -- },
+  -- {
+  --   name = "microwiki",
+  --   "jmtd/nvim-microwiki",
+  --   require("plugins.contrib.nvim-microwiki"),
+  -- },
+  -- {
+  --   name = "mkdnflow",
+  --   "jakewvincent/mkdnflow.nvim",
+  --   require("plugins.contrib.nvim-mkdnflow"),
+  -- },
   -- {
   --   name = "nb",
   --   "shoebox/nb.nvim",
@@ -49,11 +49,11 @@ return {
   --   "nvim-neorg/neorg",
   --   require("plugins.contrib.nvim-neorg"),
   -- },
-  {
-    name = "notekeeper",
-    "ricarim/notekeeper.nvim",
-    require("plugins.contrib.nvim-notekeeper"),
-  },
+  -- {
+  --   name = "notekeeper",
+  --   "ricarim/notekeeper.nvim",
+  --   require("plugins.contrib.nvim-notekeeper"),
+  -- },
   -- {
   --   name = "notes",
   --   "mikedupree/nvim-notes",
