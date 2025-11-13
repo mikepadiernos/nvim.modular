@@ -5,8 +5,9 @@ return {
     require("plugins.lsp.lsp-config"),
   },
   -- {
-  --   "jay-babu/mason-null-ls.nvim",
-  --   require("plugins.lsp.lsp-mason-null-ls"),
+  --	name = "lsp-mason-null-ls",
+  --	"jay-babu/mason-null-ls.nvim",
+  --	require("plugins.lsp.lsp-mason-null-ls"),
   -- },
   {
     name = "lsp-extras",
@@ -23,10 +24,20 @@ return {
     "lukas-reineke/lsp-format.nvim",
     require("plugins.lsp.lsp-format"),
   },
+  -- {
+  --   name = "lsp-mason-auto-install",
+  --   "owallb/mason-auto-install.nvim",
+  --   require("plugins.lsp.lsp-mason-auto-install")
+  -- },
   {
-    name = "lsp-mason-auto-install",
-    "owallb/mason-auto-install.nvim",
-    require("plugins.lsp.lsp-mason-auto-install")
+  	name = "lsp-mason-nvim-dap",
+  	"jay-babu/mason-nvim-dap.nvim",
+  	require("plugins.lsp.lsp-mason-nvim-dap")
+  },
+  {
+    name = "lsp-mason-tool-installer",
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    require("plugins.lsp.lsp-mason-tool-installer")
   },
   -- {
   --   name = "lsp-lens",

@@ -64,6 +64,7 @@ M.nvdash = {
 
 M.base46 = {
   theme = "onedark",
+  transparency = true,
   hl_add = {
     St_MusicInfo = { fg = "#FFFB54", bg = "#000000" },
     -- St_MusicState = { fg = "#FFFB54", bg = "#0a0d0f" },
