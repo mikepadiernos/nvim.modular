@@ -5,6 +5,11 @@ return {
     "prochri/telescope-all-recent.nvim",
     require("plugins.telescope.nvim-telescope-all-recent"),
   },
+  {
+    name = "telescope-aws-accounts",
+    "fbreckle/telescope-aws-accounts.nvim",
+    require("plugins.telescope.nvim-telescope-aws-accounts"),
+  },
   -- {
   --   name = "telescope-emoji",
   --   "allaman/emoji.nvim",
@@ -27,7 +32,7 @@ return {
   -- },
   {
     name = "telescope-gitignore",
-    "chaosbaby/telescope-gitignore.nvim",
+    "llawn/telescope-gitignore.nvim",
     require("plugins.telescope.nvim-telescope-gitignore"),
   },
   {

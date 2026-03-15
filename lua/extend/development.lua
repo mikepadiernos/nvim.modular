@@ -1,10 +1,5 @@
 return {
   {
-    name = "composer",
-    "RVxLab/composer.nvim",
-    require("plugins.contrib.nvim-composer"),
-  },
-  {
     name = "copilot",
     "github/copilot.vim",
     require("plugins.contrib.nvim-copilot"),

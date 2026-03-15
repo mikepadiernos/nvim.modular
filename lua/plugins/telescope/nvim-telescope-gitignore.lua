@@ -1,6 +1,6 @@
 return {
-  "chaosbaby/telescope-gitignore.nvim",
+  "llawn/telescope-gitignore.nvim",
   config = function()
-    require("telescope").load_extension "gitignore"
+    require("telescope").load_extension("gitignore")
   end,
 }

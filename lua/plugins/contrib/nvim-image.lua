@@ -9,15 +9,15 @@ return {
         -- require("magick").setup {}
       end,
     },
-    {
-      "nvim-treesitter/nvim-treesitter",
-      build = ":TSUpdate",
-      config = function()
-        require("nvim-treesitter.configs").setup {
-          highlight = { enable = true },
-        }
-      end,
-    },
+    -- {
+    --   "nvim-treesitter/nvim-treesitter",
+    --   build = ":TSUpdate",
+    --   config = function()
+    --     require("nvchad.configs.lspconfig").setup({
+    --       highlight = { enable = true },
+    --     })
+    --   end,
+    -- },
   },
   config = function()
     require("image").setup()
