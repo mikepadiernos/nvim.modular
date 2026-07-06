@@ -69,7 +69,8 @@ return {
         }
       end
 
-      api.config.mappings.default_on_attach(bufnr)
+      -- api.config.mappings.default_on_attach(bufnr)
+      api.map.on_attach.default(bufnr)
       map("n", "+", api.tree.change_root_to_node, opts("CD"))
       map("n", "?", api.tree.toggle_help, opts("Help"))
       map("n", "<ESC>", api.tree.close, opts("Close"))
@@ -89,7 +90,7 @@ return {
       },
       update_focused_file = {
         enable = true,
-        update_root = true,
+        -- update_root = true,
       },
       view = {
         width = 45,
@@ -118,7 +119,7 @@ return {
           hidden_placement = "signcolumn",
           diagnostics_placement = "signcolumn",
           bookmarks_placement = "signcolumn",
-          padding = " ",
+          -- padding = " ",
           symlink_arrow = " ➛  ",
           show = {
             file = true,

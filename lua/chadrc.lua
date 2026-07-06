@@ -76,7 +76,7 @@ M.base46 = {
     NormalNC = { bg = User_bg },
     NormalFloat = { bg = User_bg },
     FloatBorder = { fg = User_bg, bg = User_bg },
-    WinSeparator = { fg = User_bg, bg = User_bg },
+    WinSeparator = { fg = "none", bg = "none" },
     TabLineSel = { bg = User_bg },
     TbFill = { bg = User_bg },
     TbBufOn = { bg = User__bg2 },
@@ -125,7 +125,7 @@ M.base46 = {
     TelescopePromptBorder = { fg = User__bg, bg = User__bg },
     NoiceCmdlinePopup = { fg = User__bg },
     NoiceCompletionItemKindDefault = { fg = User_bg2, bg = User_bg2 },
-    NvimTreeWinSeparator = { fg = User_bg, bg = User_bg },
+    NvimTreeWinSeparator = { fg = "none", bg = "none" },
     NvimTreeNormal = { bg = User_bg },
     NvimTreeNormalNC = { bg = User_bg },
   },
@@ -139,7 +139,8 @@ M.ui = {
   tabufline = {
     enabled = true,
     lazyload = true,
-    order = { "buffers", "tabs", "btns" },
+    treeOffsetFt = "NvimTree",
+    order = { "treeOffset", "buffers", "tabs", "btns" },
     overriden_modules = function(modules)
       table.insert(modules, modules[1]) -- adds nvimtree module ( its at index 1 ) , to end of the table
       table.remove(modules, 1) -- removes nvimtree module at index 1
@@ -193,5 +194,21 @@ M.ui = {
     },
   },
 }
+
+-- local strep = string.rep
+--
+-- local function getNvimTreeWidth()
+--   for _, win in pairs(M.nvim_tabpage_list_wins(0)) do
+--     if vim.bo[M.nvim_win_get_buf(win)].ft == "NvimTree" then
+--       return M.nvim_win_get_width(win)
+--     end
+--   end
+--   return 0
+-- end
+--
+-- M.treeOffset = function()
+--   local w = getNvimTreeWidth()
+--   return w == 0 and " " or "%#NvimTreeNormal#" .. strep(" ", w) .. "%#NvimTreeWinSeparator#" .. " "
+-- end
 
 return M

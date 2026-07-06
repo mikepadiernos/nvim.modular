@@ -50,11 +50,11 @@ return {
     "royanirudd/clipboard-history.nvim",
     require("plugins.contrib.nvim-clipboard-history"),
   },
-  {
-    name = "colorizer",
-    "norcalli/nvim-colorizer.lua",
-    require("plugins.contrib.nvim-colorizer"),
-  },
+  -- {
+  --   name = "colorizer",
+  --   "norcalli/nvim-colorizer.lua",
+  --   require("plugins.contrib.nvim-colorizer"),
+  -- },
   -- {
   --   name = "colorpicker",
   --   "tribhuwan-kumar/NVIMColorPicker",
