@@ -220,7 +220,7 @@ end
 
 M.treeOffset = function()
   local w = getNvimTreeWidth()
-  return w == 0 and "" or "%#NvimTreeNormal#" .. strep("", w) .. "%#NvimTreeWinSeparator#" .. ""
+  return w == 0 and "" or "%#NvimTreeNormal#" .. strep(" ", w) .. "%#NvimTreeWinSeparator#" .. " "
 end
 
 return M
