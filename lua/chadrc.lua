@@ -14,47 +14,59 @@ M.lsp = { signature = false }
 M.nvdash = {
   load_on_startup = true,
   header = {
-    -- " ████████████████████████████   ",
-    -- "                         ████   ",
-    -- " ████    ████    ████    ████   ",
-    -- " ████    ████    ████    ████   ",
-    -- " ████    ████    ████████████   ",
-    -- " ████    ████    ████           ",
-    -- " ████    ████    ████           ",
-    -- "                                ",
-    -- "                                ",
-    -- "                                ",
+    " ████████████████████████████   ",
+    "                         ████   ",
+    " ████    ████    ████    ████   ",
+    " ████    ████    ████    ████   ",
+    " ████    ████    ████████████   ",
+    " ████    ████    ████           ",
+    " ████    ████    ████           ",
+    "                                ",
+    "                                ",
+    "                                ",
   },
   buttons = {
-    { txt = "󰄸   Projects", keys = "󱁐 fp", cmd = "Telescope projects" },
     -- { txt = "󰛳   Connect Remote", keys = "󱁐 fv", cmd = "lua sshfs.connect()" },
-    { txt = "   File History", keys = "󱁐 fu", cmd = "Telescope mru_files" },
-    -- { txt = "    File History [Global]", keys = "󱁐 fo", cmd = "Telescope oldfiles" },
-    -- { txt = "   Find Files", keys = "󱁐 ff", cmd = "Telescope find_files" },
-    -- { txt = "    Find Files [Live]", keys = "󱁐 fw", cmd = "Telescope live_grep" },
-    -- { txt = "󱙓   Find Files [Live]", keys = "󱁐 fw", cmd = "Telescope live_grep" },
-    { txt = "   Find Files", keys = "󱁐 fw", cmd = "Telescope live_grep" },
-    { txt = "   File Manager", keys = "󱁐 fs", cmd = "Yazi" },
-    { txt = "   Highlights", keys = "󱁐 ft", cmd = "Telescope highlights" },
-
-    -- { txt = "", no_gap = true, rep = true },
-    { txt = "", no_gap = true, rep = true },
-
-    { txt = "󰞋   Help", keys = "󱁐 fh", cmd = "Telescope help_tags" },
+    { txt = "   File Manager", keys = "󱁐 fs", cmd = "Yazi", no_gap = true },
+    { txt = "󰄸   Projects", keys = "󱁐 fp", cmd = "Telescope projects", no_gap = true },
+    { txt = "   File History", keys = "󱁐 fu", cmd = "Telescope mru_files", no_gap = true },
+    { txt = "   Find Files", keys = "󱁐 fw", cmd = "Telescope live_grep", no_gap = true },
+    { txt = "   Highlights", keys = "󱁐 ft", cmd = "Telescope highlights", no_gap = true },
 
     { txt = "", no_gap = true, rep = true },
 
-    { txt = "󰪿   Cheatsheet", keys = "󱁐 ch", cmd = "NvCheatsheet" },
+    { txt = "󰞋   Help", keys = "󱁐 fh", cmd = "Telescope help_tags", no_gap = true },
 
-    -- { txt = "", no_gap = true, rep = true },
+    { txt = "", no_gap = true, rep = true },
+
+    { txt = "󰪿   Cheatsheet", keys = "󱁐 ch", cmd = "NvCheatsheet", no_gap = true },
+
     { txt = "", no_gap = true, rep = true },
 
     { txt = "", hl = "NvDashFooter", no_gap = true, rep = true },
+    -- {
+    --   txt = function()
+    --     local stats = require("lazy").stats()
+    --     local ms = math.floor(stats.startuptime) .. " ms"
+    --     return "   Loaded" .. stats.loaded .. " / " .. stats.count .. " plugins in " .. ms .. "  "
+    --   end,
+    --   hl = "NvDashFooter",
+    --   no_gap = true,
+    -- },
     {
       txt = function()
         local stats = require("lazy").stats()
         local ms = math.floor(stats.startuptime) .. " ms"
-        return "     Loaded " .. stats.loaded .. " / " .. stats.count .. " plugins in " .. ms .. "  "
+        return "   Loaded " .. stats.loaded .. " / " .. stats.count .. " plugins" .. "  "
+      end,
+      hl = "NvDashFooter",
+      no_gap = true,
+    },
+    {
+      txt = function()
+        local stats = require("lazy").stats()
+        local ms = math.floor(stats.startuptime) .. " ms"
+        return "    Started in " .. ms .. "  " .. "  "
       end,
       hl = "NvDashFooter",
       no_gap = true,
@@ -76,7 +88,7 @@ M.base46 = {
     NormalNC = { bg = User_bg },
     NormalFloat = { bg = User_bg },
     FloatBorder = { fg = User_bg, bg = User_bg },
-    WinSeparator = { fg = "none", bg = "none" },
+    WinSeparator = { fg = User_bg, bg = "none" },
     TabLineSel = { bg = User_bg },
     TbFill = { bg = User_bg },
     TbBufOn = { bg = User__bg2 },
@@ -125,7 +137,7 @@ M.base46 = {
     TelescopePromptBorder = { fg = User__bg, bg = User__bg },
     NoiceCmdlinePopup = { fg = User__bg },
     NoiceCompletionItemKindDefault = { fg = User_bg2, bg = User_bg2 },
-    NvimTreeWinSeparator = { fg = "none", bg = "none" },
+    NvimTreeWinSeparator = { fg = User_bg, bg = "none" },
     NvimTreeNormal = { bg = User_bg },
     NvimTreeNormalNC = { bg = User_bg },
   },
@@ -195,20 +207,20 @@ M.ui = {
   },
 }
 
--- local strep = string.rep
---
--- local function getNvimTreeWidth()
---   for _, win in pairs(M.nvim_tabpage_list_wins(0)) do
---     if vim.bo[M.nvim_win_get_buf(win)].ft == "NvimTree" then
---       return M.nvim_win_get_width(win)
---     end
---   end
---   return 0
--- end
---
--- M.treeOffset = function()
---   local w = getNvimTreeWidth()
---   return w == 0 and " " or "%#NvimTreeNormal#" .. strep(" ", w) .. "%#NvimTreeWinSeparator#" .. " "
--- end
+local strep = string.rep
+
+local function getNvimTreeWidth()
+  for _, win in pairs(vim.api.nvim_tabpage_list_wins(0)) do
+    if vim.bo[vim.api.nvim_win_get_buf(win)].ft == "NvimTree" then
+      return vim.api.nvim_win_get_width(win)
+    end
+  end
+  return 0
+end
+
+M.treeOffset = function()
+  local w = getNvimTreeWidth()
+  return w == 0 and "" or "%#NvimTreeNormal#" .. strep("", w) .. "%#NvimTreeWinSeparator#" .. ""
+end
 
 return M
