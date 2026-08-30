@@ -425,11 +425,11 @@ return {
     "mrjones2014/smart-splits.nvim",
     require("plugins.contrib.nvim-smart-splits"),
   },
-  -- {
-  --   name = "smear-cursor",
-  --   "sphamba/smear-cursor.nvim",
-  --   require("plugins.contrib.nvim-smear-cursor"),
-  -- },
+  {
+    name = "smear-cursor",
+    "sphamba/smear-cursor.nvim",
+    require("plugins.contrib.nvim-smear-cursor"),
+  },
   -- {
   --   name = "snacks",
   --   "folke/snacks.nvim",
